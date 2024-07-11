@@ -85,11 +85,11 @@ function Team() {
                             {  teamData[0]?.teamMods.map( (item) => {
                                 return (
                                     <span> 
-                                        { item.modName == "Partying" ? <img src="https://i.imgur.com/83JqkX2.png" height="30px" title="This team is out of the running and partying!"></img> : '' }
+                                        { item.modName === "Partying" ? <img src="https://i.imgur.com/83JqkX2.png" height="30px" title="This team is out of the running and partying!"></img> : '' }
                                         
-                                        { item.modName == "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
+                                        { item.modName === "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
                                         
-                                        { item.modName == "Suck Forever" ? <img src="https://i.imgur.com/G4L25nw.png" height="30px" title="This team will suck forever."></img> : '' }
+                                        { item.modName === "Suck Forever" ? <img src="https://i.imgur.com/G4L25nw.png" height="30px" title="This team will suck forever."></img> : '' }
                                     </span>
                                 )}) 
                             }
