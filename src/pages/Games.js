@@ -64,25 +64,25 @@ function Games() {
                                                 <h3 className='center'>Day {item.gameDay} Game {item.gameNumber}</h3>
                                                 <h3 className='split-para-old'>
                                                     {
-                                                        item.weather === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="30px" class="weather" title="Null"></img> : ''
+                                                        item.weather === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="30px" class="weather" title="Null" alt='Null'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="30px" class="weather" title="WITNESS"></img> : ''
+                                                        item.weather === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="30px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="30px" class="weather" title="Sunny"></img> : ''
+                                                        item.weather === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="30px" class="weather" title="Sunny" alt='Sunny'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="30px" class="weather" title="WITNESS"></img> : ''
+                                                        item.weather === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="30px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="30px" class="weather" title="Shuffle"></img> : ''
+                                                        item.weather === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="30px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="30px" class="weather" title="Waves"></img> : ''
+                                                        item.weather === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="30px" class="weather" title="Waves" alt='Waves'></img> : ''
                                                     }
                                                     {
-                                                        (item.homeScore > item.awayScore && item.inningNumber > 8 && item.topOfInning === false) ? <img src="https://i.imgur.com/PVobD6N.png" height="30px" class="shame" title="Shame"></img> : ''
+                                                        (item.homeScore > item.awayScore && item.inningNumber > 8 && item.topOfInning === false) ? <img src="https://i.imgur.com/PVobD6N.png" height="30px" class="shame" title="Shame" alt='Shame'></img> : ''
                                                     }
                                                     {
                                                         (item.topOfInning) ?
@@ -98,21 +98,21 @@ function Games() {
                                                 <div className='inline'>
                                                     {
                                                         (item.baseThree === true) ?
-                                                            <img className="base-three" src="https://i.imgur.com/Jo55R5U.png" height="50px"></img>
+                                                            <img className="base-three" src="https://i.imgur.com/Jo55R5U.png" height="50px" alt='Thirdbase'></img>
                                                             : 
-                                                            <img className="base-three" src="https://i.imgur.com/C4kBgYH.png" height="50px"></img>
+                                                            <img className="base-three" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Thirdbase'></img>
                                                     }
                                                     {
                                                         (item.baseTwo === true) ?
-                                                            <img className="base-two" src="https://i.imgur.com/Jo55R5U.png" height="50px"></img>
+                                                            <img className="base-two" src="https://i.imgur.com/Jo55R5U.png" height="50px" alt='Secondbase'></img>
                                                             : 
-                                                            <img className="base-two" src="https://i.imgur.com/C4kBgYH.png" height="50px"></img>
+                                                            <img className="base-two" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Secondbase'></img>
                                                     }
                                                     {
                                                         (item.baseOne === true) ?
-                                                            <img className="base-one" src="https://i.imgur.com/Jo55R5U.png" height="50px"></img>
+                                                            <img className="base-one" src="https://i.imgur.com/Jo55R5U.png" height="50px" alt='Firstbase'></img>
                                                             : 
-                                                            <img className="base-one" src="https://i.imgur.com/C4kBgYH.png" height="50px"></img>
+                                                            <img className="base-one" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Firstbase'></img>
                                                     }
                                                 </div>
                                                 <div className="right">
