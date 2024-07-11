@@ -57,7 +57,7 @@ function Players() {
                     playerData?.map( (item) => {
                         return (
                             <div className='player-link'>
-                                <a href={'http://localhost:3000/player/'+item.name} value={item._id} key={item.name}>{ item.teamEmoji }{ item.name }</a>
+                                <a href={'http://daseball.adaptable.app/player/'+item.name} value={item._id} key={item.name}>{ item.teamEmoji }{ item.name }</a>
                             </div>
                         )
                     })
