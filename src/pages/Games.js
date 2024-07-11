@@ -26,7 +26,7 @@ function Games() {
     }
 
     const fetchSeason = async () => {
-        await fetch('http://localhost:4000/season/'+currentActiveSeason)
+        await fetch('https://daseballapi.adaptable.app/season/'+currentActiveSeason)
         .then(res => res.json())
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
@@ -37,7 +37,7 @@ function Games() {
 
     const fetchGamesData = async () => {
         setgameLoading(true)
-        await fetch('http://localhost:4000/games/'+seasonData[0].seasonNumber+'/'+seasonData[0].seasonDay)
+        await fetch('https://daseballapi.adaptable.app/games/'+seasonData[0].seasonNumber+'/'+seasonData[0].seasonDay)
         .then(res => res.json())
         .then(data => setgameData(data))
         .catch(err => console.log(err))

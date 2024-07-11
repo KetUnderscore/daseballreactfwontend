@@ -59,7 +59,7 @@ function Player () {
     }
 
     const fetchPlayer = async () => {
-        await axios.get('http://localhost:4000/player/'+params.id)
+        await axios.get('https://daseballapi.adaptable.app/player/'+params.id)
         .then(res => setPlayerData(res.data))
         .then(setPlayerLoaded(true))
         .catch(err => console.log(err))
@@ -67,7 +67,7 @@ function Player () {
 
     const fetchPlayerStats = async () => {
         if (playerData != null) {
-            await axios.get('http://localhost:4000/playerData/'+playerData[0].name+'/'+seasonNumber)
+            await axios.get('https://daseballapi.adaptable.app/playerData/'+playerData[0].name+'/'+seasonNumber)
             .then(res => setPlayerStatData(res.data))
             .then(setPlayerStatsLoaded(true))
             .catch(err => console.log(err))

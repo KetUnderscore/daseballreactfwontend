@@ -33,7 +33,7 @@ function Team() {
     }
 
     const fetchTeam = async () => {
-        await fetch('http://localhost:4000/team/'+params.teamName)
+        await fetch('https://daseballapi.adaptable.app/team/'+params.teamName)
         .then(res => res.json())
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))
@@ -43,7 +43,7 @@ function Team() {
     const fetchPitchers = async () => {
         setPitchingLoading(true)
         for (let i = 0; i < teamData[0].pitchingRotation.length; i++) {
-            await fetch('http://localhost:4000/playerbyid/'+teamData[0].pitchingRotation[i])
+            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].pitchingRotation[i])
             .then(res => res.json())
             .then(data => pitchingData.push(data[0]))
             .catch(err => console.log(err))
@@ -54,7 +54,7 @@ function Team() {
     const fetchBatters = async () => {
         setBattingLoading(true)
         for (let i = 0; i < teamData[0].battingRotation.length; i++) {
-            await fetch('http://localhost:4000/playerbyid/'+teamData[0].battingRotation[i])
+            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].battingRotation[i])
             .then(res => res.json())
             .then(data => battingData.push(data[0]))
             .catch(err => console.log(err))
@@ -65,7 +65,7 @@ function Team() {
     const fetchPockets = async () => {
         setPocketLoading(true)
         for (let i = 0; i < teamData[0].shadowRotation.length; i++) {
-            await fetch('http://localhost:4000/playerbyid/'+teamData[0].shadowRotation[i])
+            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].shadowRotation[i])
             .then(res => res.json())
             .then(data => pocketData.push(data[0]))
             .catch(err => console.log(err))

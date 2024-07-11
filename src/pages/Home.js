@@ -6,7 +6,7 @@ function Home() {
             <p>Daseball is a love letter to amatuer coding, Sport Simulations and the creative pursuit.</p>
             <br/>
             <p>API</p>
-            <a href="http://localhost:4000/games/"><p>/games/</p></a>
+            <a href="https://daseballapi.adaptable.app/games/"><p>/games/</p></a>
             <p>Options: /games/seasonNumber/dayNumber</p>
             <br/>
             <p>Todo:</p>

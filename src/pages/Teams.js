@@ -20,7 +20,7 @@ function Teams() {
     }
 
     const fetchTeams = async () => {
-        await fetch('http://localhost:4000/teams/')
+        await fetch('https://daseballapi.adaptable.app/teams/')
         .then(res => res.json())
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))

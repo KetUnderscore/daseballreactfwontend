@@ -11,7 +11,7 @@ function Players() {
 
     const fetchPlayers = async () => {
         if (!playersLoaded) {
-            await fetch('http://localhost:4000/players/'+paramsData)
+            await fetch('https://daseballapi.adaptable.app/players/'+paramsData)
             .then(res => res.json())
             .then(data => setPlayerData(data))
             .then(setPlayerLoaded(true))
