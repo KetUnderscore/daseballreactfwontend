@@ -123,8 +123,8 @@
   display: flex;
   flex-direction: column;
   background: rgb(43, 43, 43);
-  max-width: 45%;
-  min-width: 700px;
+  max-width: 90%;
+  min-width: min(700px, 100%);
   margin: 1rem;
 }
 
@@ -272,7 +272,7 @@ a {
   background: rgb(43, 43, 43);
   display: block;
   max-width: 480px;
-  min-width: 480px;
+  min-width: min(480px, 100%); 
   border-radius: 1rem 1rem 1rem 1rem;
   margin: 0.5rem;
 }

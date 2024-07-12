@@ -16,7 +16,7 @@ function Home() {
                 <li>Season Game Schedule</li>
                 <li>Weather Compendium</li>
                 <li>The Book</li>
-                <li>Mobile Support (?)</li>
+                <li>Mobile Support (!)</li>
                 <li>Recent Events Page</li>
             </ul>
         </div>
