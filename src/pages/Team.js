@@ -103,7 +103,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'https://main--sage-kelpie-4610b7.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.name }</a><span>{ "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 100)) - (Math.floor((item.praying + item.publicity + item.pope) / 100))))) }</span>
+                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.name }</a><span>{ "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 100)) - (Math.floor((item.praying + item.publicity + item.pope) / 100))))) }</span>
                                             </div>
                                         </div>
                                     )
@@ -121,7 +121,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'https://main--sage-kelpie-4610b7.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.name }</a><span>{ "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 100)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 100))))) }</span>
+                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.name }</a><span>{ "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 100)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 100))))) }</span>
                                             </div>
                                         </div>
                                     )
@@ -140,7 +140,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'https://main--sage-kelpie-4610b7.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.name }</a><span>{"★".repeat(Math.max(0, Math.floor(statstotal / 400))) + (statstotal % 400 >= 200 ? '☆' : '')}</span>
+                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.name }</a><span>{"★".repeat(Math.max(0, Math.floor(statstotal / 400))) + (statstotal % 400 >= 200 ? '☆' : '')}</span>
                                             </div>
                                         </div>
                                     )
