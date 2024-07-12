@@ -55,7 +55,7 @@ function Games() {
                     <div className="player">
                         <div>
                             <h2>Season {seasonData[0].seasonNumber}</h2>
-                            <h3 className='centered'>Day {seasonData[0].seasonDay} Games</h3>
+                            <h3 className='center'>Day {seasonData[0].seasonDay} Games</h3>
                             {
                                 gameData ?
                                 gameData?.map( (item) => {
