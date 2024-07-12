@@ -57,7 +57,7 @@ function Players() {
                     playerData?.map( (item) => {
                         return (
                             <div className='player-link'>
-                                <a href={'http://daseball.adaptable.app/player/'+item.name} value={item._id} key={item.name}>{ item.teamEmoji }{ item.name }</a>
+                                <a href={'https://main--sage-kelpie-4610b7.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.teamEmoji }{ item.name }</a>
                             </div>
                         )
                     })

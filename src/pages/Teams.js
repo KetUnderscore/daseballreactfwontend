@@ -57,7 +57,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'http://daseball.adaptable.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
+                                        <a href={'https://main--sage-kelpie-4610b7.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
@@ -72,7 +72,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'http://daseball.adaptable.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
+                                        <a href={'https://main--sage-kelpie-4610b7.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
@@ -87,7 +87,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'http://daseball.adaptable.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
+                                        <a href={'https://main--sage-kelpie-4610b7.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
@@ -102,7 +102,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'http://daseball.adaptable.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
+                                        <a href={'https://main--sage-kelpie-4610b7.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon } L | { item.gamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
