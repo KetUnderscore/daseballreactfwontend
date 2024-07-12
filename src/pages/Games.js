@@ -92,8 +92,8 @@ function Games() {
                                                         <span>🔻 of {item.inningNumber}</span>
                                                     }
                                                 </h3>
-                                                <h3 className='split-para-old'>{item.homeTeam.teamEmoji}{item.homeTeam.teamName} <span>{item.homeScore}</span></h3>
-                                                <h3 className='split-para-old'>{item.awayTeam.teamEmoji}{item.awayTeam.teamName} <span>{item.awayScore}</span></h3>
+                                                <h3 className='split-para-old' style={{color: "#"+item.homeTeam.teamColor}}>{item.homeTeam.teamEmoji}{item.homeTeam.teamName} <span style={{color: 'white'}}>{item.homeScore}</span></h3>
+                                                <h3 className='split-para-old' style={{color: "#"+item.awayTeam.teamColor}}>{item.awayTeam.teamEmoji}{item.awayTeam.teamName} <span style={{color: 'white'}}>{item.awayScore}</span></h3>
                                             </div>
                                             <div className='game-panel'>
                                                 <div className='inline'>
@@ -121,8 +121,8 @@ function Games() {
                                                     <p>Strikes : {'🟠'.repeat(item.currentStrikes) + '🔵'.repeat(Math.max(0,(3 - item.currentStrikes)))}</p>
                                                     <p>Outs : {'🟠'.repeat(item.currentOuts) + '🔵'.repeat(Math.max(0,(3 - item.currentOuts)))}</p>
                                                 </div>
-                                                <p className='split-para-old'>Pitcher <span>{(item.topofinning === true) ? item.homeTeam.teamEmoji : item.awayTeam.teamEmoji}<a href={'http://daseball.adaptable.app/player/'+item.currentPitcher.name}>{item.currentPitcher.name}</a></span></p>
-                                                <p className='split-para-old'>Batter <span>{(item.topofinning === true) ? item.awayTeam.teamEmoji : item.homeTeam.teamEmoji}<a href={'http://daseball.adaptable.app/player/'+item.currentBatter.name}>{item.currentBatter.name}</a></span></p>
+                                                <p className='split-para-old'>Pitcher <span>{(item.topofinning === true) ? item.homeTeam.teamEmoji : item.awayTeam.teamEmoji}<a style={{color: item.topofinning === true ? "#"+item.homeTeam.teamColor : "#"+item.awayTeam.teamColor}} href={'http://daseball.adaptable.app/player/'+item.currentPitcher.name}>{item.currentPitcher.name}</a></span></p>
+                                                <p className='split-para-old'>Batter <span>{(item.topofinning === true) ? item.awayTeam.teamEmoji : item.homeTeam.teamEmoji}<a style={{color: item.topofinning === true ? "#"+item.awayTeam.teamColor : "#"+item.homeTeam.teamColor}} href={'http://daseball.adaptable.app/player/'+item.currentBatter.name}>{item.currentBatter.name}</a></span></p>
                                             </div>
                                             <div className='game-panel'>
                                                 <p>
