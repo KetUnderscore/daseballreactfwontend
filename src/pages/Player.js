@@ -80,7 +80,7 @@ function Player () {
                 {
                     playerData != null ?
                     <div className="player-box">
-                        <h1>{ playerData[0].name }</h1>
+                        <h1>{ playerData[0].teamEmoji }{ playerData[0].name }</h1>
                         <div className="center row">
                             {  playerData[0]?.modifiers.map( (item) => {
                                 return (
