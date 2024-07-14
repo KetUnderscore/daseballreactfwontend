@@ -47,6 +47,7 @@ function Players() {
         )
     }
 
+    // Add {paramsData == "fans" ? item.fans.length : ''} to the end to see fan count
     const Players = () => {
         return (
             <div>
