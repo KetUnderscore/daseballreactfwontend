@@ -12,6 +12,7 @@ function Home() {
             <p>Todo:</p>
             <ul>
                 <li>Logging In</li>
+                <li>Betting</li>
                 <li>Add Votes Page</li>
                 <li>Season Game Schedule</li>
                 <li>Weather Compendium</li>
