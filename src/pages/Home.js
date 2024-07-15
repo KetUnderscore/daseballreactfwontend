@@ -3,11 +3,9 @@ function Home() {
         <div className="player">
             <h1>DASEBALL</h1>
             <h2>Data League Baseball</h2>
-            <p>Daseball is a love letter to amatuer coding, Sport Simulations and the creative pursuit.</p>
-            <br/>
-            <p>API</p>
-            <a href="https://daseballapi.adaptable.app/games/"><p>/games/</p></a>
-            <p>Options: /games/seasonNumber/dayNumber</p>
+            <p>Daseball is a love letter to amatuer coding, Sport Simulations and the creative pursuit.
+            <br/>Navigate with the nav bar at the top of the screen.
+            </p>
             <br/>
             <p>Todo:</p>
             <ul>
@@ -20,6 +18,12 @@ function Home() {
                 <li>Mobile Support (!)</li>
                 <li>Recent Events Page</li>
             </ul>
+            <br/>
+            <h2>API HERE</h2>
+            <p>For code wizards and nerds only.</p>
+            <a href="https://daseballapi.adaptable.app/games/"><p>/games/</p></a>
+            <p>Options: /games/seasonNumber/dayNumber</p>
+            <br/>
         </div>
     )
 }
