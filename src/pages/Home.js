@@ -20,7 +20,7 @@ function Home() {
             </ul>
             <br/>
             <h2>API HERE</h2>
-            <p>For code wizards and nerds only.</p>
+            <h3 className="center">For code wizards and nerds only.</h3>
             <a href="https://daseballapi.adaptable.app/games/"><p>/games/</p></a>
             <p>Options: /games/seasonNumber/dayNumber</p>
             <br/>
