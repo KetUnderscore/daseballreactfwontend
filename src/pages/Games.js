@@ -121,8 +121,8 @@ function Games() {
                                                     <p>Strikes : {'🟠'.repeat(item.currentStrikes) + '🔵'.repeat(Math.max(0,(3 - item.currentStrikes)))}</p>
                                                     <p>Outs : {'🟠'.repeat(item.currentOuts) + '🔵'.repeat(Math.max(0,(3 - item.currentOuts)))}</p>
                                                 </div>
-                                                <p className='split-para-old'>Pitcher <span>{item.currentPitcher.teamEmoji}<a style={{color: (item.topOfinning) ? "#"+item.awayTeam.teamColor : "#"+item.homeTeam.teamColor}} href={'http://daseball.netlify.app/player/'+item.currentPitcher.name}>{item.currentPitcher.name}</a></span></p>
-                                                <p className='split-para-old'>Batter <span>{item.currentBatter.teamEmoji}<a style={{color: (item.topOfinning) ? "#"+item.homeTeam.teamColor : "#"+item.awayTeam.teamColor}} href={'http://daseball.netlify.app/player/'+item.currentBatter.name}>{item.currentBatter.name}</a></span></p>
+                                                <p className='split-para-old'>Pitcher <span>{item.currentPitcher.teamEmoji}<a style={{color: item.topOfinning ? "#"+item.awayTeam.teamColor : "#"+item.homeTeam.teamColor}} href={'http://daseball.netlify.app/player/'+item.currentPitcher.name}>{item.currentPitcher.name}</a></span></p>
+                                                <p className='split-para-old'>Batter <span>{item.currentBatter.teamEmoji}<a style={{color: item.topOfinning ? "#"+item.homeTeam.teamColor : "#"+item.awayTeam.teamColor}} href={'http://daseball.netlify.app/player/'+item.currentBatter.name}>{item.currentBatter.name}</a></span></p>
                                             </div>
                                             <div className='game-panel'>
                                                 <p>
