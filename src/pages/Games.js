@@ -42,7 +42,7 @@ function Games() {
         .then(data => setgameData(data))
         .catch(err => console.log(err))
         setgameLoaded(true)
-        await delay(3000);
+        await delay(2500);
         setgameLoading(false)
         setgameLoaded(false)
     }
