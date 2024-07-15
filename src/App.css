@@ -223,7 +223,7 @@ a {
 .game-panel {
   background: rgb(43, 43, 43);
   display: inline-block;
-  max-width: 30%;
+  max-width: 400px;
   min-width: 400px;
   justify-content: center;
   margin: 0.5rem;
