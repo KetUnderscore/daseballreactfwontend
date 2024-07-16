@@ -20,7 +20,7 @@ function Mods() {
                     <h3 className="center">Suck Forever</h3>
                     <img src="https://i.imgur.com/G4L25nw.png" height="50px" title="This team will suck forever."></img>
                     <p className="center">Teams that Suck Forever will lose one star when they realize their fate.
-                    <br/>Teams that Suck Forever will party while losing by three or more points.</p>
+                    <br/>Teams that Suck Forever will party while losing by two or more points.</p>
                 </div>
             </div>
 
