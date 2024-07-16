@@ -4,6 +4,7 @@ function Players() {
     const [playerData, setPlayerData] = useState([])
     const [playersLoaded, setPlayerLoaded] = useState(false)
     const [paramsData, setparamsData] = useState("total")
+    const [paramsDataName, setparamsDataName] = useState(null)
 
     useEffect( () => {
         fetchPlayers()
@@ -11,19 +12,38 @@ function Players() {
 
     const fetchPlayers = async () => {
         if (!playersLoaded) {
-            await fetch('https://daseballapi.adaptable.app/players/'+paramsData)
-            .then(res => res.json())
-            .then(data => setPlayerData(data))
-            .then(setPlayerLoaded(true))
-            .catch(err => console.log(err))
+            if (paramsDataName) {
+                await fetch('https://daseballapi.adaptable.app/players/'+paramsData+'/'+paramsDataName)
+                .then(res => res.json())
+                .then(data => setPlayerData(data))
+                .then(setPlayerLoaded(true))
+                .catch(err => console.log(err))
+            } else {
+                await fetch('https://daseballapi.adaptable.app/players/'+paramsData)
+                .then(res => res.json())
+                .then(data => setPlayerData(data))
+                .then(setPlayerLoaded(true))
+                .catch(err => console.log(err))
+            }
         }
     }
 
     const SortChanger = (x) => {
-        if (x != paramsData) {
+        if (x !== paramsData) {
             setparamsData(x)
             setPlayerLoaded(false)
         }
+    }
+
+    const SortChangerName = (x) => {
+        if (x !== paramsDataName) {
+            setparamsDataName(x)
+            setPlayerLoaded(false)
+        }
+    }
+
+    const ClickToLoad = (x) => {
+        setPlayerLoaded(false)
     }
 
     const FetchSeason = () => {
@@ -51,7 +71,6 @@ function Players() {
     const Players = () => {
         return (
             <div>
-                <p className="info-text">Sort By</p>
                 <FetchSeason />
                 <br/>
                 {
@@ -70,6 +89,14 @@ function Players() {
     return (
         <div className="player">
             <h1>Players</h1>
+            <p className="info-text">Sort By</p>
+            <div className='season-form center'>
+                <input 
+                    style={{color: 'black'}} type="text" name="name"
+                    value={paramsDataName}
+                    onChange={(e) => SortChangerName(e.target.value)}
+                />
+            </div>
             <Players />
         </div>
     )
