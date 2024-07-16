@@ -4,7 +4,6 @@ const { currentActiveSeason } = require('../config.json')
 
 function Games() {
     const params = useParams()
-    console.log(params)
 
     const delay = ms => new Promise(res => setTimeout(res, ms));
 
@@ -16,8 +15,6 @@ function Games() {
 
     useEffect( () => {
         fetchGameData()
-        console.log(seasonData)
-        console.log(gameData)
     })
 
     const fetchGameData = async () => {
