@@ -8,7 +8,8 @@ function Header() {
     return (
       <nav className="nav-bar">
         <a href="/" ><img src={ logo } alt="Logo" className="logo" /></a>
-        <ul>
+        <br/>
+        <ul className='wrap-me'>
           <li>
             <a href="/">Home</a>
           </li>
@@ -23,6 +24,9 @@ function Header() {
           </li>
           <li>
             <a href="/games">Games</a>
+          </li>
+          <li>
+            <a href="/schedule">Schedule</a>
           </li>
         </ul>
       </nav>
