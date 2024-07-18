@@ -28,7 +28,7 @@ function Games() {
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
         .catch(err => console.log(err))
-        await delay(3000);
+        await delay(3500);
         setSeasonLoaded(false)
     }
 
@@ -39,7 +39,7 @@ function Games() {
         .then(data => setgameData(data))
         .catch(err => console.log(err))
         setgameLoaded(true)
-        await delay(2500);
+        await delay(3500);
         setgameLoading(false)
         setgameLoaded(false)
     }
