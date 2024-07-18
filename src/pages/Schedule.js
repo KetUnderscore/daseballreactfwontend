@@ -75,7 +75,7 @@ function Schedule() {
                 .catch(err => console.log(err))
             }
             for (let i = 6; i < 12; i++) {
-                await fetch('https://daseballapi.adaptable.app/playerbyid/'+gameDataFull[i].pitchingRotation[Math.floor((seasonData[0].seasonDay-1) / 2) % 3])
+                await fetch('https://daseballapi.adaptable.app/playerbyid/'+gameDataFull[i].pitchingRotation[Math.floor((seasonData[0].seasonDay) / 2) % 3])
                 .then(res => res.json())
                 .then(data => pitcherDataTemp.push(data[0].name))
                 .catch(err => console.log(err))
