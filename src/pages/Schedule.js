@@ -94,19 +94,19 @@ function Schedule() {
         let pitcherDataTemp = []
         if (seasonData[0].seasonDay >= 41) {
             for (let i = 0; i < 4; i++) {
-                await fetch('https://daseballapi.adaptable.app/playerbyid/'+gameDataFull[i].pitchingRotation[Math.floor((seasonData[0].seasonDay-1)) % 3])
-                .then(res => res.json())
-                .then(data => pitcherDataTemp.push(data[0].name))
-                .catch(err => console.log(err))
-            }
-            for (let i = 4; i < 8; i++) {
                 await fetch('https://daseballapi.adaptable.app/playerbyid/'+gameDataFull[i].pitchingRotation[Math.floor((seasonData[0].seasonDay)) % 3])
                 .then(res => res.json())
                 .then(data => pitcherDataTemp.push(data[0].name))
                 .catch(err => console.log(err))
             }
-            for (let i = 8; i < 12; i++) {
+            for (let i = 4; i < 8; i++) {
                 await fetch('https://daseballapi.adaptable.app/playerbyid/'+gameDataFull[i].pitchingRotation[Math.floor((seasonData[0].seasonDay+1)) % 3])
+                .then(res => res.json())
+                .then(data => pitcherDataTemp.push(data[0].name))
+                .catch(err => console.log(err))
+            }
+            for (let i = 8; i < 12; i++) {
+                await fetch('https://daseballapi.adaptable.app/playerbyid/'+gameDataFull[i].pitchingRotation[Math.floor((seasonData[0].seasonDay+2)) % 3])
                 .then(res => res.json())
                 .then(data => pitcherDataTemp.push(data[0].name))
                 .catch(err => console.log(err))
