@@ -208,21 +208,21 @@ function Schedule() {
                                 <h2>
                                 {seasonData[0].seasonDay >= 41 ?
                                 <div>
-                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][1] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][1] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][1] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][1] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][1] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                    { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-41][1] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                 </div>
                                 : 
                                 <div>
-                                    { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                    { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                    { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                    { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                    { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                    { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                    { seasonData[0].weather[seasonData[0].seasonDay-1][1] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                    { seasonData[0].weather[seasonData[0].seasonDay-1][1] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                    { seasonData[0].weather[seasonData[0].seasonDay-1][1] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                    { seasonData[0].weather[seasonData[0].seasonDay-1][1] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                    { seasonData[0].weather[seasonData[0].seasonDay-1][1] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                    { seasonData[0].weather[seasonData[0].seasonDay-1][1] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                 </div>
                                 }
                                 <span style={{color: "#"+gameDataFull[2].teamColor}}> {Math.round((gameDataFull[2].gamesWon/(gameDataFull[2].gamesWon+gameDataFull[3].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[3].teamColor}}>{Math.round((gameDataFull[3].gamesWon/(gameDataFull[3].gamesWon+gameDataFull[2].gamesWon))*100)}%</span></h2>
@@ -236,12 +236,12 @@ function Schedule() {
                                     VS <br/><span style={{color: "#"+gameDataFull[5].teamColor}}>{gameDataFull[5].teamEmoji}{gameDataFull[5].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay-1][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay-1][2] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay-1][2] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay-1][2] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay-1][2] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay-1][2] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay-1][2] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[4].teamColor}}> {Math.round((gameDataFull[4].gamesWon/(gameDataFull[4].gamesWon+gameDataFull[5].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[5].teamColor}}>{Math.round((gameDataFull[5].gamesWon/(gameDataFull[5].gamesWon+gameDataFull[4].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[4].teamEmoji}{pitcherData[4]} <br/> 
@@ -278,12 +278,12 @@ function Schedule() {
                                     <span style={{color: "#"+gameDataFull[7].teamColor}}>{gameDataFull[7].teamEmoji}{gameDataFull[7].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][1] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][1] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][1] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][1] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][1] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][1] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[6].teamColor}}> {Math.round((gameDataFull[6].gamesWon/(gameDataFull[6].gamesWon+gameDataFull[7].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[7].teamColor}}>{Math.round((gameDataFull[7].gamesWon/(gameDataFull[7].gamesWon+gameDataFull[6].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[6].teamEmoji}{pitcherData[6]} <br/> 
@@ -319,36 +319,34 @@ function Schedule() {
                                     <span style={{color: "#"+gameDataFull[9].teamColor}}>{gameDataFull[9].teamEmoji}{gameDataFull[9].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][1] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][1] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][1] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][1] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][1] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][1] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[8].teamColor}}> {Math.round((gameDataFull[8].gamesWon/(gameDataFull[8].gamesWon+gameDataFull[9].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[9].teamColor}}>{Math.round((gameDataFull[9].gamesWon/(gameDataFull[9].gamesWon+gameDataFull[8].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[8].teamEmoji}{pitcherData[8]} <br/> 
                                     VS <br/> {gameDataFull[9].teamEmoji}{pitcherData[9]}</h2>
                                 </div>
                                 <div>
-                                {seasonData[0].seasonDay <= 40 ?
                                 <div className='game-panel'>
                                     <h2><span style={{color: "#"+gameDataFull[10].teamColor}}>{gameDataFull[10].teamEmoji}{gameDataFull[10].teamName}</span> <br/> 
                                     VS <br/><span style={{color: "#"+gameDataFull[11].teamColor}}>{gameDataFull[11].teamEmoji}{gameDataFull[11].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][2] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][2] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][2] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][2] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][2] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay][2] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[10].teamColor}}> {Math.round((gameDataFull[10].gamesWon/(gameDataFull[10].gamesWon+gameDataFull[11].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[11].teamColor}}>{Math.round((gameDataFull[11].gamesWon/(gameDataFull[11].gamesWon+gameDataFull[10].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[10].teamEmoji}{pitcherData[10]} <br/> 
                                     VS <br/> {gameDataFull[11].teamEmoji}{pitcherData[11]}</h2>
-                                </div> :
-                                <></>}
+                                </div>
                             </div>
                             </div>
                         </div> :
@@ -366,12 +364,12 @@ function Schedule() {
                                     <span style={{color: "#"+gameDataFull[9].teamColor}}>{gameDataFull[9].teamEmoji}{gameDataFull[9].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[8].teamColor}}> {Math.round((gameDataFull[8].gamesWon/(gameDataFull[8].gamesWon+gameDataFull[9].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[9].teamColor}}>{Math.round((gameDataFull[9].gamesWon/(gameDataFull[9].gamesWon+gameDataFull[8].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[8].teamEmoji}{pitcherData[8]} <br/> 
@@ -383,12 +381,12 @@ function Schedule() {
                                     <span style={{color: "#"+gameDataFull[11].teamColor}}>{gameDataFull[11].teamEmoji}{gameDataFull[11].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-40][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][1] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][1] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][1] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][1] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][1] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-39][1] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[10].teamColor}}> {Math.round((gameDataFull[10].gamesWon/(gameDataFull[10].gamesWon+gameDataFull[11].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[11].teamColor}}>{Math.round((gameDataFull[11].gamesWon/(gameDataFull[11].gamesWon+gameDataFull[10].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[10].teamEmoji}{pitcherData[10]} <br/> 
@@ -425,12 +423,12 @@ function Schedule() {
                                     <span style={{color: "#"+gameDataFull[15].teamColor}}>{gameDataFull[15].teamEmoji}{gameDataFull[15].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][1] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][1] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][1] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][1] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][1] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][1] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[14].teamColor}}> {Math.round((gameDataFull[14].gamesWon/(gameDataFull[14].gamesWon+gameDataFull[15].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[15].teamColor}}>{Math.round((gameDataFull[15].gamesWon/(gameDataFull[15].gamesWon+gameDataFull[14].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[14].teamEmoji}{pitcherData[14]} <br/> 
@@ -441,12 +439,12 @@ function Schedule() {
                                     VS <br/><span style={{color: "#"+gameDataFull[17].teamColor}}>{gameDataFull[17].teamEmoji}{gameDataFull[17].teamName}</span></h2>
                                     <h2>
                                     <div>
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                                        { seasonData[0].weather[seasonData[0].seasonDay+1][0] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][2] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" class="weather" title="Null" alt='Null'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][2] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][2] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" class="weather" title="Sunny" alt='Sunny'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][2] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][2] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                                        { seasonData[0].weather[seasonData[0].seasonDay+1][2] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" class="weather" title="Waves" alt='Waves'></img> : ''}
                                     </div>
                                     <span style={{color: "#"+gameDataFull[16].teamColor}}> {Math.round((gameDataFull[16].gamesWon/(gameDataFull[16].gamesWon+gameDataFull[17].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[17].teamColor}}>{Math.round((gameDataFull[17].gamesWon/(gameDataFull[17].gamesWon+gameDataFull[16].gamesWon))*100)}%</span></h2>
                                     <h2>{gameDataFull[16].teamEmoji}{pitcherData[16]} <br/> 
