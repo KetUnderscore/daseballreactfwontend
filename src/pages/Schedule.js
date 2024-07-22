@@ -197,7 +197,7 @@ function Schedule() {
                                 </div>
                                 }
                                 
-                                <span style={{color: "#"+gameDataFull[0].teamColor}}> {Math.round((gameDataFull[0].gamesWon/(gameDataFull[0].gamesWon+gameDataFull[1].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[1].teamColor}}>{Math.round((gameDataFull[1].gamesWon/(gameDataFull[1].gamesWon+gameDataFull[0].gamesWon))*100)}%</span></h2>
+                                <span style={{color: "#"+gameDataFull[0].teamColor}}>{Math.round((gameDataFull[0].gamesWon/(gameDataFull[0].gamesWon+gameDataFull[1].gamesWon))*100)}%</span> - <span style={{color: "#"+gameDataFull[1].teamColor}}>{Math.round((gameDataFull[1].gamesWon/(gameDataFull[1].gamesWon+gameDataFull[0].gamesWon))*100)}%</span></h2>
                                 <h2>{gameDataFull[0].teamEmoji}{pitcherData[0]} <br/> 
                                 VS <br/> {gameDataFull[1].teamEmoji}{pitcherData[1]}</h2>
                             </div>

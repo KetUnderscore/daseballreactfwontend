@@ -80,6 +80,9 @@ function Games() {
                                                         item.weather === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="30px" class="weather" title="Waves" alt='Waves'></img> : ''
                                                     }
                                                     {
+                                                        item.weather === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="30px" class="weather" title="Coffee" alt='Coffee'></img> : ''
+                                                    }
+                                                    {
                                                         (item.homeScore > item.awayScore && item.inningNumber > 8 && item.topOfInning === false) ? <img src="https://i.imgur.com/PVobD6N.png" height="30px" class="shame" title="Shame" alt='Shame'></img> : ''
                                                     }
                                                     {
