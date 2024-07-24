@@ -145,7 +145,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Heating Up</h3>
-                    <img src="https://i.imgur.com/4mvBVph.png" height="50px" title="This player is heating up..."></img>
+                    <img src="https://i.imgur.com/wWxWKyI.png" height="50px" title="This player is heating up..."></img>
                     <p className="center">This player is heating up.
                     <br/>This player will catch fire next game.</p>
                 </div>
@@ -163,7 +163,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Erased</h3>
-                    <img src="https://i.imgur.com/N1MvyL6.png" height="50px" title="This player is erased..."></img>
+                    <img src="https://i.imgur.com/4mvBVph.png" height="50px" title="This player is erased..."></img>
                     <p className="center">Erased players were deleted and can not play.</p>
                 </div>
             </div>
