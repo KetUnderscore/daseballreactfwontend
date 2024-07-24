@@ -84,9 +84,9 @@ function Mods() {
                     <p className="center">Sunsetters play better the longer a game goes on.</p>
                 </div>
                 <div className='mod'>
-                    <h3 className="center">Sprintter</h3>
+                    <h3 className="center">Sprinter</h3>
                     <img src="https://i.imgur.com/xLI45y0.png" height="50px" title="This player always trys to steal."></img>
-                    <p className="center">Sprintters will always try to steal when given the opportunity.</p>
+                    <p className="center">Sprinters will always try to steal when given the opportunity.</p>
                 </div>
             </div>
 
