@@ -17,6 +17,12 @@ function Mods() {
                     <br/>Stable wears off after a season.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Witness Protection</h3>
+                    <img src="https://i.imgur.com/pclDlgi.png" height="50px" title="This team is protected from the Witness."></img>
+                    <p className="center">Teams with Witness Protection will be protected from the Witness.
+                    <br/>Witness Protection wears off after a season.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Suck Forever</h3>
                     <img src="https://i.imgur.com/G4L25nw.png" height="50px" title="This team will suck forever."></img>
                     <p className="center">Teams that Suck Forever will lose one star when they realize their fate.
@@ -77,6 +83,11 @@ function Mods() {
                     <img src="https://i.imgur.com/nsGvwgp.png" height="50px" title="This player plays better later in the game."></img>
                     <p className="center">Sunsetters play better the longer a game goes on.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Sprintter</h3>
+                    <img src="https://i.imgur.com/xLI45y0.png" height="50px" title="This player always trys to steal."></img>
+                    <p className="center">Sprintters will always try to steal when given the opportunity.</p>
+                </div>
             </div>
 
             <h3 className="center">Permanent Mods</h3>
@@ -100,6 +111,11 @@ function Mods() {
                     <h3 className="center">Early Bird</h3>
                     <img src="https://i.imgur.com/4OKwfNk.png" height="50px" title="This player draws a walk on three balls."></img>
                     <p className="center">Early Birds draw walks on three balls instead of four.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Multiple</h3>
+                    <img src="https://i.imgur.com/P9EWUY3.png" height="50px" title="This player scores double."></img>
+                    <p className="center">Multiples score for twice as much.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Lucky</h3>
@@ -128,8 +144,26 @@ function Mods() {
                     <br/>Found players can not be lost.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Heating Up</h3>
+                    <img src="https://i.imgur.com/4mvBVph.png" height="50px" title="This player is heating up..."></img>
+                    <p className="center">This player is heating up.
+                    <br/>This player will catch fire next game.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">On Fire</h3>
+                    <img src="https://i.imgur.com/N1MvyL6.png" height="50px" title="This player is on fire!"></img>
+                    <p className="center">Players on fire will hit a homerun next at bat.
+                    <br/>This player will burn out after hitting a homerun.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Burnt Out</h3>
+                    <img src="https://i.imgur.com/qmw52U7.png" height="50px" title="This player is burnt out..."></img>
+                    <p className="center">Burnt Out players play worst for the rest of the game.
+                    <br/>This player will start warming up next game.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Erased</h3>
-                    <img src="https://i.imgur.com/4mvBVph.png" height="50px" title="This player is erased..."></img>
+                    <img src="https://i.imgur.com/N1MvyL6.png" height="50px" title="This player is erased..."></img>
                     <p className="center">Erased players were deleted and can not play.</p>
                 </div>
             </div>
