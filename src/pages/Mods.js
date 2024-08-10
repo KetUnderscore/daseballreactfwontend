@@ -118,6 +118,11 @@ function Mods() {
                     <p className="center">Multiples score for twice as much.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Siren</h3>
+                    <img src="https://i.imgur.com/3CsxZ4f.png" height="50px" title="This player has an alluring voice."></img>
+                    <p className="center">Sirens voice may make the opposing pitcher/batter miss.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Lucky</h3>
                     <img src="https://i.imgur.com/Mgx5muI.png" height="50px" title="This player gets all the breaks!"></img>
                     <p className="center">Lucky players are Luckier.</p>
@@ -165,6 +170,16 @@ function Mods() {
                     <h3 className="center">Erased</h3>
                     <img src="https://i.imgur.com/4mvBVph.png" height="50px" title="This player is erased..."></img>
                     <p className="center">Erased players were deleted and can not play.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Wired</h3>
+                    <img src="https://i.imgur.com/he4j9B0.png" height="50px" title="This player is wired!"></img>
+                    <p className="center">Wired players scores count more.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Tired</h3>
+                    <img src="https://i.imgur.com/OFRRbPE.png" height="50px" title="This player is tired..."></img>
+                    <p className="center">Tired players scores count less.</p>
                 </div>
             </div>
 

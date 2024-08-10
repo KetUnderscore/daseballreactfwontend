@@ -150,6 +150,7 @@ function Team() {
                                                     { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="20px" title="This player just can't catch a break!"></img> : '' }
                                                     { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="20px" title="This player draws a walk on three balls."></img> : '' }
                                                     { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
+                                                    { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -161,6 +162,8 @@ function Team() {
                                                     { item.name === "HeatingUp" ? <img src="https://i.imgur.com/wWxWKyI.png" height="20px" title="This player is heating up..."></img> : '' }
                                                     { item.name === "On Fire" ? <img src="https://i.imgur.com/N1MvyL6.png" height="20px" title="This player is on fire!"></img> : '' }
                                                     { item.name === "Burnt Out" ? <img src="https://i.imgur.com/qmw52U7.png" height="20px" title="This player is burnt out..."></img> : '' }
+                                                    { item.name === "Wired" ? <img src="https://i.imgur.com/he4j9B0.png" height="30px" title="This player is wired!"></img> : '' }
+                                                    { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height="30px" title="This player is tired..."></img> : '' }
                                                     </>
                                                 )
                                             }) : ''}
