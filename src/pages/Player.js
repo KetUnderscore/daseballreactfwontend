@@ -36,6 +36,7 @@ function Player () {
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="4.1">4.1</option>
+                    <option value="4.2">4.2</option>
                 </select>
             </div>
         )
@@ -105,6 +106,7 @@ function Player () {
                                         { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="30px" title="This player draws a walk on three balls."></img> : '' }
                                         { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="30px" title="This player scores twice."></img> : '' }
                                         { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="30px" title="This player has an alluring voice."></img> : '' }
+                                        { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="30px" title="This player is vampiric."></img> : '' }
 
                                         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="30px" title="This player plays better for every player on base."></img> : '' }
                                         { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="30px" title="This player plays better later in the game."></img> : '' }

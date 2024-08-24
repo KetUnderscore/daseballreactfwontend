@@ -132,6 +132,11 @@ function Mods() {
                     <img src="https://i.imgur.com/sTrsKvH.png" height="50px" title="This player just can't catch a break!"></img>
                     <p className="center">Unlucky players are Unluckier.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Vampiric</h3>
+                    <img src="https://i.imgur.com/Pn1UoAL.png" height="50px" title="This player is vampiric."></img>
+                    <p className="center">Vampires may siphon stats off opposing players.</p>
+                </div>
             </div>
 
             <h3 className="center">Effect Mods</h3>
