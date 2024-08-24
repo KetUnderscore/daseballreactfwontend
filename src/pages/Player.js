@@ -10,7 +10,7 @@ function Player () {
     const [playerStatData, setPlayerStatData] = useState(null)
     const [playerLoaded, setPlayerLoaded] = useState(false)
     const [playerStatsLoaded, setPlayerStatsLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(4.1) // Default is Season 4.1
+    const [seasonNumber, setSeasonNumber] = useState(4.2) // Default is Season 4.2
 
     useEffect( () => {
         fetchPlayerData()
