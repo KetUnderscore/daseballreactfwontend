@@ -102,19 +102,19 @@ function Games() {
                                                 <div className='inline'>
                                                     {
                                                         (item.baseThree === true) ?
-                                                            <img className="base-three" src="https://i.imgur.com/Jo55R5U.png" height="50px" title={item.thirdBase.name} alt='Thirdbase'></img>
+                                                            <img className="base-three" src="https://i.imgur.com/Jo55R5U.png" height="50px" title='Thirdbase' alt='Thirdbase'></img>
                                                             : 
                                                             <img className="base-three" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Thirdbase'></img>
                                                     }
                                                     {
                                                         (item.baseTwo === true) ?
-                                                            <img className="base-two" src="https://i.imgur.com/Jo55R5U.png" height="50px" title={item.secondBase.name} alt='Secondbase'></img>
+                                                            <img className="base-two" src="https://i.imgur.com/Jo55R5U.png" height="50px" title='Secondbase' alt='Secondbase'></img>
                                                             : 
                                                             <img className="base-two" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Secondbase'></img>
                                                     }
                                                     {
                                                         (item.baseOne === true) ?
-                                                            <img className="base-one" src="https://i.imgur.com/Jo55R5U.png" height="50px" title={item.firstBase.name} alt='Firstbase'></img>
+                                                            <img className="base-one" src="https://i.imgur.com/Jo55R5U.png" height="50px" title='Firstbase' alt='Firstbase'></img>
                                                             : 
                                                             <img className="base-one" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Firstbase'></img>
                                                     }
