@@ -83,7 +83,7 @@ function Games() {
                                                         item.weather === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="30px" class="weather" title="Coffee" alt='Coffee'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 5 ? <img src="https://i.imgur.com/NBMbLYO.png" height="30px" class="weather" title="Coffee" alt='Coffee'></img> : ''
+                                                        item.weather === 5 ? <img src="https://i.imgur.com/NBMbLYO.png" height="30px" class="weather" title="Skipping" alt='Skipping'></img> : ''
                                                     }
                                                     {
                                                         (item.homeScore > item.awayScore && item.inningNumber > 8 && item.topOfInning === false) ? <img src="https://i.imgur.com/PVobD6N.png" height="30px" class="shame" title="Shame" alt='Shame'></img> : ''
@@ -102,19 +102,19 @@ function Games() {
                                                 <div className='inline'>
                                                     {
                                                         (item.baseThree === true) ?
-                                                            <img className="base-three" src="https://i.imgur.com/Jo55R5U.png" height="50px" alt='Thirdbase'></img>
+                                                            <img className="base-three" src="https://i.imgur.com/Jo55R5U.png" height="50px" title={item.thirdBase.name} alt='Thirdbase'></img>
                                                             : 
                                                             <img className="base-three" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Thirdbase'></img>
                                                     }
                                                     {
                                                         (item.baseTwo === true) ?
-                                                            <img className="base-two" src="https://i.imgur.com/Jo55R5U.png" height="50px" alt='Secondbase'></img>
+                                                            <img className="base-two" src="https://i.imgur.com/Jo55R5U.png" height="50px" title={item.secondBase.name} alt='Secondbase'></img>
                                                             : 
                                                             <img className="base-two" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Secondbase'></img>
                                                     }
                                                     {
                                                         (item.baseOne === true) ?
-                                                            <img className="base-one" src="https://i.imgur.com/Jo55R5U.png" height="50px" alt='Firstbase'></img>
+                                                            <img className="base-one" src="https://i.imgur.com/Jo55R5U.png" height="50px" title={item.firstBase.name} alt='Firstbase'></img>
                                                             : 
                                                             <img className="base-one" src="https://i.imgur.com/C4kBgYH.png" height="50px" alt='Firstbase'></img>
                                                     }
