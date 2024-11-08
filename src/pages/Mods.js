@@ -143,6 +143,16 @@ function Mods() {
                     <p className="center">Unlucky players are Unluckier.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Lonely</h3>
+                    <img src="https://i.imgur.com/vAuwVXq.png" height="50px" title="This player is lonely."></img>
+                    <p className="center">Lonely players play better on larger teams.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Loner</h3>
+                    <img src="https://i.imgur.com/6IXXrHo.png" height="50px" title="This player is a loner."></img>
+                    <p className="center">Loner players play better on smaller teams.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Vampiric</h3>
                     <img src="https://i.imgur.com/Pn1UoAL.png" height="50px" title="This player is vampiric."></img>
                     <p className="center">Vampires may siphon stats off opposing players.</p>
@@ -195,12 +205,14 @@ function Mods() {
                 <div className='mod'>
                     <h3 className="center">Wired</h3>
                     <img src="https://i.imgur.com/he4j9B0.png" height="50px" title="This player is wired!"></img>
-                    <p className="center">Wired players scores count more.</p>
+                    <p className="center">Wired players scores count more.
+                    <br/>Becomes Tired if hit by a coffee bean.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Tired</h3>
                     <img src="https://i.imgur.com/OFRRbPE.png" height="50px" title="This player is tired..."></img>
-                    <p className="center">Tired players scores count less.</p>
+                    <p className="center">Tired players scores count less.
+                    <br/>Removed if hit by a coffee bean.</p>
                 </div>
             </div>
 

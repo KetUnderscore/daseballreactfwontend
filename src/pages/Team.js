@@ -150,6 +150,8 @@ function Team() {
                                                     { item.name === "New Cool" ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" title="This player enjoys the Sun."></img> : '' }
                                                     { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height="20px" title="This player gets all the breaks!"></img> : '' }
                                                     { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="20px" title="This player just can't catch a break!"></img> : '' }
+                                                    { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height="20px" title="This player plays better on larger teams."></img> : '' }
+                                                    { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height="20px" title="This player plays better on smaller teams."></img> : '' }
                                                     { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="20px" title="This player draws a walk on three balls."></img> : '' }
                                                     { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
@@ -209,6 +211,8 @@ function Team() {
                                                     { item.name === "New Cool" ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" title="This player enjoys the Sun."></img> : '' }
                                                     { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height="20px" title="This player gets all the breaks!"></img> : '' }
                                                     { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="20px" title="This player just can't catch a break!"></img> : '' }
+                                                    { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height="20px" title="This player plays better on larger teams."></img> : '' }
+                                                    { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height="20px" title="This player plays better on smaller teams."></img> : '' }
                                                     { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="20px" title="This player draws a walk on three balls."></img> : '' }
                                                     { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
@@ -269,6 +273,8 @@ function Team() {
                                                         { item.name === "New Cool" ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" title="This player enjoys the Sun."></img> : '' }
                                                         { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height="20px" title="This player gets all the breaks!"></img> : '' }
                                                         { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="20px" title="This player just can't catch a break!"></img> : '' }
+                                                        { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height="20px" title="This player plays better on larger teams."></img> : '' }
+                                                        { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height="20px" title="This player plays better on smaller teams."></img> : '' }
                                                         { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="20px" title="This player draws a walk on three balls."></img> : '' }
                                                         { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
                                                         { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }

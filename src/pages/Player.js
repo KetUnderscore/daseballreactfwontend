@@ -102,6 +102,8 @@ function Player () {
                                         { item.name === "Old School" ? <img src="https://i.imgur.com/yvlrdat.png" height="30px" title="This player enjoys the Null."></img> : '' }
                                         { item.name === "New Cool" ? <img src="https://i.imgur.com/MX8RFc4.png" height="30px" title="This player enjoys the Sun."></img> : '' }
                                         { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height="30px" title="This player gets all the breaks!"></img> : '' }
+                                        { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height="30px" title="This player plays better on larger teams."></img> : '' }
+                                        { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height="30px" title="This player plays better on smaller teams."></img> : '' }
                                         { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="30px" title="This player just can't catch a break!"></img> : '' }
                                         { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="30px" title="This player draws a walk on three balls."></img> : '' }
                                         { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="30px" title="This player scores twice."></img> : '' }
