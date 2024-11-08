@@ -37,6 +37,7 @@ function Player () {
                     <option value="4">4</option>
                     <option value="4.1">4.1</option>
                     <option value="4.2">4.2</option>
+                    <option value="5">5</option>
                 </select>
             </div>
         )
