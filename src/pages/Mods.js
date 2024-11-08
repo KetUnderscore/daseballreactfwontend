@@ -160,8 +160,7 @@ function Mods() {
                     <h3 className="center">Found</h3>
                     <img src="https://i.imgur.com/FJ30bdi.png" height="50px" title="This player was found!"></img>
                     <p className="center">Found players were washed in.
-                    <br/>When a player is found they will recieve a stat boost.
-                    <br/>Found players can not be lost.</p>
+                    <br/>When a player is found for the first time they will recieve a stat boost.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Heating Up</h3>
@@ -185,6 +184,13 @@ function Mods() {
                     <h3 className="center">Erased</h3>
                     <img src="https://i.imgur.com/4mvBVph.png" height="50px" title="This player is erased..."></img>
                     <p className="center">Erased players were deleted and can not play.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Data Leak</h3>
+                    <img src="https://i.imgur.com/dLWhUNY.png" height="50px" title="This player is leaking data!"></img>
+                    <p className="center">Data Leak players were deleted and came back wrong.
+                    <br/>These players are leaking data!
+                    <br/>You just couldn't let them rest...</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Wired</h3>
