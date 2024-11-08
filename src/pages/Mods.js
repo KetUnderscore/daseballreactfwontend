@@ -28,6 +28,16 @@ function Mods() {
                     <p className="center">Teams that Suck Forever will lose one star when they realize their fate.
                     <br/>Teams that Suck Forever will party while losing by two or more points.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Coffee Lovers</h3>
+                    <img src="https://i.imgur.com/1WdpOMz.png" height="50px" title="This team may start pouring coffee."></img>
+                    <p className="center">This team may change the weather to Coffee.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Tape Lovers</h3>
+                    <img src="https://i.imgur.com/NBMbLYO.png" height="50px" title="This team may start skipping."></img>
+                    <p className="center">This team may change the weather to Skipping.</p>
+                </div>
             </div>
 
             
