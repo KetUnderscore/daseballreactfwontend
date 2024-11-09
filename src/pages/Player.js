@@ -12,6 +12,10 @@ function Player () {
     const [playerStatsLoaded, setPlayerStatsLoaded] = useState(false)
     const [seasonNumber, setSeasonNumber] = useState(4.2) // Default is Season 4.2
 
+    let favoriteSeason
+    let favoritePosition
+    let favoriteStar
+
     useEffect( () => {
         fetchPlayerData()
     })
@@ -67,6 +71,10 @@ function Player () {
         .then(res => setPlayerData(res.data))
         .then(setPlayerLoaded(true))
         .catch(err => console.log(err))
+        favoriteSeason = ['Spring', 'Summer', 'Fall', 'Winter'][playerData[0].favSes]
+        favoritePosition = ['Pitcher', 'Catcher', 'First Base', 'Second Base', 'Third Base', 'Shortstop', 'Left Field', 'Center Field',
+            'Right Field', 'Designated Hitter'][playerData[0].favPos]
+        favoriteStar = ['Red', 'Orange', 'Yellow', 'Blue', 'Green'][playerData[0].starAlignment]
     }
 
     const fetchPlayerStats = async () => {
@@ -195,6 +203,23 @@ function Player () {
                         <h2>BTM | {"★".repeat(Math.max(0, Math.floor(playerData[0].batman) / 33)) + (Math.max(0, playerData[0].batman) % 33 > 16 ? '☆' : '')}
                             <span className='red-text'>{"★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].batman))) / 33) + (Math.abs(Math.min(0, playerData[0].batman)) % 33 > 16 ? '☆' : '')}</span>
                         </h2>
+                    </div>
+                    : 
+                    <>
+                    </>
+                }
+                {
+                    playerData != null ?
+                    <div className="player-box">
+                        <h1>Interview Responses</h1>
+                        <h2>Birthday | { playerData[0].birthday } </h2>
+                        <h2>Favorite Number | { playerData[0].favNum } </h2>
+                        <h2>Favorite Season | { favoriteSeason } </h2>
+                        <h2>Favorite Holiday | { playerData[0].favHol } </h2>
+                        <h2>Favorite Soup | { playerData[0].favSoup } </h2>
+                        <h2>Favorite Lineup Spot | { favoritePosition } </h2>
+                        <h2>Eye Count | { playerData[0].eyeCount } </h2>
+                        <h2>Star Alignment | { favoriteStar } </h2>
                     </div>
                     : 
                     <>
