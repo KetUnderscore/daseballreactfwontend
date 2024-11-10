@@ -41,7 +41,7 @@ function Team() {
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))
         .catch(err => console.log(err))
-        let x = teamToView.curVibe
+        let x = teamData[0].curVibe
         switch (true) {
             case (x < -25):
                 vibes = "↓↓↓↓ Devastating"
