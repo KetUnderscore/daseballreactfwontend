@@ -41,6 +41,19 @@ function Team() {
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))
         .catch(err => console.log(err))
+        }
+    }
+
+    const fetchPitchers = async () => {
+        setPitchingLoading(true)
+        for (let i = 0; i < teamData[0].pitchingRotation.length; i++) {
+            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].pitchingRotation[i])
+            .then(res => res.json())
+            .then(data => pitchingData.push(data[0]))
+            .catch(err => console.log(err))
+        }
+        setPitchingLoaded(true)
+        
         let x = teamData[0].curVibe
         switch (true) {
             case (x < -25):
@@ -70,18 +83,6 @@ function Team() {
             case (x >= 26):
                 vibes = "↑↑↑↑ Impeccable"
                 break;
-        }
-    }
-
-    const fetchPitchers = async () => {
-        setPitchingLoading(true)
-        for (let i = 0; i < teamData[0].pitchingRotation.length; i++) {
-            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].pitchingRotation[i])
-            .then(res => res.json())
-            .then(data => pitchingData.push(data[0]))
-            .catch(err => console.log(err))
-        }
-        setPitchingLoaded(true)
     }
 
     const fetchBatters = async () => {

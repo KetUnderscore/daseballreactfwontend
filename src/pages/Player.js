@@ -71,10 +71,6 @@ function Player () {
         .then(res => setPlayerData(res.data))
         .then(setPlayerLoaded(true))
         .catch(err => console.log(err))
-        favoriteSeason = ['Spring', 'Summer', 'Fall', 'Winter'][playerData[0].favSes]
-        favoritePosition = ['Pitcher', 'Catcher', 'First Base', 'Second Base', 'Third Base', 'Shortstop', 'Left Field', 'Center Field',
-            'Right Field', 'Designated Hitter'][playerData[0].favPos]
-        favoriteStar = ['Red', 'Orange', 'Yellow', 'Blue', 'Green'][playerData[0].starAlignment]
     }
 
     const fetchPlayerStats = async () => {
@@ -83,6 +79,13 @@ function Player () {
             .then(res => setPlayerStatData(res.data))
             .then(setPlayerStatsLoaded(true))
             .catch(err => console.log(err))
+        }
+        
+        if (playerData != null) {
+            favoriteSeason = ['Spring', 'Summer', 'Fall', 'Winter'][playerData[0].favSes]
+            favoritePosition = ['Pitcher', 'Catcher', 'First Base', 'Second Base', 'Third Base', 'Shortstop', 'Left Field', 'Center Field',
+                'Right Field', 'Designated Hitter'][playerData[0].favPos]
+            favoriteStar = ['Red', 'Orange', 'Yellow', 'Blue', 'Green'][playerData[0].starAlignment]
         }
     }
 
