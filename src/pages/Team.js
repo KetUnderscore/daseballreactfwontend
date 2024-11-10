@@ -18,6 +18,8 @@ function Team() {
     const [pocketLoading, setPocketLoading] = useState(false)
     const [playerHiddenData, setPlayerHiddenData] = useState(false)
 
+    let vibes = "None"
+
     useEffect( () => {
         fetchTeamData()
         .then(console.log(teamData))
@@ -39,6 +41,36 @@ function Team() {
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))
         .catch(err => console.log(err))
+        let x = teamToView.curVibe
+        switch (true) {
+            case (x < -25):
+                vibes = "↓↓↓↓ Devastating"
+                break;
+            case (x < -15):
+                vibes = "↓↓↓ Horrid"
+                break;
+            case (x < -5):
+                vibes = "↓↓ Bad"
+                break;
+            case (x < 0):
+                vibes = "↓ Not Great"
+                break;
+            case (x < 1):
+                vibes = "⟷ Meh"
+                break;
+            case (x < 6):
+                vibes = "↑ Pretty Good"
+                break;
+            case (x < 16):
+                vibes = "↑↑ Great"
+                break;
+            case (x < 26):
+                vibes = "↑↑↑ Amazing"
+                break;
+            case (x >= 26):
+                vibes = "↑↑↑↑ Impeccable"
+                break;
+        }
     }
 
     const fetchPitchers = async () => {
@@ -95,6 +127,8 @@ function Team() {
                     teamData != null ?
                     <div className="player">
                         <h1>{ teamData[0].teamEmoji }{ teamData[0].teamName }</h1>
+                        <h1>Vibes | { vibes }</h1>
+                        <h1>Spirit Fund | { teamData[0].spiritFund } / 10000</h1>
                         <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
 
                         <div className="center row">
