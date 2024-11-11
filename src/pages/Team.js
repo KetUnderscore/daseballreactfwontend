@@ -18,8 +18,6 @@ function Team() {
     const [pocketLoading, setPocketLoading] = useState(false)
     const [playerHiddenData, setPlayerHiddenData] = useState(false)
 
-    let vibes = "None"
-
     useEffect( () => {
         fetchTeamData()
         .then(console.log(teamData))
@@ -33,38 +31,6 @@ function Team() {
         if (teamData != null && teamLoaded && !pitchingLoaded && !pitchingLoading) {fetchPitchers()}
         if (teamData != null && teamLoaded && !battingLoaded && !battingLoading) {fetchBatters()}
         if (teamData != null && teamLoaded && !pocketLoaded && !pocketLoading) {fetchPockets()}
-        if (teamData != null) {
-            let x = teamData[0].curVibe
-            switch (true) {
-                case (x < -25):
-                    vibes = "↓↓↓↓ Devastating"
-                    break;
-                case (x < -15):
-                    vibes = "↓↓↓ Horrid"
-                    break;
-                case (x < -5):
-                    vibes = "↓↓ Bad"
-                    break;
-                case (x < 0):
-                    vibes = "↓ Not Great"
-                    break;
-                case (x < 1):
-                    vibes = "⟷ Meh"
-                    break;
-                case (x < 6):
-                    vibes = "↑ Pretty Good"
-                    break;
-                case (x < 16):
-                    vibes = "↑↑ Great"
-                    break;
-                case (x < 26):
-                    vibes = "↑↑↑ Amazing"
-                    break;
-                case (x >= 26):
-                    vibes = "↑↑↑↑ Impeccable"
-                    break;
-            }
-        }
     }
 
     const fetchTeam = async () => {
@@ -129,7 +95,18 @@ function Team() {
                     teamData != null ?
                     <div className="player">
                         <h1>{ teamData[0].teamEmoji }{ teamData[0].teamName }</h1>
-                        <h1>Vibes | { vibes }</h1>
+                        <h1>Vibes | {   teamData[0].curVibe < -25 ? "↓↓↓↓ Devastating" :
+                                        teamData[0].curVibe < -15 ? "↓↓↓ Horrid" :
+                                        teamData[0].curVibe < -5 ?  "↓↓ Bad" :
+                                        teamData[0].curVibe < 0 ?   "↓ Not Great" :
+                                        teamData[0].curVibe < 1 ?   "⟷ Meh" :
+                                        teamData[0].curVibe < 6 ?   "↑ Pretty Good" :
+                                        teamData[0].curVibe < 16 ?  "↑↑ Great" :
+                                        teamData[0].curVibe < 26 ?  "↑↑↑ Amazing" :
+                                        teamData[0].curVibe >= 26 ? "↑↑↑↑ Impeccable" :
+                                        "None"
+                                    }</h1>
+                    break;
                         <h1>Spirit Fund | { teamData[0].spiritFund } / 10000</h1>
                         <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
 
