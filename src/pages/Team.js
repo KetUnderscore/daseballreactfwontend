@@ -100,7 +100,8 @@ function Team() {
                     teamData != null ?
                     <div className="player">
                         <h1>{ teamData[0].teamEmoji }{ teamData[0].teamName }</h1>
-                        <h1>Vibes | {   teamData[0].curVibe < -25 ? "↓↓↓↓ Devastating" :
+                        <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
+                        <h2>Vibes | {   teamData[0].curVibe < -25 ? "↓↓↓↓ Devastating" :
                                         teamData[0].curVibe < -15 ? "↓↓↓ Horrid" :
                                         teamData[0].curVibe < -5 ?  "↓↓ Bad" :
                                         teamData[0].curVibe < 0 ?   "↓ Not Great" :
@@ -110,9 +111,8 @@ function Team() {
                                         teamData[0].curVibe < 26 ?  "↑↑↑ Amazing" :
                                         teamData[0].curVibe >= 26 ? "↑↑↑↑ Impeccable" :
                                         "None"
-                                    }</h1>
-                        <h1>Spirit Fund | {teamData[0].spiritFund }/ 10000</h1>
-                        <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
+                                    }</h2>
+                        <h2>Spirit Fund | {teamData[0].spiritFund }/ 10000</h2>
 
                         <div className="center row">
                             {  teamData[0]?.teamMods.map( (item) => {

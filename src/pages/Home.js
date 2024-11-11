@@ -9,17 +9,32 @@ function Home() {
             <br/><a href="https://discord.gg/UZ3TfurF4N">Discord</a>
             </p>
             <br/>
-            <p>Todo:</p>
-            <ul>
-                <li>Logging In</li>
-                <li>Betting</li>
-                <li>Add Votes Page</li>
-                <li>Season Game Schedule</li>
-                <li>Weather Compendium</li>
-                <li>The Book</li>
-                <li>Mobile Support (!)</li>
-                <li>Recent Events Page</li>
-            </ul>
+            <div className='game-panel'>
+                <p>Todo:</p>
+                <ul>
+                    <li>Logging In</li>
+                    <li>Betting</li>
+                    <li>Add Votes Page</li>
+                    <li>Season Game Schedule</li>
+                    <li>Weather Compendium</li>
+                    <li>The Book</li>
+                    <li>Mobile Support (!)</li>
+                    <li>Recent Events Page</li>
+                </ul>
+            </div>
+            <div className='game-panel'>
+                <p>Todo:</p>
+                <ul>
+                    <li>Logging In</li>
+                    <li>Betting</li>
+                    <li>Add Votes Page</li>
+                    <li>Season Game Schedule</li>
+                    <li>Weather Compendium</li>
+                    <li>The Book</li>
+                    <li>Mobile Support (!)</li>
+                    <li>Recent Events Page</li>
+                </ul>
+            </div>
             <br/>
             <h2>API HERE</h2>
             <h3 className="center">For code wizards and nerds only.</h3>
