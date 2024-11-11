@@ -33,7 +33,7 @@ function Home() {
                     {
                         seasonData?.seasonEvents.map( (item) => {
                             return (
-                                <div>
+                                <div key={""+item.gameDay+item.gameNum}>
                                     <h2>Day {item.gameDay} Game {item.gameNum}</h2>
                                     <p>{item.events}</p>
                                 </div>
