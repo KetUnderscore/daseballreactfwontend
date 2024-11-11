@@ -4,9 +4,9 @@ const { currentActiveSeason } = require('../config.json')
 
 function Schedule() {
     const params = useParams()
-
+    
     const delay = ms => new Promise(res => setTimeout(res, ms));
-
+    
     const [seasonData, setSeasonData] = useState(null)
     const [seasonLoaded, setSeasonLoaded] = useState(false)
     const [gameDataFull, setgameDataFull] = useState([])
