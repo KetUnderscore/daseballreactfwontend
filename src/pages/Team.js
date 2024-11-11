@@ -1,9 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-const params = useParams()
-console.log(params)
-
 const [teamData, setTeamData] = useState(null)
 const [teamLoaded, setTeamLoaded] = useState(false)
 const [pitchingData, setPitchingData] = useState([])
@@ -20,6 +17,9 @@ const [playerHiddenData, setPlayerHiddenData] = useState(false)
 let vibes = "None"
 
 function Team() {
+
+    const params = useParams()
+    console.log(params)
 
     useEffect( () => {
         fetchTeamData()

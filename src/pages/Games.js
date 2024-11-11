@@ -2,10 +2,6 @@ import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 const { currentActiveSeason } = require('../config.json')
 
-const params = useParams()
-
-const delay = ms => new Promise(res => setTimeout(res, ms));
-
 const [seasonData, setSeasonData] = useState(null)
 const [seasonLoaded, setSeasonLoaded] = useState(false)
 const [gameData, setgameData] = useState([])
@@ -13,6 +9,10 @@ const [gameLoaded, setgameLoaded] = useState(false)
 const [gameLoading, setgameLoading] = useState(false)
 
 function Games() {
+
+    const params = useParams()
+    
+    const delay = ms => new Promise(res => setTimeout(res, ms));
 
     useEffect( () => {
         fetchGameData()
