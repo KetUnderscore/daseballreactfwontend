@@ -2,19 +2,20 @@ import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+const params = useParams()
+
+const [playerData, setPlayerData] = useState(null)
+const [playerHiddenData, setPlayerHiddenData] = useState(false)
+const [playerStatData, setPlayerStatData] = useState(null)
+const [playerLoaded, setPlayerLoaded] = useState(false)
+const [playerStatsLoaded, setPlayerStatsLoaded] = useState(false)
+const [seasonNumber, setSeasonNumber] = useState(4.2) // Default is Season 4.2
+
+let favoriteSeason
+let favoritePosition
+let favoriteStar
+
 function Player () {
-    const params = useParams()
-
-    const [playerData, setPlayerData] = useState(null)
-    const [playerHiddenData, setPlayerHiddenData] = useState(false)
-    const [playerStatData, setPlayerStatData] = useState(null)
-    const [playerLoaded, setPlayerLoaded] = useState(false)
-    const [playerStatsLoaded, setPlayerStatsLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(4.2) // Default is Season 4.2
-
-    let favoriteSeason
-    let favoritePosition
-    let favoriteStar
 
     useEffect( () => {
         fetchPlayerData()
@@ -80,7 +81,7 @@ function Player () {
             .then(setPlayerStatsLoaded(true))
             .catch(err => console.log(err))
         }
-        
+
         if (playerData != null) {
             favoriteSeason = ['Spring', 'Summer', 'Fall', 'Winter'][playerData[0].favSes]
             favoritePosition = ['Pitcher', 'Catcher', 'First Base', 'Second Base', 'Third Base', 'Shortstop', 'Left Field', 'Center Field',
