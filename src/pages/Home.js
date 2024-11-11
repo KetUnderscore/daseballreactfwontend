@@ -25,6 +25,26 @@ function Home() {
         .catch(err => console.log(err))
     }
 
+    const Events = () => {
+        return (
+            <div className='game-holder'>
+                <div className='game-panel'>
+                    <h1>Season Events</h1>
+                    {
+                        seasonData?.seasonEvents.map( (item) => {
+                            return (
+                                <div>
+                                    <h2>Day {item.gameDay} Game {item.gameNum}</h2>
+                                    <p>{item.events}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="player">
             <h1>DASEBALL</h1>
@@ -46,21 +66,7 @@ function Home() {
                 <li>Mobile Support (!)</li>
                 <li>Recent Events Page</li>
             </ul>
-            <div className='game-holder'>
-                <div className='game-panel'>
-                    <h1>Season Events</h1>
-                    {
-                        seasonData?.seasonEvents.map( (item) => {
-                            return (
-                                <div>
-                                    <h2>Day {item.gameDay} Game {item.gameNum}</h2>
-                                    <p>{item.events}</p>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
-            </div>
+            <Events/>
             <br/>
             <h2>API HERE</h2>
             <h3 className="center">For code wizards and nerds only.</h3>
