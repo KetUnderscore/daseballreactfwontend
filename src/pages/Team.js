@@ -20,7 +20,7 @@ function Team() {
     const [playerHiddenData, setPlayerHiddenData] = useState(false)
 
     let progbar
-    if (teamData != null) {progbar = { bgcolor: teamData[0].teamColor, completed: Math.round((teamData[0].spiritFund / 10000)* 100) }}
+    if (teamData != null) {progbar = { bgcolor: "#" + teamData[0].teamColor, completed: Math.round((teamData[0].spiritFund / 10000)* 100) }}
     
 
     useEffect( () => {
@@ -111,7 +111,7 @@ function Team() {
                                         teamData[0].curVibe >= 26 ? "↑↑↑↑ Impeccable" :
                                         "None"
                                     }</h1>
-                        <h1>Spirit Fund | <ProgressBar bgcolor={progbar.bgcolor} completed={progbar.completed} /></h1>
+                        <h1>Spirit Fund<ProgressBar bgcolor={progbar.bgcolor} completed={progbar.completed} /></h1>
                         <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
 
                         <div className="center row">
