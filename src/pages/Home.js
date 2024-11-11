@@ -1,4 +1,30 @@
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+
 function Home() {
+    const params = useParams()
+    console.log(params)
+
+    const [seasonData, setSeasonData] = useState(null)
+    const [seasonLoaded, setSeasonLoaded] = useState(false)
+    const [seasonNumber, setSeasonNumber] = useState(4.2) // Default is Season 4.2
+
+    useEffect( () => {
+        fetchSeasonData()
+    })
+
+    const fetchSeasonData = async () => {
+        if (!seasonData && !seasonLoaded) {fetchSeason()}
+    }
+
+    const fetchSeason = async () => {
+        await fetch('https://daseballapi.adaptable.app/season/'+params.seasonNumber)
+        .then(res => res.json())
+        .then(data => setTeamData(data))
+        .then(setTeamLoaded(true))
+        .catch(err => console.log(err))
+    }
+
     return (
         <div className="player">
             <h1>DASEBALL</h1>
@@ -9,31 +35,31 @@ function Home() {
             <br/><a href="https://discord.gg/UZ3TfurF4N">Discord</a>
             </p>
             <br/>
-            <div className='game-panel'>
-                <p>Todo:</p>
-                <ul>
-                    <li>Logging In</li>
-                    <li>Betting</li>
-                    <li>Add Votes Page</li>
-                    <li>Season Game Schedule</li>
-                    <li>Weather Compendium</li>
-                    <li>The Book</li>
-                    <li>Mobile Support (!)</li>
-                    <li>Recent Events Page</li>
-                </ul>
-            </div>
-            <div className='game-panel'>
-                <p>Todo:</p>
-                <ul>
-                    <li>Logging In</li>
-                    <li>Betting</li>
-                    <li>Add Votes Page</li>
-                    <li>Season Game Schedule</li>
-                    <li>Weather Compendium</li>
-                    <li>The Book</li>
-                    <li>Mobile Support (!)</li>
-                    <li>Recent Events Page</li>
-                </ul>
+            <p>Todo:</p>
+            <ul>
+                <li>Logging In</li>
+                <li>Betting</li>
+                <li>Add Votes Page</li>
+                <li>Season Game Schedule</li>
+                <li>Weather Compendium</li>
+                <li>The Book</li>
+                <li>Mobile Support (!)</li>
+                <li>Recent Events Page</li>
+            </ul>
+            <div className='game-holder'>
+                <div className='game-panel'>
+                    <h1>Season Events</h1>
+                    {
+                        seasonData.seasonEvents?.map( (item) => {
+                            return (
+                                <div>
+                                    <h2>Day {item.gameDay} Game {item.gameNum}</h2>
+                                    <p>{item.events}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
             <br/>
             <h2>API HERE</h2>
