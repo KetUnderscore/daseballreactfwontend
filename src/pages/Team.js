@@ -33,6 +33,38 @@ function Team() {
         if (teamData != null && teamLoaded && !pitchingLoaded && !pitchingLoading) {fetchPitchers()}
         if (teamData != null && teamLoaded && !battingLoaded && !battingLoading) {fetchBatters()}
         if (teamData != null && teamLoaded && !pocketLoaded && !pocketLoading) {fetchPockets()}
+        if (teamData != null) {
+            let x = teamData[0].curVibe
+            switch (true) {
+                case (x < -25):
+                    vibes = "↓↓↓↓ Devastating"
+                    break;
+                case (x < -15):
+                    vibes = "↓↓↓ Horrid"
+                    break;
+                case (x < -5):
+                    vibes = "↓↓ Bad"
+                    break;
+                case (x < 0):
+                    vibes = "↓ Not Great"
+                    break;
+                case (x < 1):
+                    vibes = "⟷ Meh"
+                    break;
+                case (x < 6):
+                    vibes = "↑ Pretty Good"
+                    break;
+                case (x < 16):
+                    vibes = "↑↑ Great"
+                    break;
+                case (x < 26):
+                    vibes = "↑↑↑ Amazing"
+                    break;
+                case (x >= 26):
+                    vibes = "↑↑↑↑ Impeccable"
+                    break;
+            }
+        }
     }
 
     const fetchTeam = async () => {
@@ -41,36 +73,6 @@ function Team() {
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))
         .catch(err => console.log(err))
-        let x = teamData[0].curVibe
-        switch (true) {
-            case (x < -25):
-                vibes = "↓↓↓↓ Devastating"
-                break;
-            case (x < -15):
-                vibes = "↓↓↓ Horrid"
-                break;
-            case (x < -5):
-                vibes = "↓↓ Bad"
-                break;
-            case (x < 0):
-                vibes = "↓ Not Great"
-                break;
-            case (x < 1):
-                vibes = "⟷ Meh"
-                break;
-            case (x < 6):
-                vibes = "↑ Pretty Good"
-                break;
-            case (x < 16):
-                vibes = "↑↑ Great"
-                break;
-            case (x < 26):
-                vibes = "↑↑↑ Amazing"
-                break;
-            case (x >= 26):
-                vibes = "↑↑↑↑ Impeccable"
-                break;
-        }
     }
 
     const fetchPitchers = async () => {
