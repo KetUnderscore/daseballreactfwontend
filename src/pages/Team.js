@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import ProgressBar from './components/ProgressBar'
+import ProgressBar from '../components/ProgressBar.js'
 
 function Team() {
     const params = useParams()
