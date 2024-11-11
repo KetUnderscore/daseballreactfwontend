@@ -80,13 +80,6 @@ function Player () {
             .then(setPlayerStatsLoaded(true))
             .catch(err => console.log(err))
         }
-
-        if (playerData != null) {
-            favoriteSeason = ['Spring', 'Summer', 'Fall', 'Winter'][playerData[0].favSes]
-            favoritePosition = ['Pitcher', 'Catcher', 'First Base', 'Second Base', 'Third Base', 'Shortstop', 'Left Field', 'Center Field',
-                'Right Field', 'Designated Hitter'][playerData[0].favPos]
-            favoriteStar = ['Red', 'Orange', 'Yellow', 'Blue', 'Green'][playerData[0].starAlignment]
-        }
     }
 
     const Player = () => {
@@ -217,12 +210,28 @@ function Player () {
                         <h1>Interview Responses</h1>
                         <h2>Birthday | { playerData[0].birthday } </h2>
                         <h2>Favorite Number | { playerData[0].favNum } </h2>
-                        <h2>Favorite Season | { favoriteSeason } </h2>
+                        <h2>Favorite Season | { playerData[0].favSes === 0 ? 'Spring':
+                                                playerData[0].favSes === 1 ? 'Summer':
+                                                playerData[0].favSes === 2 ? 'Fall' :
+                                                'Winter' } </h2>
                         <h2>Favorite Holiday | { playerData[0].favHol } </h2>
                         <h2>Favorite Soup | { playerData[0].favSoup } </h2>
-                        <h2>Favorite Lineup Spot | { favoritePosition } </h2>
+                        <h2>Favorite Lineup Spot | { playerData[0].favPos === 0 ? 'Pitcher' :
+                                                     playerData[0].favPos === 1 ? 'Catcher' :
+                                                     playerData[0].favPos === 2 ? 'First Base' :
+                                                     playerData[0].favPos === 3 ? 'Second Base' :
+                                                     playerData[0].favPos === 4 ? 'Third Base' :
+                                                     playerData[0].favPos === 5 ? 'Shortstop' :
+                                                     playerData[0].favPos === 6 ? 'Left Field' :
+                                                     playerData[0].favPos === 7 ? 'Center Field' :
+                                                     playerData[0].favPos === 8 ? 'Right Field' :
+                                                     'Designated Hitter' } </h2>
                         <h2>Eye Count | { playerData[0].eyeCount } </h2>
-                        <h2>Star Alignment | { favoriteStar } </h2>
+                        <h2>Star Alignment | { playerData[0].starAlignment === 0 ? 'Red' :
+                                               playerData[0].starAlignment === 1 ? 'Orange' :
+                                               playerData[0].starAlignment === 2 ? 'Yellow' :
+                                               playerData[0].starAlignment === 3 ? 'Blue':
+                                               'Green' } </h2>
                     </div>
                     : 
                     <>

@@ -106,7 +106,6 @@ function Team() {
                                         teamData[0].curVibe >= 26 ? "↑↑↑↑ Impeccable" :
                                         "None"
                                     }</h1>
-                    break;
                         <h1>Spirit Fund | { teamData[0].spiritFund } / 10000</h1>
                         <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
 
