@@ -15,7 +15,6 @@ function Home() {
             setparamsData(seasonNumber)
         }
         fetchSeasonData()
-        .then(console.log(seasonData))
     })
 
     const fetchSeasonData = async () => {
@@ -23,7 +22,7 @@ function Home() {
     }
 
     const fetchSeason = async () => {
-        await fetch('https://daseballapi.adaptable.app/season/')
+        await fetch('https://daseballapi.adaptable.app/season/'+seasonNumber)
         .then(res => res.json())
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
@@ -37,7 +36,7 @@ function Home() {
                     <h1>Season Events</h1>
                     {
                         seasonData ?
-                        seasonData[0]?.seasonEvents.map( (item) => {
+                        seasonData[0]?.seasonEvents.toReversed().map( (item) => {
                             return (
                                 <div key={""+item.gameDay+item.gameNum}>
                                     <h2>Day {item.gameDay} Game {item.gameNum}</h2>
