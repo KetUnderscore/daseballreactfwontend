@@ -8,8 +8,12 @@ function Home() {
     const [seasonData, setSeasonData] = useState(null)
     const [seasonLoaded, setSeasonLoaded] = useState(false)
     const [seasonNumber, setSeasonNumber] = useState(4.2) // Default is Season 4.2
+    const [paramsData, setparamsData] = useState(4.2)
 
     useEffect( () => {
+        if (seasonNumber !== paramsData) {
+            setparamsData(seasonNumber)
+        }
         fetchSeasonData()
         .then(console.log(seasonData))
     })
@@ -19,7 +23,7 @@ function Home() {
     }
 
     const fetchSeason = async () => {
-        await fetch('https://daseballapi.adaptable.app/season/'+seasonNumber)
+        await fetch('https://daseballapi.adaptable.app/season/')
         .then(res => res.json())
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
@@ -32,7 +36,8 @@ function Home() {
                 <div className='game-panel'>
                     <h1>Season Events</h1>
                     {
-                        seasonData?.seasonEvents.map( (item) => {
+                        seasonData ?
+                        seasonData[0]?.seasonEvents.map( (item) => {
                             return (
                                 <div key={""+item.gameDay+item.gameNum}>
                                     <h2>Day {item.gameDay} Game {item.gameNum}</h2>
@@ -40,6 +45,8 @@ function Home() {
                                 </div>
                             )
                         })
+                        :
+                        <></>
                     }
                 </div>
             </div>
@@ -65,7 +72,6 @@ function Home() {
                 <li>Weather Compendium</li>
                 <li>The Book</li>
                 <li>Mobile Support (!)</li>
-                <li>Recent Events Page</li>
             </ul>
             <Events/>
             <br/>
