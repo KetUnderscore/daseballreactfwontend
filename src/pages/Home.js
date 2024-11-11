@@ -50,7 +50,7 @@ function Home() {
                 <div className='game-panel'>
                     <h1>Season Events</h1>
                     {
-                        seasonData.seasonEvents?.map( (item) => {
+                        seasonData?.seasonEvents.map( (item) => {
                             return (
                                 <div>
                                     <h2>Day {item.gameDay} Game {item.gameNum}</h2>
