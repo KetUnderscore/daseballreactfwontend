@@ -20,8 +20,8 @@ function Home() {
     const fetchSeason = async () => {
         await fetch('https://daseballapi.adaptable.app/season/'+params.seasonNumber)
         .then(res => res.json())
-        .then(data => setTeamData(data))
-        .then(setTeamLoaded(true))
+        .then(data => setSeasonData(data))
+        .then(setSeasonLoaded(true))
         .catch(err => console.log(err))
     }
 
