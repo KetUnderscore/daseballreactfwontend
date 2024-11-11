@@ -2,13 +2,12 @@ import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 const { currentActiveSeason } = require('../config.json')
 
-const [seasonData, setSeasonData] = useState(null)
-const [seasonLoaded, setSeasonLoaded] = useState(false)
-const [gameData, setgameData] = useState([])
-const [gameLoaded, setgameLoaded] = useState(false)
-const [gameLoading, setgameLoading] = useState(false)
-
 function Games() {
+    const [seasonData, setSeasonData] = useState(null)
+    const [seasonLoaded, setSeasonLoaded] = useState(false)
+    const [gameData, setgameData] = useState([])
+    const [gameLoaded, setgameLoaded] = useState(false)
+    const [gameLoading, setgameLoading] = useState(false)
 
     const params = useParams()
     

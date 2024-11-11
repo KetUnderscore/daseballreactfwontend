@@ -1,22 +1,21 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
-const [teamData, setTeamData] = useState(null)
-const [teamLoaded, setTeamLoaded] = useState(false)
-const [pitchingData, setPitchingData] = useState([])
-const [pitchingLoaded, setPitchingLoaded] = useState(false)
-const [pitchingLoading, setPitchingLoading] = useState(false)
-const [battingData, setBattingData] = useState([])
-const [battingLoaded, setBattingLoaded] = useState(false)
-const [battingLoading, setBattingLoading] = useState(false)
-const [pocketData, setPocketData] = useState([])
-const [pocketLoaded, setPocketLoaded] = useState(false)
-const [pocketLoading, setPocketLoading] = useState(false)
-const [playerHiddenData, setPlayerHiddenData] = useState(false)
-
 let vibes = "None"
 
 function Team() {
+    const [teamData, setTeamData] = useState(null)
+    const [teamLoaded, setTeamLoaded] = useState(false)
+    const [pitchingData, setPitchingData] = useState([])
+    const [pitchingLoaded, setPitchingLoaded] = useState(false)
+    const [pitchingLoading, setPitchingLoading] = useState(false)
+    const [battingData, setBattingData] = useState([])
+    const [battingLoaded, setBattingLoaded] = useState(false)
+    const [battingLoading, setBattingLoading] = useState(false)
+    const [pocketData, setPocketData] = useState([])
+    const [pocketLoaded, setPocketLoaded] = useState(false)
+    const [pocketLoading, setPocketLoading] = useState(false)
+    const [playerHiddenData, setPlayerHiddenData] = useState(false)
 
     const params = useParams()
     console.log(params)
