@@ -11,6 +11,7 @@ function Home() {
 
     useEffect( () => {
         fetchSeasonData()
+        .then(console.log(seasonData))
     })
 
     const fetchSeasonData = async () => {
