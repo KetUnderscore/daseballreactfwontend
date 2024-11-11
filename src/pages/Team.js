@@ -19,7 +19,7 @@ function Team() {
     const [playerHiddenData, setPlayerHiddenData] = useState(false)
 
     let progbar
-    if (teamData != null) {progbar = { bgcolor: "", completed: Math.round((teamData[0].spiritFund / 10000)* 100) }}
+    if (teamData != null) {progbar = { bgcolor: teamData[0].teamColor, completed: Math.round((teamData[0].spiritFund / 10000)* 100) }}
     
 
     useEffect( () => {
