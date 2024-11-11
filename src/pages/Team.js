@@ -111,7 +111,8 @@ function Team() {
                                         teamData[0].curVibe >= 26 ? "↑↑↑↑ Impeccable" :
                                         "None"
                                     }</h1>
-                        <h1>Spirit Fund<ProgressBar bgcolor={progbar.bgcolor} completed={progbar.completed} /></h1>
+                        <h1>Spirit Fund</h1>
+                        <div className='auto-marginer'><ProgressBar bgcolor={progbar.bgcolor} completed={progbar.completed} /></div>
                         <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
 
                         <div className="center row">

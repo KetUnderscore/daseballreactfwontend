@@ -294,3 +294,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.auto-marginer {
+  margin: auto;
+}
