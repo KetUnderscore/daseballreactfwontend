@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 
+const [teamData, setTeamData] = useState(null)
+const [osteamData, ossetTeamData] = useState([])
+const [nsteamData, nssetTeamData] = useState([])
+const [octeamData, ocsetTeamData] = useState([])
+const [ncteamData, ncsetTeamData] = useState([])
+const [teamLoaded, setTeamLoaded] = useState(false)
+const [teamsLoaded, setTeamsLoaded] = useState(false)
+
 function Teams() {
-    const [teamData, setTeamData] = useState(null)
-    const [osteamData, ossetTeamData] = useState([])
-    const [nsteamData, nssetTeamData] = useState([])
-    const [octeamData, ocsetTeamData] = useState([])
-    const [ncteamData, ncsetTeamData] = useState([])
-    const [teamLoaded, setTeamLoaded] = useState(false)
-    const [teamsLoaded, setTeamsLoaded] = useState(false)
 
     useEffect( () => {
         fetchTeamData()

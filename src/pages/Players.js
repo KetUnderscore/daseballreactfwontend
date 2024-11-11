@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 
+const [playerData, setPlayerData] = useState([])
+const [playersLoaded, setPlayerLoaded] = useState(false)
+const [paramsData, setparamsData] = useState("total")
+const [paramsDataName, setparamsDataName] = useState(null)
+
 function Players() {
-    const [playerData, setPlayerData] = useState([])
-    const [playersLoaded, setPlayerLoaded] = useState(false)
-    const [paramsData, setparamsData] = useState("total")
-    const [paramsDataName, setparamsDataName] = useState(null)
 
     useEffect( () => {
         fetchPlayers()
