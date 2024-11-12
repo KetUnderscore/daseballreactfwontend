@@ -31,14 +31,14 @@ function Home() {
 
     const Events = () => {
         return (
-            <div className='game-holder'>
-                <div className='game-panel'>
-                    <h1>Season Events</h1>
+            <div>
+                <h1 className="center">Season Events</h1>
+                <div className="mod-container">
                     {
                         seasonData ?
                         seasonData[0]?.seasonEvents.toReversed().map( (item) => {
                             return (
-                                <div key={""+item.gameDay+item.gameNum}>
+                                <div className='mod' key={""+item.gameDay+item.gameNum}>
                                     <h2>Day {item.gameDay} Game {item.gameNum}</h2>
                                     <p>{item.events}</p>
                                 </div>
