@@ -23,17 +23,17 @@ function Schedule() {
 
     useEffect( () => {
         fetchGameData()
+        console.log(seasonData)
     })
 
     const fetchGameData = async () => {
         if (!seasonLoaded) {fetchSeason()}
-        if (seasonData != null && seasonLoaded && !gameLoaded && !gameLoading) {fetchGamesData()}
         if (gameDataFull != null && gameLoaded && !pitcherLoaded && !pitcherLoading) {fetchPitchersData()}
         if (gameDataFull != null && gameLoaded && pitcherLoaded && !daysLoaded) {loadDays()}
     }
 
     const fetchSeason = async () => {
-        await fetch('https://daseballapi.adaptable.app/season/'+currentActiveSeason)
+        await fetch('https://daseballapi.adaptable.app/seasonSchedule/'+currentActiveSeason)
         .then(res => res.json())
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
