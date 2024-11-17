@@ -7,7 +7,7 @@ function Home() {
 
     const [seasonData, setSeasonData] = useState(null)
     const [seasonLoaded, setSeasonLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(5) // Default is Season 4.2
+    const [seasonNumber, setSeasonNumber] = useState(5) // Default is Season 5
     const [paramsData, setparamsData] = useState(5)
 
     useEffect( () => {
@@ -32,7 +32,7 @@ function Home() {
     const Events = () => {
         return (
             <div>
-                <h1 className="center">Season Events</h1>
+                <h1 className="center">Season {seasonNumber} Events</h1>
                 <div className="mod-container">
                     {
                         seasonData ?

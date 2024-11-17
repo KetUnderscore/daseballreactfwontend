@@ -165,6 +165,7 @@ function Schedule() {
                 {
                     seasonData != null && daysLoaded ?
                     <div className="player center">
+                        <h1>Season {currentActiveSeason} Schedule</h1>
                         { dayOneSched.length > 0 ?
                         <div>
                             <h2>Day {seasonData[0].seasonDay}</h2>
