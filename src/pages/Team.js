@@ -105,7 +105,7 @@ function Team() {
                                         teamData[0].curVibe > -25 && teamData[0].curVibe < -16 ? "↓↓↓ Horrid" :
                                         teamData[0].curVibe > -15 && teamData[0].curVibe < -5 ?  "↓↓ Bad" :
                                         teamData[0].curVibe > -6 && teamData[0].curVibe < 0 ?   "↓ Not Great" :
-                                        teamData[0].curVibe === 1 ?   "⟷ Meh" :
+                                        teamData[0].curVibe === 0 ?   "⟷ Meh" :
                                         teamData[0].curVibe > 0 && teamData[0].curVibe < 6 ?   "↑ Pretty Good" :
                                         teamData[0].curVibe > 5 && teamData[0].curVibe < 16 ?  "↑↑ Great" :
                                         teamData[0].curVibe > 15 && teamData[0].curVibe < 26 ?  "↑↑↑ Amazing" :
