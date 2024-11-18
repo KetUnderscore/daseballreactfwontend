@@ -72,8 +72,8 @@ function Schedule() {
                     }
                     
                     <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*100)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*100)}%</span></h2>
-                    <h2>{team1.teamEmoji}{team1.players.name} <br/> 
-                    VS <br/> {team2.teamEmoji}{team2.players.name}</h2>
+                    <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
+                        VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
                 </div>
                 ])
             }
@@ -110,8 +110,8 @@ function Schedule() {
                         }
                         
                         <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*100)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*100)}%</span></h2>
-                        <h2>{team1.teamEmoji}{team1.players.name} <br/> 
-                        VS <br/> {team2.teamEmoji}{team2.players.name}</h2>
+                        <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
+                        VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
                     </div>
                     )])
                 }
@@ -149,8 +149,8 @@ function Schedule() {
                         }
                         
                         <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*100)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*100)}%</span></h2>
-                        <h2>{team1.teamEmoji}{team1.players.name} <br/> 
-                        VS <br/> {team2.teamEmoji}{team2.players.name}</h2>
+                        <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
+                        VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
                     </div>
                     )])
                 }
