@@ -54,7 +54,7 @@ function Home() {
                 <div className="mod-container">
                     {
                         seasonData ?
-                        rows.map( (item) => {
+                        rows.toReversed().map( (item) => {
                             return (
                                 <div className='mod' key={""+item.gameDay+item.gameNum}>
                                     <p>{item}</p>
