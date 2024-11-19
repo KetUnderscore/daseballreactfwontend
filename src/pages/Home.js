@@ -30,17 +30,34 @@ function Home() {
     }
 
     const Events = () => {
+        let rows = []
+        if (seasonData) {
+            for (let i = 1; i < seasonData[0].seasonDay; i++) {
+                let dayGames = seasonData[0].seasonEvents.filter(function (el) {
+                    return el.gameDay === i
+                })
+                rows.push(
+                    dayGames.map( (item) => {
+                        return (
+                            <div className='mod' key={""+item.gameDay+item.gameNum}>
+                                <h2>Day {item.gameDay} Game {item.gameNum}</h2>
+                                <p>{item.events}</p>
+                            </div>
+                        )
+                    })
+                )
+            }
+        }
         return (
             <div>
                 <h1 className="center">Season {seasonNumber} Events</h1>
                 <div className="mod-container">
                     {
                         seasonData ?
-                        seasonData[0]?.seasonEvents.toReversed().map( (item) => {
+                        rows.map( (item) => {
                             return (
                                 <div className='mod' key={""+item.gameDay+item.gameNum}>
-                                    <h2>Day {item.gameDay} Game {item.gameNum}</h2>
-                                    <p>{item.events}</p>
+                                    <p>{item}</p>
                                 </div>
                             )
                         })
