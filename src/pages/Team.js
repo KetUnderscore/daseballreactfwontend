@@ -101,6 +101,7 @@ function Team() {
                     <div className="player">
                         <h1>{ teamData[0].teamEmoji }{ teamData[0].teamName }</h1>
                         <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
+                        <h1>{ "🟡"*teamData[0].championshipWins } | { "🔴"*teamData[0].championshipLosses }</h1>
                         <h2>Vibes | {   teamData[0].curVibe < -24 ? "↓↓↓↓ Devastating" :
                                         teamData[0].curVibe > -25 && teamData[0].curVibe < -15 ? "↓↓↓ Horrid" :
                                         teamData[0].curVibe > -16 && teamData[0].curVibe < -5 ?  "↓↓ Bad" :
