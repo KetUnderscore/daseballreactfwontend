@@ -68,6 +68,22 @@
 
 .logo {
   height: 3rem;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  margin-top:-2px;
+  margin-bottom: -2px;
+  color:#fdff7d;
+}
+
+.titlebox {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
 }
 
 .player {
