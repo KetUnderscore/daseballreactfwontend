@@ -41,7 +41,14 @@ function Home() {
                         return (
                             <div className='mod' key={""+item.gameDay+item.gameNum}>
                                 <h2>Day {item.gameDay} Game {item.gameNum}</h2>
-                                <p>{item.events}</p>
+                                <p>{item.events.split("\n").map(function(item, idx) {
+                                        return (
+                                            <span key={idx}>
+                                                {item}
+                                                <br/>
+                                            </span>
+                                        )
+                                    })}</p>
                             </div>
                         )
                     })
