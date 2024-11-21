@@ -71,7 +71,7 @@ function Schedule() {
                     </div>
                     }
                     
-                    <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*100)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*100)}%</span></h2>
+                    <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span></h2>
                     <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
                         VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
                 </div>
@@ -109,7 +109,7 @@ function Schedule() {
                         </div>
                         }
                         
-                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*100)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*100)}%</span></h2>
+                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span></h2>
                         <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
                         VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
                     </div>
@@ -148,7 +148,7 @@ function Schedule() {
                         </div>
                         }
                         
-                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*100)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*100)}%</span></h2>
+                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span></h2>
                         <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
                         VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
                     </div>
