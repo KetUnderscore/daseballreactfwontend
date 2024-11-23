@@ -42,7 +42,7 @@ function Schedule() {
             let teamLength = 12
             let teamSlotA = 0
             let teamSlotB = 1
-            if (seasonData[0].seasonDay >= 46) {teamLength = 4}
+            if (seasonData[0].seasonDay >= 46) {if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}}
             for (let gn = 0; gn < teamLength; gn += 2) {
                 let team1 = seasonData[0].scheduleTeamInfo[0][gn-teamSlotA]
                 let team2 = seasonData[0].scheduleTeamInfo[0][gn+teamSlotB]
@@ -86,8 +86,7 @@ function Schedule() {
                 let teamLength = 12
                 let teamSlotA = 4
                 let teamSlotB = 3
-                if (seasonData[0].seasonDay >= 46) {
-                    teamLength = 4
+                if (seasonData[0].seasonDay >= 46) {if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}
                     teamSlotA = 0
                     teamSlotB = -1
                 }
@@ -133,8 +132,7 @@ function Schedule() {
                 let teamLength = 12
                 let teamSlotA = 8
                 let teamSlotB = 7
-                if (seasonData[0].seasonDay >= 46) {
-                    teamLength = 4
+                if (seasonData[0].seasonDay >= 46) {if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}
                     teamSlotA = 0
                     teamSlotB = -1
                 }
