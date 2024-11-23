@@ -87,7 +87,7 @@ function Schedule() {
                         VS <br/>
                         <span style={{color: "#"+team2.teamColor}}>{team2.teamEmoji}{team2.teamName}</span></h2>
                         <h2>
-                        {seasonData[0].seasonDay >= 41 ?
+                        {seasonData[0].seasonDay >= 46 ?
                         <div>
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
@@ -126,7 +126,7 @@ function Schedule() {
                         VS <br/>
                         <span style={{color: "#"+team2.teamColor}}>{team2.teamEmoji}{team2.teamName}</span></h2>
                         <h2>
-                        {seasonData[0].seasonDay >= 41 ?
+                        {seasonData[0].seasonDay >= 46 ?
                         <div>
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
