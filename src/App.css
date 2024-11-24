@@ -357,3 +357,7 @@ a {
   font: inherit;
   cursor: pointer;
 }
+
+.yellow-text {
+  color: #fdff7d;
+}
