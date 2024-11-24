@@ -123,6 +123,8 @@ function Player () {
                                         { item.name === "Found" ? <img src="https://i.imgur.com/FJ30bdi.png" height="30px" title="This player was found!"></img> : '' }
                                         { item.name === "Erased" ? <img src="https://i.imgur.com/4mvBVph.png" height="30px" title="This player was erased..."></img> : '' }
                                         { item.name === "Data Leak" ? <img src="https://i.imgur.com/dLWhUNY.png" height="30px" title="This player is leaking!"></img> : '' }
+                                        { item.name === "Data Breach" ? <img src="https://i.imgur.com/ROhdf21.png" height="30px" title="This player is breaking!"></img> : '' }
+                                        { item.name === "Patched" ? <img src="https://i.imgur.com/ar8A2xZ.png" height="30px" title="This player has been patched."></img> : '' }
                                         { item.name === "HeatingUp" ? <img src="https://i.imgur.com/wWxWKyI.png" height="30px" title="This player is heating up..."></img> : '' }
                                         { item.name === "On Fire" ? <img src="https://i.imgur.com/N1MvyL6.png" height="30px" title="This player is on fire!"></img> : '' }
                                         { item.name === "Burnt Out" ? <img src="https://i.imgur.com/qmw52U7.png" height="30px" title="This player is burnt out..."></img> : '' }

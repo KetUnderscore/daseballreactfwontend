@@ -203,6 +203,18 @@ function Mods() {
                     <br/>You just couldn't let them rest...</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Data Breach</h3>
+                    <img src="https://i.imgur.com/ROhdf21.png" height="50px" title="This player is leaking breaking!"></img>
+                    <p className="center">Data Breach players were <span className="yellow-text">HELP</span> and <span className="yellow-text">WHY WON'T IT STOP</span>.
+                    <br/>These players are <span className="yellow-text">FIX ME</span>!
+                    <br/>You just couldn't <span className="yellow-text">I NEVER ASKED FOR THIS</span>...</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Patched</h3>
+                    <img src="https://i.imgur.com/ar8A2xZ.png" height="50px" title="This player has been patched."></img>
+                    <p className="center">This player is all better now.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Wired</h3>
                     <img src="https://i.imgur.com/he4j9B0.png" height="50px" title="This player is wired!"></img>
                     <p className="center">Wired players scores count more.
