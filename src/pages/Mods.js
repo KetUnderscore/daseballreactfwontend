@@ -23,12 +23,6 @@ function Mods() {
                     <br/>Witness Protection wears off after a season.</p>
                 </div>
                 <div className='mod'>
-                    <h3 className="center">Suck Forever</h3>
-                    <img src="https://i.imgur.com/G4L25nw.png" height="50px" title="This team will suck forever."></img>
-                    <p className="center">Teams that Suck Forever will lose one star when they realize their fate.
-                    <br/>Teams that Suck Forever will party while losing by two or more points.</p>
-                </div>
-                <div className='mod'>
                     <h3 className="center">Coffee Lovers</h3>
                     <img src="https://i.imgur.com/1WdpOMz.png" height="50px" title="This team may start pouring coffee."></img>
                     <p className="center">This team may change the weather to Coffee.</p>
@@ -42,6 +36,12 @@ function Mods() {
                     <h3 className="center">Homefield Advantage</h3>
                     <img src="https://i.imgur.com/tCnQYQ2.png" height="50px" title="This team has a homefield advantage!"></img>
                     <p className="center">This team starts with 1 run when playing a home game.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Suck Forever</h3>
+                    <img src="https://i.imgur.com/G4L25nw.png" height="50px" title="This team will suck forever."></img>
+                    <p className="center">Teams that Suck Forever will lose one star when they realize their fate.
+                    <br/>Teams that Suck Forever will party while losing by two or more points.</p>
                 </div>
             </div>
 
