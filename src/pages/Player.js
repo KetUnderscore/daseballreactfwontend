@@ -131,6 +131,7 @@ function Player () {
                                         { item.name === "Burnt Out" ? <img src="https://i.imgur.com/qmw52U7.png" height="30px" title="This player is burnt out..."></img> : '' }
                                         { item.name === "Wired" ? <img src="https://i.imgur.com/he4j9B0.png" height="30px" title="This player is wired!"></img> : '' }
                                         { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height="30px" title="This player is tired..."></img> : '' }
+                                        { item.name === "Team Pillar" ? <img src="https://i.imgur.com/GXCcMj0.png" height="30px" title="This player is a team pillar! They are immune!"></img> : '' }
                                     </span>
                                 )}) 
                             }
