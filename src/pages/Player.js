@@ -102,6 +102,7 @@ function Player () {
                                         
                                         { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height="30px" title="This player is having a great season."></img> : '' }
                                         { item.name === "Icon" ? <img src="https://i.imgur.com/qbFbglH.png" height="30px" title="This player is an icon. Doubled favorite payouts!"></img> : '' }
+                                        { item.name === "Icon+" ? <img src="https://i.imgur.com/qbFbglH.png" height="30px" title="This player is an icon+. Tripled favorite payouts!"></img> : '' }
                                         { item.name === "Minimized" ? <img src="https://i.imgur.com/ZAxrqiz.png" height="30px" title="This player was minimized to zero."></img> : '' }
 
                                         { item.name === "Old School" ? <img src="https://i.imgur.com/yvlrdat.png" height="30px" title="This player enjoys the Null."></img> : '' }
