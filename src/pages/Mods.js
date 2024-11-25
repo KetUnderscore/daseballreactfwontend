@@ -38,6 +38,11 @@ function Mods() {
                     <img src="https://i.imgur.com/NBMbLYO.png" height="50px" title="This team may start skipping."></img>
                     <p className="center">This team may change the weather to Skipping.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Homefield Advantage</h3>
+                    <img src="https://i.imgur.com/tCnQYQ2.png" height="50px" title="This team has a homefield advantage!"></img>
+                    <p className="center">This team starts with 1 run when playing a home game.</p>
+                </div>
             </div>
 
             
