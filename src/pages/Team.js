@@ -113,7 +113,7 @@ function Team() {
                                         teamData[0].curVibe > 24 ? "↑↑↑↑ Impeccable" :
                                         "None"
                                     }</h2>
-                        <h2>Spirit Fund | {teamData[0].spiritFund } / 10000</h2>
+                        <h2>Spirit Fund | {teamData[0].spiritFund } / {teamData[0].spiritMax }</h2>
 
                         <div className="center row">
                             {  teamData[0]?.teamMods.map( (item) => {
