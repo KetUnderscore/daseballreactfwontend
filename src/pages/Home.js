@@ -88,10 +88,9 @@ function Home() {
             <br/>
             <p>Todo:</p>
             <ul>
-                <li>Logging In</li>
-                <li>Betting</li>
-                <li>Add Votes Page</li>
-                <li>Season Game Schedule</li>
+                <li>Website Logging In</li>
+                <li>Website Betting</li>
+                <li>Website Votes Page</li>
                 <li>Weather Compendium</li>
                 <li>The Book</li>
                 <li>Mobile Support (!)</li>
