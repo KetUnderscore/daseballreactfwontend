@@ -10,7 +10,7 @@ function Player () {
     const [playerStatData, setPlayerStatData] = useState(null)
     const [playerLoaded, setPlayerLoaded] = useState(false)
     const [playerStatsLoaded, setPlayerStatsLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(5) // Default is Season 4.2
+    const [seasonNumber, setSeasonNumber] = useState(6) // Default is Season 6
     
     let favoriteSeason
     let favoritePosition
@@ -42,6 +42,7 @@ function Player () {
                     <option value="4.1">4.1</option>
                     <option value="4.2">4.2</option>
                     <option value="5">5</option>
+                    <option value="6">6</option>
                 </select>
             </div>
         )
