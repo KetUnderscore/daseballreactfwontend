@@ -41,11 +41,11 @@ function Schedule() {
             setDaysLoaded(true)
             let teamLength = 12
             let teamSlotA = 0
-            let teamSlotB = 1
+            let teamSlotB = 0
             if (seasonData[0].seasonDay >= 46) {if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}}
             for (let gn = 0; gn < teamLength; gn += 2) {
                 let team1 = seasonData[0].scheduleTeamInfo[0][gn-teamSlotA]
-                let team2 = seasonData[0].scheduleTeamInfo[0][gn+teamSlotB]
+                let team2 = seasonData[0].scheduleTeamInfo[0][gn+1-teamSlotB]
                 setDayOneSched(dayOneSched => [...dayOneSched, 
                 <div className='game-panel' key={gn}>
                     <h2><span style={{color: "#"+team1.teamColor}}>{team1.teamEmoji}{team1.teamName}</span> <br/>
@@ -84,8 +84,8 @@ function Schedule() {
             }
             if (seasonData[0].scheduleTeamInfo.length > 1) {
                 let teamLength = 12
-                let teamSlotA = 4
-                let teamSlotB = 3
+                let teamSlotA = 0
+                let teamSlotB = 0
                 if (seasonData[0].seasonDay >= 46) {
                     if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}
                     teamSlotA = 0
@@ -93,7 +93,7 @@ function Schedule() {
                 }
                 for (let gn = 0; gn < teamLength; gn += 2) {
                     let team1 = seasonData[0].scheduleTeamInfo[1][gn-teamSlotA]
-                    let team2 = seasonData[0].scheduleTeamInfo[1][gn-teamSlotB]
+                    let team2 = seasonData[0].scheduleTeamInfo[1][gn+1-teamSlotB]
                     setDayTwoSched(dayTwoSched => [...dayTwoSched, (
                     <div className='game-panel'>
                         <h2><span style={{color: "#"+team1.teamColor}}>{team1.teamEmoji}{team1.teamName}</span> <br/>
@@ -131,8 +131,8 @@ function Schedule() {
             }
             if (seasonData[0].scheduleTeamInfo.length > 2) {
                 let teamLength = 12
-                let teamSlotA = 8
-                let teamSlotB = 7
+                let teamSlotA = 0
+                let teamSlotB = 0
                 if (seasonData[0].seasonDay >= 46) {
                     if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}
                     teamSlotA = 0
@@ -140,7 +140,7 @@ function Schedule() {
                 }
                 for (let gn = 0; gn < teamLength; gn += 2) {
                     let team1 = seasonData[0].scheduleTeamInfo[2][gn-teamSlotA]
-                    let team2 = seasonData[0].scheduleTeamInfo[2][gn-teamSlotB]
+                    let team2 = seasonData[0].scheduleTeamInfo[2][gn+1-teamSlotB]
                     setDayThreeSched(dayThreeSched => [...dayThreeSched, (
                     <div className='game-panel'>
                         <h2><span style={{color: "#"+team1.teamColor}}>{team1.teamEmoji}{team1.teamName}</span> <br/>
