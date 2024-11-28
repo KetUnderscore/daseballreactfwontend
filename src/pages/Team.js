@@ -176,6 +176,53 @@ function Team() {
                                                     { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                     { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
+                                                    { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+            
+                                                    { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
+                                                    { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
+                                                    { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
+            
+                                                    { item.name === "Lost" ? <img src="https://i.imgur.com/2Vyez52.png" height="20px" title="This player is lost..."></img> : '' }
+                                                    { item.name === "Found" ? <img src="https://i.imgur.com/FJ30bdi.png" height="20px" title="This player was found!"></img> : '' }
+                                                    { item.name === "Erased" ? <img src="https://i.imgur.com/4mvBVph.png" height="20px" title="This player was erased..."></img> : '' }
+                                                    { item.name === "Data Leak" ? <img src="https://i.imgur.com/dLWhUNY.png" height="20px" title="This player is leaking!"></img> : '' }
+                                                    { item.name === "Data Breach" ? <img src="https://i.imgur.com/ROhdf21.png" height="20px" title="This player is breaking!"></img> : '' }
+                                                    { item.name === "Patched" ? <img src="https://i.imgur.com/ar8A2xZ.png" height="20px" title="This player has been patched."></img> : '' }
+                                                    { item.name === "HeatingUp" ? <img src="https://i.imgur.com/wWxWKyI.png" height="20px" title="This player is heating up..."></img> : '' }
+                                                    { item.name === "On Fire" ? <img src="https://i.imgur.com/N1MvyL6.png" height="20px" title="This player is on fire!"></img> : '' }
+                                                    { item.name === "Burnt Out" ? <img src="https://i.imgur.com/qmw52U7.png" height="20px" title="This player is burnt out..."></img> : '' }
+                                                    { item.name === "Wired" ? <img src="https://i.imgur.com/he4j9B0.png" height="20px" title="This player is wired!"></img> : '' }
+                                                    { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height="20px" title="This player is tired..."></img> : '' }
+                                                    { item.name === "Team Pillar" ? <img src="https://i.imgur.com/GXCcMj0.png" height="20px" title="This player is a team pillar! They are immune!"></img> : '' }
+                                                    </>
+                                                )
+                                            }) : ''}
+                                            {playerHiddenData != false ? item.item.modifiers.map( (item) => {
+                                                return (
+                                                    <> 
+                                                    { item.name === "Visitor" ? <img src="https://i.imgur.com/ZjehUbe.png" height="20px" title="This player is a visitor from a far off land."></img> : '' }
+                                                    { item.name === "Hlockey" ? <img src="https://i.imgur.com/kUcBFL9.png" height="20px" title="This player plays in Hlockey. This player has improved Assault."></img> : '' }
+                                                    { item.name === "TerrorBall" ? <img src="https://i.imgur.com/iRVkDQU.png" height="20px" title="This player plays in Terror Ball. This player has improved Return Of The Killer Tomatoes 2."></img> : '' }
+                                                    { item.name === "NarrativeLeague" ? <img src="https://i.imgur.com/UOktOHC.png" height="20px" title="This player plays for the Narrative League. Things will happen to this player."></img> : '' }
+                                                    { item.name === "AltLeague" ? <img src="https://i.imgur.com/MJlBNU0.png" height="20px" title="This player plays for the Alternate League. This player has done this before."></img> : '' }
+                                                    { item.name === "BlittleLeague" ? <img src="https://i.imgur.com/keUYQ24.png" height="20px" title="This player plays for the Blittle League. This player is still growing."></img> : '' }
+                                                    
+                                                    { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height="20px" title="This player is having a great season."></img> : '' }
+                                                    { item.name === "Icon" ? <img src="https://i.imgur.com/qbFbglH.png" height="20px" title="This player is an icon. Doubled favorite payouts!"></img> : '' }
+                                                    { item.name === "Icon+" ? <img src="https://i.imgur.com/9jU25eY.png" height="20px" title="This player is an icon+. Tripled favorite payouts!"></img> : '' }
+                                                    { item.name === "Minimized" ? <img src="https://i.imgur.com/ZAxrqiz.png" height="20px" title="This player was minimized to zero."></img> : '' }
+            
+                                                    { item.name === "Old School" ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" title="This player enjoys the Null."></img> : '' }
+                                                    { item.name === "New Cool" ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" title="This player enjoys the Sun."></img> : '' }
+                                                    { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height="20px" title="This player gets all the breaks!"></img> : '' }
+                                                    { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="20px" title="This player just can't catch a break!"></img> : '' }
+                                                    { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height="20px" title="This player plays better on larger teams."></img> : '' }
+                                                    { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height="20px" title="This player plays better on smaller teams."></img> : '' }
+                                                    { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="20px" title="This player draws a walk on three balls."></img> : '' }
+                                                    { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
+                                                    { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
+                                                    { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
+                                                    { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -241,6 +288,53 @@ function Team() {
                                                     { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                     { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
+                                                    { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+            
+                                                    { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
+                                                    { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
+                                                    { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
+            
+                                                    { item.name === "Lost" ? <img src="https://i.imgur.com/2Vyez52.png" height="20px" title="This player is lost..."></img> : '' }
+                                                    { item.name === "Found" ? <img src="https://i.imgur.com/FJ30bdi.png" height="20px" title="This player was found!"></img> : '' }
+                                                    { item.name === "Erased" ? <img src="https://i.imgur.com/4mvBVph.png" height="20px" title="This player was erased..."></img> : '' }
+                                                    { item.name === "Data Leak" ? <img src="https://i.imgur.com/dLWhUNY.png" height="20px" title="This player is leaking!"></img> : '' }
+                                                    { item.name === "Data Breach" ? <img src="https://i.imgur.com/ROhdf21.png" height="20px" title="This player is breaking!"></img> : '' }
+                                                    { item.name === "Patched" ? <img src="https://i.imgur.com/ar8A2xZ.png" height="20px" title="This player has been patched."></img> : '' }
+                                                    { item.name === "HeatingUp" ? <img src="https://i.imgur.com/wWxWKyI.png" height="20px" title="This player is heating up..."></img> : '' }
+                                                    { item.name === "On Fire" ? <img src="https://i.imgur.com/N1MvyL6.png" height="20px" title="This player is on fire!"></img> : '' }
+                                                    { item.name === "Burnt Out" ? <img src="https://i.imgur.com/qmw52U7.png" height="20px" title="This player is burnt out..."></img> : '' }
+                                                    { item.name === "Wired" ? <img src="https://i.imgur.com/he4j9B0.png" height="20px" title="This player is wired!"></img> : '' }
+                                                    { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height="20px" title="This player is tired..."></img> : '' }
+                                                    { item.name === "Team Pillar" ? <img src="https://i.imgur.com/GXCcMj0.png" height="20px" title="This player is a team pillar! They are immune!"></img> : '' }
+                                                    </>
+                                                )
+                                            }) : ''}
+                                            {playerHiddenData != false ? item.item.modifiers.map( (item) => {
+                                                return (
+                                                    <> 
+                                                    { item.name === "Visitor" ? <img src="https://i.imgur.com/ZjehUbe.png" height="20px" title="This player is a visitor from a far off land."></img> : '' }
+                                                    { item.name === "Hlockey" ? <img src="https://i.imgur.com/kUcBFL9.png" height="20px" title="This player plays in Hlockey. This player has improved Assault."></img> : '' }
+                                                    { item.name === "TerrorBall" ? <img src="https://i.imgur.com/iRVkDQU.png" height="20px" title="This player plays in Terror Ball. This player has improved Return Of The Killer Tomatoes 2."></img> : '' }
+                                                    { item.name === "NarrativeLeague" ? <img src="https://i.imgur.com/UOktOHC.png" height="20px" title="This player plays for the Narrative League. Things will happen to this player."></img> : '' }
+                                                    { item.name === "AltLeague" ? <img src="https://i.imgur.com/MJlBNU0.png" height="20px" title="This player plays for the Alternate League. This player has done this before."></img> : '' }
+                                                    { item.name === "BlittleLeague" ? <img src="https://i.imgur.com/keUYQ24.png" height="20px" title="This player plays for the Blittle League. This player is still growing."></img> : '' }
+                                                    
+                                                    { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height="20px" title="This player is having a great season."></img> : '' }
+                                                    { item.name === "Icon" ? <img src="https://i.imgur.com/qbFbglH.png" height="20px" title="This player is an icon. Doubled favorite payouts!"></img> : '' }
+                                                    { item.name === "Icon+" ? <img src="https://i.imgur.com/9jU25eY.png" height="20px" title="This player is an icon+. Tripled favorite payouts!"></img> : '' }
+                                                    { item.name === "Minimized" ? <img src="https://i.imgur.com/ZAxrqiz.png" height="20px" title="This player was minimized to zero."></img> : '' }
+            
+                                                    { item.name === "Old School" ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" title="This player enjoys the Null."></img> : '' }
+                                                    { item.name === "New Cool" ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" title="This player enjoys the Sun."></img> : '' }
+                                                    { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height="20px" title="This player gets all the breaks!"></img> : '' }
+                                                    { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="20px" title="This player just can't catch a break!"></img> : '' }
+                                                    { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height="20px" title="This player plays better on larger teams."></img> : '' }
+                                                    { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height="20px" title="This player plays better on smaller teams."></img> : '' }
+                                                    { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="20px" title="This player draws a walk on three balls."></img> : '' }
+                                                    { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
+                                                    { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
+                                                    { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
+                                                    { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -307,6 +401,7 @@ function Team() {
                                                         { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
                                                         { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                         { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
+                                                        { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
                 
                                                         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                         { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -324,6 +419,52 @@ function Team() {
                                                         { item.name === "Wired" ? <img src="https://i.imgur.com/he4j9B0.png" height="20px" title="This player is wired!"></img> : '' }
                                                         { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height="20px" title="This player is tired..."></img> : '' }
                                                         { item.name === "Team Pillar" ? <img src="https://i.imgur.com/GXCcMj0.png" height="20px" title="This player is a team pillar! They are immune!"></img> : '' }
+                                                    </>
+                                                )
+                                            }) : ''}
+                                            {playerHiddenData != false ? item.item.modifiers.map( (item) => {
+                                                return (
+                                                    <> 
+                                                    { item.name === "Visitor" ? <img src="https://i.imgur.com/ZjehUbe.png" height="20px" title="This player is a visitor from a far off land."></img> : '' }
+                                                    { item.name === "Hlockey" ? <img src="https://i.imgur.com/kUcBFL9.png" height="20px" title="This player plays in Hlockey. This player has improved Assault."></img> : '' }
+                                                    { item.name === "TerrorBall" ? <img src="https://i.imgur.com/iRVkDQU.png" height="20px" title="This player plays in Terror Ball. This player has improved Return Of The Killer Tomatoes 2."></img> : '' }
+                                                    { item.name === "NarrativeLeague" ? <img src="https://i.imgur.com/UOktOHC.png" height="20px" title="This player plays for the Narrative League. Things will happen to this player."></img> : '' }
+                                                    { item.name === "AltLeague" ? <img src="https://i.imgur.com/MJlBNU0.png" height="20px" title="This player plays for the Alternate League. This player has done this before."></img> : '' }
+                                                    { item.name === "BlittleLeague" ? <img src="https://i.imgur.com/keUYQ24.png" height="20px" title="This player plays for the Blittle League. This player is still growing."></img> : '' }
+                                                    
+                                                    { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height="20px" title="This player is having a great season."></img> : '' }
+                                                    { item.name === "Icon" ? <img src="https://i.imgur.com/qbFbglH.png" height="20px" title="This player is an icon. Doubled favorite payouts!"></img> : '' }
+                                                    { item.name === "Icon+" ? <img src="https://i.imgur.com/9jU25eY.png" height="20px" title="This player is an icon+. Tripled favorite payouts!"></img> : '' }
+                                                    { item.name === "Minimized" ? <img src="https://i.imgur.com/ZAxrqiz.png" height="20px" title="This player was minimized to zero."></img> : '' }
+            
+                                                    { item.name === "Old School" ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" title="This player enjoys the Null."></img> : '' }
+                                                    { item.name === "New Cool" ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" title="This player enjoys the Sun."></img> : '' }
+                                                    { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height="20px" title="This player gets all the breaks!"></img> : '' }
+                                                    { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height="20px" title="This player just can't catch a break!"></img> : '' }
+                                                    { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height="20px" title="This player plays better on larger teams."></img> : '' }
+                                                    { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height="20px" title="This player plays better on smaller teams."></img> : '' }
+                                                    { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height="20px" title="This player draws a walk on three balls."></img> : '' }
+                                                    { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height="20px" title="This player scores twice."></img> : '' }
+                                                    { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
+                                                    { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
+                                                    { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+            
+                                                    { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
+                                                    { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
+                                                    { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
+            
+                                                    { item.name === "Lost" ? <img src="https://i.imgur.com/2Vyez52.png" height="20px" title="This player is lost..."></img> : '' }
+                                                    { item.name === "Found" ? <img src="https://i.imgur.com/FJ30bdi.png" height="20px" title="This player was found!"></img> : '' }
+                                                    { item.name === "Erased" ? <img src="https://i.imgur.com/4mvBVph.png" height="20px" title="This player was erased..."></img> : '' }
+                                                    { item.name === "Data Leak" ? <img src="https://i.imgur.com/dLWhUNY.png" height="20px" title="This player is leaking!"></img> : '' }
+                                                    { item.name === "Data Breach" ? <img src="https://i.imgur.com/ROhdf21.png" height="20px" title="This player is breaking!"></img> : '' }
+                                                    { item.name === "Patched" ? <img src="https://i.imgur.com/ar8A2xZ.png" height="20px" title="This player has been patched."></img> : '' }
+                                                    { item.name === "HeatingUp" ? <img src="https://i.imgur.com/wWxWKyI.png" height="20px" title="This player is heating up..."></img> : '' }
+                                                    { item.name === "On Fire" ? <img src="https://i.imgur.com/N1MvyL6.png" height="20px" title="This player is on fire!"></img> : '' }
+                                                    { item.name === "Burnt Out" ? <img src="https://i.imgur.com/qmw52U7.png" height="20px" title="This player is burnt out..."></img> : '' }
+                                                    { item.name === "Wired" ? <img src="https://i.imgur.com/he4j9B0.png" height="20px" title="This player is wired!"></img> : '' }
+                                                    { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height="20px" title="This player is tired..."></img> : '' }
+                                                    { item.name === "Team Pillar" ? <img src="https://i.imgur.com/GXCcMj0.png" height="20px" title="This player is a team pillar! They are immune!"></img> : '' }
                                                     </>
                                                 )
                                             }) : ''}
