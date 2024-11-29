@@ -177,6 +177,7 @@ function Team() {
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                     { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+                                                    { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -223,6 +224,7 @@ function Team() {
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                     { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+                                                    { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -289,6 +291,7 @@ function Team() {
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                     { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+                                                    { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -335,6 +338,7 @@ function Team() {
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                     { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+                                                    { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -402,6 +406,7 @@ function Team() {
                                                         { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                         { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
                                                         { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+                                                        { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
                 
                                                         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                         { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
@@ -448,6 +453,7 @@ function Team() {
                                                     { item.name === "Siren" ? <img src="https://i.imgur.com/3CsxZ4f.png" height="20px" title="This player has an alluring voice."></img> : '' }
                                                     { item.name === "Vampiric" ? <img src="https://i.imgur.com/Pn1UoAL.png" height="20px" title="This player is vampiric."></img> : '' }
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
+                                                    { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
