@@ -162,6 +162,11 @@ p {
   padding: 0rem 2rem;
 }
 
+label {
+  color: white;
+  padding: 0rem 2rem;
+}
+
 h1 {
   color: white;
   text-align: center;
@@ -173,6 +178,7 @@ h2 {
 
 h3 {
   color: white;
+  text-align: center;
 }
 
 a {
@@ -360,4 +366,29 @@ a {
 
 .yellow-text {
   color: #fdff7d;
+}
+
+.offscreen {
+  position: absolute;
+  left: -1000%;
+}
+
+.registry form {
+  display: table;
+}
+
+.registry form p {
+  display: table-row;
+}
+
+.registry form label {
+  display: table-cell;
+}
+
+.registry form input {
+  display: table-cell;
+}
+
+.registry form button {
+  margin-left: 30px;
 }
