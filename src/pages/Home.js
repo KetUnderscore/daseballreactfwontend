@@ -99,10 +99,7 @@ function Home() {
             <br/>
             <h2>API HERE</h2>
             <h3 className="center">For code wizards and nerds only.</h3>
-            <a href="https://daseballapi.adaptable.app/games/"><p>/games/</p></a>
-            <p>Options: /games/seasonNumber/dayNumber</p>
-            <a href="https://daseballapi.adaptable.app/playerData/"><p>/playerData/</p></a>
-            <p>Options: /playerData/name/season</p>
+            <a href="https://daseballapi.adaptable.app/"><p>API Home</p></a>
             <br/>
             <br/>
         </div>
