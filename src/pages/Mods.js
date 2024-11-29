@@ -236,6 +236,12 @@ function Mods() {
                     <p className="center">Tired players scores count less.
                     <br/>Removed if hit by a coffee bean.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Team Pillar</h3>
+                    <img src="https://i.imgur.com/GXCcMj0.png" height="50px" title="This player is a team pillar! They are immune!"></img>
+                    <p className="center">This player is a pillar of their team.
+                    <br/>This player is immune to most things.</p>
+                </div>
             </div>
 
             <h3 className="center">Seasonal Mods</h3>
