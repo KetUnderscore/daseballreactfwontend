@@ -112,13 +112,13 @@ function Schedule() {
                         </div>
                         : 
                         <div>
-                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn-12)/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn-12)/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn-12)/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn-12)/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn-12)/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn-12)/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn-12)/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn)/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn)/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay][0+((gn)/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
                         </div>
                         }
                         
@@ -159,13 +159,13 @@ function Schedule() {
                         </div>
                         : 
                         <div>
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn-24)/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn-24)/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn-24)/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn-24)/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn-24)/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn-24)/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn-24)/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
+                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
                         </div>
                         }
                         
