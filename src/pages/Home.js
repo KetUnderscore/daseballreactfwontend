@@ -32,7 +32,7 @@ function Home() {
     const Events = () => {
         let rows = []
         if (seasonData) {
-            for (let i = seasonData[0].seasonDay-9; i < seasonData[0].seasonDay; i++) {
+            for (let i = Math.max(seasonData[0].seasonDay-9, 0); i < seasonData[0].seasonDay; i++) {
                 let dayGames = seasonData[0].seasonEvents.filter(function (el) {
                     return el.gameDay === i
                 })
