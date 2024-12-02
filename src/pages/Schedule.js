@@ -189,7 +189,7 @@ function Schedule() {
                         <h1>Season {currentActiveSeason} Schedule</h1>
                         { dayOneSched.length > 0 ?
                         <div>
-                            <h2>Day {seasonData[0].seasonDay}</h2>
+                            <h2>Day {seasonData[0].seasonDay+1}</h2>
                             <div className='game-holder'>
 
                                 {dayOneSched.map((item, index) => (
@@ -219,7 +219,7 @@ function Schedule() {
                         }
                         { dayThreeSched.length > 1 ?
                         <div>
-                            <h2>Day {seasonData[0].seasonDay+2}</h2>
+                            <h2>Day {seasonData[0].seasonDay+3}</h2>
                             <div className='game-holder'>
                                 
                                 {dayThreeSched.map((item, index) => (
