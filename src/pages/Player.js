@@ -312,6 +312,7 @@ function Player () {
                                     </span>
                                 )}) 
                             }</h2>
+                            <h2>Prop | {playerData[0].item.property}</h2>
                             <h2>Pitching | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]) / 100)) + (Math.max(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]) % 100 > 50 ? '☆' : '') }
                                 <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5])) % 100 > 50 ? '☆' : '')}</span>
                             </h2>

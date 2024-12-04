@@ -378,7 +378,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.name }</a><span>
+                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
                                             {playerHiddenData != true ? "★".repeat(Math.max(0, Math.floor(statstotal / 400))) + (statstotal % 400 >= 200 ? '☆' : '') : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
