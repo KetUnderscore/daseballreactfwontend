@@ -179,7 +179,7 @@ function Team() {
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
                                                     { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
-                                                    { item.name === "Zodiac" ? <img src="https://imgur.com/qJlX78M" height="20px" title="This player is a zodiac player."></img> : '' }
+                                                    { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="20px" title="This player is a zodiac player."></img> : '' }
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
                                                     { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
@@ -227,7 +227,7 @@ function Team() {
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
                                                     { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
-                                                    { item.name === "Zodiac" ? <img src="https://imgur.com/qJlX78M" height="20px" title="This player is a zodiac player."></img> : '' }
+                                                    { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="20px" title="This player is a zodiac player."></img> : '' }
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
                                                     { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
@@ -295,7 +295,7 @@ function Team() {
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
                                                     { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
-                                                    { item.name === "Zodiac" ? <img src="https://imgur.com/qJlX78M" height="20px" title="This player is a zodiac player."></img> : '' }
+                                                    { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="20px" title="This player is a zodiac player."></img> : '' }
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
                                                     { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
@@ -343,7 +343,7 @@ function Team() {
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
                                                     { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
-                                                    { item.name === "Zodiac" ? <img src="https://imgur.com/qJlX78M" height="20px" title="This player is a zodiac player."></img> : '' }
+                                                    { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="20px" title="This player is a zodiac player."></img> : '' }
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
                                                     { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
@@ -412,7 +412,7 @@ function Team() {
                                                         { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
                                                         { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
                 
-                                                        { item.name === "Zodiac" ? <img src="https://imgur.com/qJlX78M" height="20px" title="This player is a zodiac player."></img> : '' }
+                                                        { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="20px" title="This player is a zodiac player."></img> : '' }
                                                         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                         { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
                                                         { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
@@ -460,7 +460,7 @@ function Team() {
                                                     { item.name === "Precognition" ? <img src="https://i.imgur.com/xCk0rVZ.png" height="20px" title="This player can see a better future."></img> : '' }
                                                     { item.name === "Trader" ? <img src="https://i.imgur.com/qIl8Jji.png" height="20px" title="This player wants to trade!"></img> : '' }
             
-                                                    { item.name === "Zodiac" ? <img src="https://imgur.com/qJlX78M" height="20px" title="This player is a zodiac player."></img> : '' }
+                                                    { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="20px" title="This player is a zodiac player."></img> : '' }
                                                     { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height="20px" title="This player plays better for every player on base."></img> : '' }
                                                     { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height="20px" title="This player plays better later in the game."></img> : '' }
                                                     { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height="20px" title="This player always tries to steal if able."></img> : '' }
