@@ -264,7 +264,7 @@ function Player () {
                         <div className="player-box">
                             <h1>ITEM</h1>
                             <h2>Name | {playerData[0].item.name}</h2>
-                            <h3>{playerData[0].item.description}</h3>
+                            <h3 class name="centered">{playerData[0].item.description}</h3>
                             <h2>Mods | {  playerData[0]?.item.modifiers.map( (item) => {
                                 return (
                                     <span> 
@@ -316,14 +316,14 @@ function Player () {
                             <h2>Pitching | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]) / 100)) + (Math.max(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]) % 100 > 50 ? '☆' : '') }
                                 <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5])) % 100 > 50 ? '☆' : '')}</span>
                             </h2>
-                            <h2>Batting | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]) / 100)) + (Math.max(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]) % 100 > 50 ? '☆' : '') }
-                                <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2])) % 100 > 50 ? '☆' : '')}</span>
+                            <h2>Batting | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]) / 100)) + (Math.max(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]) % 100 >= 50 ? '☆' : '') }
+                                <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2])) % 100 >= 50 ? '☆' : '')}</span>
                             </h2>
-                            <h2>Running | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]) / 100)) + (Math.max(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]) % 100 > 50 ? '☆' : '') }
-                                <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8])) % 100 > 50 ? '☆' : '')}</span>
+                            <h2>Running | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]) / 100)) + (Math.max(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]) % 100 >= 50 ? '☆' : '') }
+                                <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8])) % 100 >= 50 ? '☆' : '')}</span>
                             </h2>
-                            <h2>Fielding | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]) / 100)) + (Math.max(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]) % 100 > 50 ? '☆' : '') }
-                                <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11])) % 100 > 50 ? '☆' : '')}</span>
+                            <h2>Fielding | { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]) / 100)) + (Math.max(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]) % 100 >= 50 ? '☆' : '') }
+                                <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11])) % 100 >= 50 ? '☆' : '')}</span>
                             </h2>
                         </div>
                         : 
