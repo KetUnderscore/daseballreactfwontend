@@ -95,8 +95,8 @@ function Games() {
                                                         <span>🔻 of {item.inningNumber}</span>
                                                     }
                                                 </h3>
-                                                <h3 className='split-para-old' style={{color: "#"+item.homeTeam.teamColor}}>{item.homeTeam.teamEmoji}<a href={'https://daseball.netlify.app/team/'+item.homeTeam.teamName}>{item.homeTeam.teamName}</a> <span style={{color: 'white'}}>{item.homeScore}</span></h3>
-                                                <h3 className='split-para-old' style={{color: "#"+item.awayTeam.teamColor}}>{item.awayTeam.teamEmoji}<a href={'https://daseball.netlify.app/team/'+item.awayTeam.teamName}>{item.awayTeam.teamName}</a> <span style={{color: 'white'}}>{item.awayScore}</span></h3>
+                                                <h3 className='split-para-old'>{item.homeTeam.teamEmoji}<a style={{color: "#"+item.homeTeam.teamColor}} href={'https://daseball.netlify.app/team/'+item.homeTeam.teamName}>{item.homeTeam.teamName}</a> <span style={{color: 'white'}}>{item.homeScore}</span></h3>
+                                                <h3 className='split-para-old'>{item.awayTeam.teamEmoji}<a style={{color: "#"+item.awayTeam.teamColor}} href={'https://daseball.netlify.app/team/'+item.awayTeam.teamName}>{item.awayTeam.teamName}</a> <span style={{color: 'white'}}>{item.awayScore}</span></h3>
                                             </div>
                                             <div className='game-panel'>
                                                 <div className='inline'>

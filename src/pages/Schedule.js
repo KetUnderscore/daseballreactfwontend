@@ -48,9 +48,9 @@ function Schedule() {
                 let team2 = seasonData[0].scheduleTeamInfo[0][gn+1-teamSlotB]
                 setDayOneSched(dayOneSched => [...dayOneSched, 
                 <div className='game-panel' key={gn}>
-                    <h2><span style={{color: "#"+team1.teamColor}}>{team1.teamEmoji}<a href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                    <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
                         VS <br/>
-                        <span style={{color: "#"+team2.teamColor}}>{team2.teamEmoji}<a href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
+                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
                     <h2>
                     {seasonData[0].seasonDay >= 46 ?
                     <div>
@@ -96,9 +96,9 @@ function Schedule() {
                     let team2 = seasonData[0].scheduleTeamInfo[1][gn+1-teamSlotB]
                     setDayTwoSched(dayTwoSched => [...dayTwoSched, (
                     <div className='game-panel'>
-                        <h2><span style={{color: "#"+team1.teamColor}}>{team1.teamEmoji}<a href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                        <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
                         VS <br/>
-                        <span style={{color: "#"+team2.teamColor}}>{team2.teamEmoji}<a href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
+                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
                         <h2>
                         {seasonData[0].seasonDay >= 46 ?
                         <div>
@@ -143,9 +143,9 @@ function Schedule() {
                     let team2 = seasonData[0].scheduleTeamInfo[2][gn+1-teamSlotB]
                     setDayThreeSched(dayThreeSched => [...dayThreeSched, (
                     <div className='game-panel'>
-                        <h2><span style={{color: "#"+team1.teamColor}}>{team1.teamEmoji}<a href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                        <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
                         VS <br/>
-                        <span style={{color: "#"+team2.teamColor}}>{team2.teamEmoji}<a href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
+                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
                         <h2>
                         {seasonData[0].seasonDay >= 46 ?
                         <div>
