@@ -89,6 +89,11 @@ function Mods() {
             <h3 className="center">Zodiac Mods</h3>
             <div className="mod-container">
                 <div className='mod'>
+                    <h3 className="center">Zodiac</h3>
+                    <img src="https://imgur.com/qJlX78M" height="50px" title="This player is a Zodiac player."></img>
+                    <p className="center">This player is a Zodiac player.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Shepard</h3>
                     <img src="https://i.imgur.com/zm2KgpM.png" height="50px" title="This player plays better for every player on base."></img>
                     <p className="center">Shepards play better for every player on base.</p>
