@@ -264,7 +264,7 @@ function Player () {
                         <div className="player-box">
                             <h1>ITEM</h1>
                             <h2>Name | {playerData[0].item.name}</h2>
-                            <h3 class name="center">{playerData[0].item.description}</h3>
+                            <h3 className="center">{playerData[0].item.description}</h3>
                             <h2>Mods | {  playerData[0]?.item.modifiers.map( (item) => {
                                 return (
                                     <span> 
