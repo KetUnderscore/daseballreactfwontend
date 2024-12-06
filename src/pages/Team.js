@@ -293,6 +293,7 @@ function modify(item, type) {
         { item.name === "Lightweight" ? <img src="https://i.imgur.com/uel3Avj.png" height={heightText} title="This player likes to travel light."></img> : '' }
         { item.name === "Tertiary" ? <img src="https://i.imgur.com/FheImZD.png" height={heightText} title="This player has an affinity for triples."></img> : '' }
         { item.name === "Mindful" ? <img src="https://i.imgur.com/ZSlUnbk.png" height={heightText} title="This player has a mind for others."></img> : '' }
+        { item.name === "WellTraveled" ? <img src="https://i.imgur.com/zCTp2Lx.png" height={heightText} title="This player has a heart for adventure."></img> : '' }
 
         { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }
@@ -311,6 +312,7 @@ function modify(item, type) {
         { item.name === "Wired" ? <img src="https://i.imgur.com/he4j9B0.png" height={heightText} title="This player is wired!"></img> : '' }
         { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height={heightText} title="This player is tired..."></img> : '' }
         { item.name === "Team Pillar" ? <img src="https://i.imgur.com/GXCcMj0.png" height={heightText} title="This player is a team pillar! They are immune!"></img> : '' }
+        { item.name === "Welled" ? <img src="https://i.imgur.com/DqqNyTQ.png" height={heightText} title="This player is stuck in a well and unable to play."></img> : '' }
     </>
     )
 }
