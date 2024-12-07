@@ -42,7 +42,7 @@ function Schedule() {
             let teamLength = 12
             let teamSlotA = 0
             let teamSlotB = 0
-            if (seasonData[0].seasonDay >= 46) {if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}}
+            if (seasonData[0].seasonDay >= 45) {if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45].length === 1) {teamLength = 2} else {teamLength = 4}}
             for (let gn = 0; gn < teamLength; gn += 2) {
                 let team1 = seasonData[0].scheduleTeamInfo[0][gn-teamSlotA]
                 let team2 = seasonData[0].scheduleTeamInfo[0][gn+1-teamSlotB]
@@ -52,16 +52,16 @@ function Schedule() {
                         VS <br/>
                         <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
                     <h2>
-                    {seasonData[0].seasonDay >= 46 ?
+                    {seasonData[0].seasonDay >= 45 ?
                     <div>
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46][0+(gn/2)] === 5 ? <img src="https://i.imgur.com/NBMbLYO.png" height="20px" className="weather" title="Skipping" alt='Skipping'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
+                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 5 ? <img src="https://i.imgur.com/NBMbLYO.png" height="20px" className="weather" title="Skipping" alt='Skipping'></img> : ''}
                     </div>
                     : 
                     <div>
@@ -86,8 +86,8 @@ function Schedule() {
                 let teamLength = 12
                 let teamSlotA = 0
                 let teamSlotB = 0
-                if (seasonData[0].seasonDay >= 46) {
-                    if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}
+                if (seasonData[0].seasonDay >= 45) {
+                    if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45].length === 1) {teamLength = 2} else {teamLength = 4}
                     teamSlotA = 0
                     teamSlotB = -1
                 }
@@ -100,7 +100,7 @@ function Schedule() {
                         VS <br/>
                         <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
                         <h2>
-                        {seasonData[0].seasonDay >= 46 ?
+                        {seasonData[0].seasonDay >= 45 ?
                         <div>
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
@@ -133,8 +133,8 @@ function Schedule() {
                 let teamLength = 12
                 let teamSlotA = 0
                 let teamSlotB = 0
-                if (seasonData[0].seasonDay >= 46) {
-                    if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-46].length === 1) {teamLength = 2} else {teamLength = 4}
+                if (seasonData[0].seasonDay >= 45) {
+                    if (seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45].length === 1) {teamLength = 2} else {teamLength = 4}
                     teamSlotA = 0
                     teamSlotB = -1
                 }
@@ -147,7 +147,7 @@ function Schedule() {
                         VS <br/>
                         <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
                         <h2>
-                        {seasonData[0].seasonDay >= 46 ?
+                        {seasonData[0].seasonDay >= 45 ?
                         <div>
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
