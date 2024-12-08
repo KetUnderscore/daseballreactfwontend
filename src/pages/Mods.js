@@ -172,6 +172,12 @@ function Mods() {
                     <img src="https://i.imgur.com/Pn1UoAL.png" height="50px" title="This player is vampiric."></img>
                     <p className="center">Vampires may siphon stats off opposing players.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Team Pillar</h3>
+                    <img src="https://i.imgur.com/GXCcMj0.png" height="50px" title="This player is a team pillar! They are immune!"></img>
+                    <p className="center">This player is a pillar of their team.
+                    <br/>This player is immune to most things.</p>
+                </div>
             </div>
 
             <h3 className="center">Effect Mods</h3>
@@ -196,8 +202,8 @@ function Mods() {
                 <div className='mod'>
                     <h3 className="center">On Fire</h3>
                     <img src="https://i.imgur.com/N1MvyL6.png" height="50px" title="This player is on fire!"></img>
-                    <p className="center">Players on fire will hit a homerun next at bat.
-                    <br/>This player will burn out after hitting a homerun.</p>
+                    <p className="center">Players on fire will get a hit next at bat.
+                    <br/>This player will burn out after getting a hit.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Burnt Out</h3>
@@ -240,12 +246,6 @@ function Mods() {
                     <img src="https://i.imgur.com/OFRRbPE.png" height="50px" title="This player is tired..."></img>
                     <p className="center">Tired players scores count less.
                     <br/>Removed if hit by a coffee bean.</p>
-                </div>
-                <div className='mod'>
-                    <h3 className="center">Team Pillar</h3>
-                    <img src="https://i.imgur.com/GXCcMj0.png" height="50px" title="This player is a team pillar! They are immune!"></img>
-                    <p className="center">This player is a pillar of their team.
-                    <br/>This player is immune to most things.</p>
                 </div>
             </div>
 
