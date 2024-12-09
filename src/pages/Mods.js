@@ -193,7 +193,8 @@ function Mods() {
                     <h3 className="center">Gentleman</h3>
                     <img src="https://i.imgur.com/B93ztw2.png" height="50px" title="This player is a gentleman thief."></img>
                     <p className="center">This player is a gentleman thief.
-                    <br/>When this player steals, they will take 0.5 runs from the opposing team.</p>
+                    <br/>When this player steals, they will take 0.5 runs from the opposing team.
+                    <br/>This player will only take points on a propper steal.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Lightweight</h3>
