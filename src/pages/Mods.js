@@ -178,6 +178,45 @@ function Mods() {
                     <p className="center">This player is a pillar of their team.
                     <br/>This player is immune to most things.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Trader</h3>
+                    <img src="https://i.imgur.com/qIl8Jji.png" height="50px" title="This player wants to trade!"></img>
+                    <p className="center">This player has a chance to trade items with opposing players.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Precognition</h3>
+                    <img src="https://i.imgur.com/xCk0rVZ.png" height="50px" title="This player can see a better future."></img>
+                    <p className="center">This player can see the future!
+                    <br/>This player can turn fouls into balls when there are two strikes in the count.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Gentleman</h3>
+                    <img src="https://i.imgur.com/B93ztw2.png" height="50px" title="This player is a gentleman thief."></img>
+                    <p className="center">This player is a gentleman thief.
+                    <br/>When this player steals, they will take 0.5 runs from the opposing team.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Lightweight</h3>
+                    <img src="https://i.imgur.com/uel3Avj.png" height="50px" title="This player likes to travel light."></img>
+                    <p className="center">This player travels light.
+                    <br/>This player plays better without an item.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Tertiary</h3>
+                    <img src="https://i.imgur.com/FheImZD.png" height="50px" title="This player has an affinity for triples."></img>
+                    <p className="center">This player hits triples more often.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Well Traveled</h3>
+                    <img src="https://i.imgur.com/zCTp2Lx.png" height="50px" title="This player has a heart for adventure."></img>
+                    <p className="center">This player plays better away.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Mindful</h3>
+                    <img src="https://i.imgur.com/ZSlUnbk.png" height="50px" title="This player has a mind for others."></img>
+                    <p className="center">This player can read minds.
+                    <br/>This player has a chance to copy an opposing players mods.</p>
+                </div>
             </div>
 
             <h3 className="center">Effect Mods</h3>
@@ -246,6 +285,11 @@ function Mods() {
                     <img src="https://i.imgur.com/OFRRbPE.png" height="50px" title="This player is tired..."></img>
                     <p className="center">Tired players scores count less.
                     <br/>Removed if hit by a coffee bean.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Welled</h3>
+                    <img src="https://i.imgur.com/DqqNyTQ.png" height="50px" title="This player is stuck in a well and unable to play."></img>
+                    <p className="center">This player is stuck in a well and unable to play.</p>
                 </div>
             </div>
 
