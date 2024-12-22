@@ -168,7 +168,7 @@ function Team() {
                                             <div className='split-para'>
                                             <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
                                             {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) - (Math.floor((item.praying + item.publicity + item.pope) / 99))))) : ''}
-                                            {playerDetailedData != false ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) - (Math.floor((item.praying + item.publicity + item.pope) / 99))))) +"(" + (Math.round(((item.praying + item.publicity + item.pope)/99)*10) / 10).toString() +")" : ''}
+                                            {playerDetailedData != false ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) - (Math.floor((item.praying + item.publicity + item.pope) / 99))))) +"(" + (Math.round(Math.floor((item.praying + item.publicity + item.pope)/99)*10) / 10).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
                                                     modify(item, 1)
@@ -201,7 +201,7 @@ function Team() {
                                             <div className='split-para'>
                                             <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
                                             {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 99)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 99))))) : ''}
-                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 297))) + (statstotal % 297 >= 148.5 ? '☆' : '') + "(" + (Math.round((statstotal/297)*10) / 10).toString() +")" : ''}
+                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 297))) + (statstotal % 297 >= 148.5 ? '☆' : '') + "(" + (Math.round(Math.floor(statstotal/297)*10) / 10).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
                                                     modify(item, 1)
@@ -234,7 +234,7 @@ function Team() {
                                             <div className='split-para'>
                                             <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
                                             {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') : ''}
-                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') + "(" + (Math.round(((statstotal)*10)/396) / 10).toString() +")" : ''}
+                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') + "(" + (Math.round(Math.floor((statstotal)/396)*10) / 10).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
                                                     modify(item, 1)
