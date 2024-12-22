@@ -119,6 +119,11 @@
   text-align: center;
 }
 
+.player h5 {
+  color: white;
+  text-align: center;
+}
+
 .season-select {
   justify-content: center;
   position: relative;
@@ -189,6 +194,16 @@ a {
   text-align: center;
 }
 
+.center-block {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.center-block button {
+  all: unset
+}
+
 .split-para {
   display: inline-block;
   max-width: 30rem;
@@ -206,7 +221,7 @@ a {
 .split-para span {
   display:block;
   float:right;
-  width: 5rem;
+  width: 7rem;
   text-align: right;
 }
 
@@ -306,6 +321,12 @@ a {
 }
 
 .mod-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mod-container input {
   display: block;
   margin-left: auto;
   margin-right: auto;

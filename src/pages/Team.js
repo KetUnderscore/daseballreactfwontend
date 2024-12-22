@@ -18,6 +18,7 @@ function Team() {
     const [pocketLoaded, setPocketLoaded] = useState(false)
     const [pocketLoading, setPocketLoading] = useState(false)
     const [playerHiddenData, setPlayerHiddenData] = useState(false)
+    const [playerDetailedData, setPlayerDetailedData] = useState(false)
 
     let progbar
     if (teamData != null) {progbar = { bgcolor: "#" + teamData[0].teamColor, completed: Math.round((teamData[0].spiritFund / 10000)* 100) }}
@@ -79,17 +80,30 @@ function Team() {
         setPocketLoaded(true)
     }
 
-    const FetchHiddenButton = () => {
+    const FetchHiddenButtons = () => {
         return (
-            <input type="image" src="https://i.imgur.com/5Qf7Ksr.png" onClick={ToggleHidden} className="hidden-button" title="Show Mods"></input>
+            <div className='center-block'>
+            <button onClick={ToggleHidden} ><img src="https://i.imgur.com/5Qf7Ksr.png" className="hidden-button" title="Show Mods"/></button>
+            <button onClick={ToggleDetailed} ><img src="https://i.imgur.com/JjKUx3p.png" className="hidden-button" title="Show Detailed Stars"/></button>
+            </div >
         )
     }
 
     const ToggleHidden = () => {
         if (playerHiddenData === false) {
+            setPlayerDetailedData(false)
             setPlayerHiddenData(true)
         } else {
             setPlayerHiddenData(false)
+        }
+    }
+
+    const ToggleDetailed = () => {
+        if (playerDetailedData === false) {
+            setPlayerHiddenData(false)
+            setPlayerDetailedData(true)
+        } else {
+            setPlayerDetailedData(false)
         }
     }
 
@@ -135,7 +149,9 @@ function Team() {
 
                         {
                             teamData != null ?
-                            <FetchHiddenButton />
+                            <>
+                                <FetchHiddenButtons />
+                            </>
                             : 
                             <>
                             </>
@@ -143,6 +159,7 @@ function Team() {
 
                         <div>
                             <h2>Pitching Rotation</h2>
+                            <h5>Pitching Stars</h5>
                             {
                                 pitchingLoaded ?
                                 pitchingData?.map( (item) => {
@@ -150,7 +167,8 @@ function Team() {
                                         <div className='player-link'>
                                             <div className='split-para'>
                                             <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
-                                            {playerHiddenData != true ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 100)) - (Math.floor((item.praying + item.publicity + item.pope) / 100))))) : ''}
+                                            {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) - (Math.floor((item.praying + item.publicity + item.pope) / 99))))) : ''}
+                                            {playerDetailedData != false ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) - (Math.floor((item.praying + item.publicity + item.pope) / 99))))) +"(" + (Math.round(((item.praying + item.publicity + item.pope)*10)/99) / 10).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
                                                     modify(item, 1)
@@ -173,14 +191,17 @@ function Team() {
                         </div>
                         <div>
                             <h2>Batting Rotation</h2>
+                            {playerDetailedData != true ? <h5>Batting Stars</h5> : <h5>Batting|Running|Fielding Stars</h5>}
                             {
                                 battingLoaded ?
                                 battingData?.map( (item) => {
+                                    let statstotal = item.battery + item.assault + item.resistingArrest + item.hammer + item.stalin + item.sickle + item.clooning + item.throwing + item.batman
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
                                             <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
-                                            {playerHiddenData != true ? "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 100)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 100))))) : ''}
+                                            {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 100)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 100))))) : ''}
+                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 297))) + (statstotal % 297 >= 148 ? '☆' : '') + "(" + (Math.round(((statstotal)*10)/297) / 10).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
                                                     modify(item, 1)
@@ -203,6 +224,7 @@ function Team() {
                         </div>
                         <div>
                             <h2>Pocket Rotation</h2>
+                            <h5>Total Stars</h5>
                             {
                                 pocketLoaded ?
                                 pocketData?.map( (item) => {
@@ -211,7 +233,8 @@ function Team() {
                                         <div className='player-link'>
                                             <div className='split-para'>
                                             <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
-                                            {playerHiddenData != true ? "★".repeat(Math.max(0, Math.floor(statstotal / 400))) + (statstotal % 400 >= 200 ? '☆' : '') : ''}
+                                            {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') : ''}
+                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') + "(" + (Math.round(((statstotal)*10)/396) / 10).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
                                                     modify(item, 1)
