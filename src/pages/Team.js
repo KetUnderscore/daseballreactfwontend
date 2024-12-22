@@ -200,8 +200,8 @@ function Team() {
                                         <div className='player-link'>
                                             <div className='split-para'>
                                             <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
-                                            {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 100)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 100)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 100))))) : ''}
-                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 297))) + (statstotal % 297 >= 148 ? '☆' : '') + "(" + (Math.round(((statstotal)*10)/297) / 10).toString() +")" : ''}
+                                            {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 99)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 99))))) : ''}
+                                            {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 297))) + (statstotal % 297 >= 148 ? '☆' : '') + "(" + (Math.round((statstotal/297)*10) / 10).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
                                                 return (
                                                     modify(item, 1)
