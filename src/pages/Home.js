@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+const { connectString } = require('../config.json')
 
 function Home() {
     const params = useParams()
@@ -22,7 +23,7 @@ function Home() {
     }
 
     const fetchSeason = async () => {
-        await fetch('https://daseballapi.adaptable.app/season/'+seasonNumber)
+        await fetch(connectString + 'season/'+seasonNumber)
         .then(res => res.json())
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
@@ -63,9 +64,12 @@ function Home() {
                         seasonData ?
                         rows.toReversed().map( (item) => {
                             return (
+                                item.length >= 1?
                                 <div className='mod' key={""+item.gameDay+item.gameNum}>
                                     <p>{item}</p>
                                 </div>
+                                :
+                                <></>
                             )
                         })
                         :

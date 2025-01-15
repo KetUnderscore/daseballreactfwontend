@@ -1,3 +1,4 @@
 {
-    "currentActiveSeason": 6
+    "currentActiveSeason": 6,
+    "connectString": "'https://daseball.netlify.app"
 }
