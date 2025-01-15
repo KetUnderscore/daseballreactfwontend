@@ -16,6 +16,7 @@ function Home() {
             setparamsData(seasonNumber)
         }
         fetchSeasonData()
+        console.log(seasonData)
     })
 
     const fetchSeasonData = async () => {
@@ -63,14 +64,13 @@ function Home() {
                     {
                         seasonData ?
                         rows.toReversed().map( (item) => {
+                            console.log(item)
+                            if (item.length >= 1) {
                             return (
-                                item.length >= 1?
                                 <div className='mod' key={""+item.gameDay+item.gameNum}>
                                     <p>{item}</p>
                                 </div>
-                                :
-                                <></>
-                            )
+                            )} else { return(<></>)}
                         })
                         :
                         <></>
