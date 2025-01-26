@@ -412,3 +412,8 @@ a {
 .registry form button {
   margin-left: 30px;
 }
+
+.green-background {
+  background-color: green;
+  border-radius: .5rem .5rem .5rem .5rem;
+}
