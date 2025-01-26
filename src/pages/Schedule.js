@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-const { currentActiveSeason } = require('../config.json')
+import { useForm } from "react-hook-form"
+const { currentActiveSeason, connectString } = require('../config.json')
 
 function Schedule() {
     const params = useParams()
@@ -16,6 +17,9 @@ function Schedule() {
     const [dayTwoSched, setDayTwoSched] = useState([])
     const [dayThreeSched, setDayThreeSched] = useState([])
 
+    const [betVal, setBetVal] = useState(null)
+    const [teamVal, setTeamVal] = useState("")
+
     useEffect( () => {
         fetchGameData()
         console.log(seasonData)
@@ -27,13 +31,26 @@ function Schedule() {
     }
 
     const fetchSeason = async () => {
-        await fetch('https://daseballapi.adaptable.app/seasonSchedule/'+currentActiveSeason)
+        await fetch(connectString + 'seasonSchedule')
         .then(res => res.json())
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
         .catch(err => console.log(err))
-        await delay(3000);
+        await delay(10000);
         setSeasonLoaded(false)
+    }
+     
+    const inputHandler = (x) => {
+        if (x !== betVal) {
+            setBetVal(parseInt(x))
+            setSeasonLoaded(false)
+        }
+    };
+
+    const handleClick = (team, day, num) => {
+        setTeamVal(team)
+        console.log(betVal)
+        alert(`${betVal} ${team} ${day} ${num}`)
     }
 
     const loadDays = async () => {
@@ -48,9 +65,11 @@ function Schedule() {
                 let team2 = seasonData[0].scheduleTeamInfo[0][gn+1-teamSlotB]
                 setDayOneSched(dayOneSched => [...dayOneSched, 
                 <div className='game-panel' key={gn}>
-                    <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
-                        VS <br/>
-                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
+                    <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                    <a style={{color: "#"+team1.teamColor}} href={'/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
+                    VS <br/>
+                    <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'/team/'+team2.teamName}>{team2.teamName}</a></span><br/>
+                    <a style={{color: "#"+team2.teamColor}} href={'/player/'+team2.players.name}>{team2.players.name}</a><br/></h2>
                     <h2>
                     {seasonData[0].seasonDay >= 45 ?
                     <div>
@@ -75,10 +94,14 @@ function Schedule() {
                         { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 5 ? <img src="https://i.imgur.com/NBMbLYO.png" height="20px" className="weather" title="Skipping" alt='Skipping'></img> : ''}
                     </div>
                     }
-                    
-                    <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span></h2>
-                    <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
-                        VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
+                        
+                    <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span>
+                    <br/>
+                    <form>
+                        <button type="submit" onClick={() => {handleClick(team1.teamName, seasonData[0].seasonDay+1, gn/2)}} style={{backgroundColor: "#"+team1.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team1.teamEmoji}</button>{" "}
+                        <button type="submit" onClick={() => {handleClick(team2.teamName, seasonData[0].seasonDay+1, gn/2)}} style={{backgroundColor: "#"+team2.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team2.teamEmoji}</button>
+                    </form>
+                    </h2>
                 </div>
                 ])
             }
@@ -96,9 +119,11 @@ function Schedule() {
                     let team2 = seasonData[0].scheduleTeamInfo[1][gn+1-teamSlotB]
                     setDayTwoSched(dayTwoSched => [...dayTwoSched, (
                     <div className='game-panel'>
-                        <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                        <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                        <a style={{color: "#"+team1.teamColor}} href={'/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
                         VS <br/>
-                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
+                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'/team/'+team2.teamName}>{team2.teamName}</a></span><br/>
+                        <a style={{color: "#"+team2.teamColor}} href={'/player/'+team2.players.name}>{team2.players.name}</a><br/></h2>
                         <h2>
                         {seasonData[0].seasonDay >= 45 ?
                         <div>
@@ -122,9 +147,10 @@ function Schedule() {
                         </div>
                         }
                         
-                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span></h2>
-                        <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
-                        VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
+                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span>
+                        <br/>
+                        <button style={{backgroundColor: "#"+team1.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team1.teamEmoji}</button>{" "}
+                        <button style={{backgroundColor: "#"+team2.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team2.teamEmoji}</button></h2>
                     </div>
                     )])
                 }
@@ -143,9 +169,11 @@ function Schedule() {
                     let team2 = seasonData[0].scheduleTeamInfo[2][gn+1-teamSlotB]
                     setDayThreeSched(dayThreeSched => [...dayThreeSched, (
                     <div className='game-panel'>
-                        <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'https://daseball.netlify.app/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                        <h2><span>{team1.teamEmoji}<a style={{color: "#"+team1.teamColor}} href={'/team/'+team1.teamName}>{team1.teamName}</a></span> <br/>
+                        <a style={{color: "#"+team1.teamColor}} href={'/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
                         VS <br/>
-                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'https://daseball.netlify.app/team/'+team2.teamName}>{team2.teamName}</a></span></h2>
+                        <span>{team2.teamEmoji}<a style={{color: "#"+team2.teamColor}} href={'/team/'+team2.teamName}>{team2.teamName}</a></span><br/>
+                        <a style={{color: "#"+team2.teamColor}} href={'/player/'+team2.players.name}>{team2.players.name}</a><br/></h2>
                         <h2>
                         {seasonData[0].seasonDay >= 45 ?
                         <div>
@@ -169,9 +197,10 @@ function Schedule() {
                         </div>
                         }
                         
-                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span></h2>
-                        <h2>{team1.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team1.players.name}>{team1.players.name}</a> <br/> 
-                        VS <br/> {team2.teamEmoji}<a href={'https://daseball.netlify.app/player/'+team2.players.name}>{team2.players.name}</a></h2>
+                        <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span>
+                        <br/>
+                        <button style={{backgroundColor: "#"+team1.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team1.teamEmoji}</button>{" "}
+                        <button style={{backgroundColor: "#"+team2.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team2.teamEmoji}</button></h2>
                     </div>
                     )])
                 }
@@ -187,6 +216,12 @@ function Schedule() {
                     seasonData != null && daysLoaded ?
                     <div className="player center">
                         <h1>Season {currentActiveSeason} Schedule</h1>
+                        <h1 style={{color: "red"}}>BETTING NOT WORKING SORRY</h1>
+                        <form>
+                            <input type="text" name="name"
+                            value={betVal}
+                            onChange={(e) => inputHandler(e.target.value)} placeholder='Bet Value' />
+                        </form>
                         { dayOneSched.length > 0 ?
                         <div>
                             <h2>Day {seasonData[0].seasonDay+1}</h2>
