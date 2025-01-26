@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-const { currentActiveSeason } = require('../config.json')
+const { currentActiveSeason, connectString } = require('../config.json')
 
 function Games() {
     const [seasonData, setSeasonData] = useState(null)
@@ -23,7 +23,7 @@ function Games() {
     }
 
     const fetchSeason = async () => {
-        await fetch('https://daseballapi.adaptable.app/season/'+currentActiveSeason)
+        await fetch(connectString + 'season/'+currentActiveSeason)
         .then(res => res.json())
         .then(data => setSeasonData(data))
         .then(setSeasonLoaded(true))
@@ -34,7 +34,7 @@ function Games() {
 
     const fetchGamesData = async () => {
         setgameLoading(true)
-        await fetch('https://daseballapi.adaptable.app/games/'+seasonData[0].seasonNumber+'/'+seasonData[0].seasonDay)
+        await fetch(connectString + 'games/'+seasonData[0].seasonNumber+'/'+seasonData[0].seasonDay)
         .then(res => res.json())
         .then(data => setgameData(data))
         .catch(err => console.log(err))
@@ -89,14 +89,17 @@ function Games() {
                                                         (item.homeScore > item.awayScore && item.inningNumber > 8 && item.topOfInning === false) ? <img src="https://i.imgur.com/PVobD6N.png" height="30px" class="shame" title="Shame" alt='Shame'></img> : ''
                                                     }
                                                     {
-                                                        (item.topOfInning) ?
-                                                        <span>🔺 of {item.inningNumber}</span>
+                                                        (item.gameOver) ?
+                                                        <span className='' style={{color: "black", backgroundColor: "red", borderRadius: ".5rem .5rem .5rem .5rem"}}>&nbsp;🔻 of {item.inningNumber} &nbsp;</span>
                                                         :
-                                                        <span>🔻 of {item.inningNumber}</span>
+                                                        (item.topOfInning) ?
+                                                        <span className='' style={{color: "black", backgroundColor: "#"+item.awayTeam.teamColor, borderRadius: ".5rem .5rem .5rem .5rem"}}>&nbsp;🔺 of {item.inningNumber} &nbsp;</span>
+                                                        :
+                                                        <span className='' style={{color: "black", backgroundColor: "#"+item.homeTeam.teamColor, borderRadius: ".5rem .5rem .5rem .5rem"}}>&nbsp;🔻 of {item.inningNumber} &nbsp;</span>
                                                     }
                                                 </h3>
-                                                <h3 className='split-para-old'>{item.homeTeam.teamEmoji}<a style={{color: "#"+item.homeTeam.teamColor}} href={'https://daseball.netlify.app/team/'+item.homeTeam.teamName}>{item.homeTeam.teamName}</a> <span style={{color: 'white'}}>{item.homeScore}</span></h3>
-                                                <h3 className='split-para-old'>{item.awayTeam.teamEmoji}<a style={{color: "#"+item.awayTeam.teamColor}} href={'https://daseball.netlify.app/team/'+item.awayTeam.teamName}>{item.awayTeam.teamName}</a> <span style={{color: 'white'}}>{item.awayScore}</span></h3>
+                                                <h3 className='split-para-old'>{item.homeTeam.teamEmoji}<a style={{color: "#"+item.homeTeam.teamColor}} href={'/team/'+item.homeTeam.teamName}>{item.homeTeam.teamName}</a> <span style={{color: 'white'}}>{item.homeScore}</span></h3>
+                                                <h3 className='split-para-old'>{item.awayTeam.teamEmoji}<a style={{color: "#"+item.awayTeam.teamColor}} href={'/team/'+item.awayTeam.teamName}>{item.awayTeam.teamName}</a> <span style={{color: 'white'}}>{item.awayScore}</span></h3>
                                             </div>
                                             <div className='game-panel'>
                                                 <div className='inline'>
@@ -124,8 +127,8 @@ function Games() {
                                                     <p>Strikes : {'🟠'.repeat(item.currentStrikes) + '🔵'.repeat(Math.max(0,(3 - item.currentStrikes)))}</p>
                                                     <p>Outs : {'🟠'.repeat(item.currentOuts) + '🔵'.repeat(Math.max(0,(3 - item.currentOuts)))}</p>
                                                 </div>
-                                                <p className='split-para-old'>Pitcher <span>{item.currentPitcher.teamEmoji}<a style={item.topOfInning ? {color: "#"+item.homeTeam.teamColor} : {color: "#"+item.awayTeam.teamColor}} href={'http://daseball.netlify.app/player/'+item.currentPitcher.name}>{item.currentPitcher.name}</a></span></p>
-                                                <p className='split-para-old'>Batter <span>{item.currentBatter.teamEmoji}<a style={item.topOfInning ? {color: "#"+item.awayTeam.teamColor} : {color: "#"+item.homeTeam.teamColor}} href={'http://daseball.netlify.app/player/'+item.currentBatter.name}>{item.currentBatter.name}</a></span></p>
+                                                <p className='split-para-old'>Pitcher <span>{item.currentPitcher.teamEmoji}<a style={item.topOfInning ? {color: "#"+item.homeTeam.teamColor} : {color: "#"+item.awayTeam.teamColor}} href={'/player/'+item.currentPitcher.name}>{item.currentPitcher.name}</a></span></p>
+                                                <p className='split-para-old'>Batter <span>{item.currentBatter.teamEmoji}<a style={item.topOfInning ? {color: "#"+item.awayTeam.teamColor} : {color: "#"+item.homeTeam.teamColor}} href={'/player/'+item.currentBatter.name}>{item.currentBatter.name}</a></span></p>
                                             </div>
                                             <div className='game-panel'>
                                                 <p>
