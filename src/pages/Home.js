@@ -8,8 +8,9 @@ function Home() {
 
     const [seasonData, setSeasonData] = useState(null)
     const [seasonLoaded, setSeasonLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(6) // Default is Season 5
-    const [paramsData, setparamsData] = useState(6)
+    const [seasonNumber, setSeasonNumber] = useState(7) // Default is Season 7
+    const [paramsData, setparamsData] = useState(7)
+    const [holdNum, setholdNum] = useState(0)
 
     useEffect( () => {
         if (seasonNumber !== paramsData) {
@@ -41,11 +42,11 @@ function Home() {
                 rows.push(
                     dayGames.map( (item) => {
                         return (
-                            <div className='mod' key={""+item.gameDay+item.gameNum}>
+                            <div className='mod'>
                                 <h2>Day {item.gameDay} Game {item.gameNum}</h2>
-                                <p>{item.events.split("\n").map(function(item, idx) {
+                                <p>{item.events.split("\n").map(function(item) {
                                         return (
-                                            <span key={idx}>
+                                            <span>
                                                 {item}
                                                 <br/>
                                             </span>
@@ -63,14 +64,16 @@ function Home() {
                 <div className="mod-container">
                     {
                         seasonData ?
-                        rows.toReversed().map( (item) => {
+                        rows.toReversed().map( (item, index) => {
+                            console.log(rows)
                             console.log(item)
                             if (item.length >= 1) {
-                            return (
-                                <div className='mod' key={""+item.gameDay+item.gameNum}>
-                                    <p>{item}</p>
-                                </div>
-                            )} else { return(<></>)}
+                                return (
+                                    <div className='mod' key={index}>
+                                        <p>{item}</p>
+                                    </div>
+                                )
+                            } else { return(<></>)}
                         })
                         :
                         <></>

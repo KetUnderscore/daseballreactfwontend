@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+const { connectString } = require('../config.json')
 
 function Teams() {
     const [teamData, setTeamData] = useState(null)
@@ -20,7 +21,7 @@ function Teams() {
     }
 
     const fetchTeams = async () => {
-        await fetch('https://daseballapi.adaptable.app/teams/')
+        await fetch(connectString + 'teams/')
         .then(res => res.json())
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))
@@ -49,7 +50,6 @@ function Teams() {
         return (
             <div className='player'>
                 {/* <h1 style={{color:'#fcc603'}}>The Boston Bee Boys are your Season 5 Champions!</h1> */}
-                { <h1 style={{color:'#fcc603'}}>The Boston Bee Boys are your Season 6 Champions!</h1> }
                 <br/>
                 <h1>Teams</h1>
                 <div className="divisions">
@@ -60,7 +60,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'https://daseball.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
+                                        <a href={'/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
@@ -75,7 +75,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'https://daseball.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
+                                        <a href={'/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
@@ -90,7 +90,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'https://daseball.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
+                                        <a href={'/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
@@ -105,7 +105,7 @@ function Teams() {
                                 return (
                                     <div className='team-link'>
                                         <div className='split-para-full'>
-                                        <a href={'https://daseball.netlify.app/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
+                                        <a href={'/team/'+item.teamName} value={item._id} key={item.teamName}><h3>{ item.teamEmoji }{ item.teamName }</h3></a><span><h3>W | { item.gamesWon+item.playoffGamesWon } L | { item.gamesLost+item.playoffGamesLost }</h3></span>
                                         </div>
                                     </div>
                                 )
