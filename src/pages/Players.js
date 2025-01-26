@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+const { connectString } = require('../config.json')
 
 function Players() {
     const [playerData, setPlayerData] = useState([])
@@ -13,13 +14,13 @@ function Players() {
     const fetchPlayers = async () => {
         if (!playersLoaded) {
             if (paramsDataName) {
-                await fetch('https://daseballapi.adaptable.app/players/'+paramsData+'/'+paramsDataName)
+                await fetch(connectString + 'players/'+paramsData+'/'+paramsDataName)
                 .then(res => res.json())
                 .then(data => setPlayerData(data))
                 .then(setPlayerLoaded(true))
                 .catch(err => console.log(err))
             } else {
-                await fetch('https://daseballapi.adaptable.app/players/'+paramsData)
+                await fetch(connectString + 'players/'+paramsData)
                 .then(res => res.json())
                 .then(data => setPlayerData(data))
                 .then(setPlayerLoaded(true))
@@ -77,7 +78,7 @@ function Players() {
                     playerData?.map( (item) => {
                         return (
                             <div className='player-link'>
-                                <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{ item.teamEmoji }{ item.name }</a>
+                                <a href={'/player/'+item.name} value={item._id} key={item.name}>{ item.teamEmoji }{ item.name }</a>
                             </div>
                         )
                     })
