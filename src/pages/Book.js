@@ -139,12 +139,12 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 11 */}
-                <div className="censored">
-                    <p>H100-P <span>███ ██████ ███ █████████ ████ ████ ███████ ██ ███ ██████</span></p>
-                    <p>H100-P <span>████████ ███████</span></p>
-                    <p>H100-P <span>██████ ██ ███ ████ ████ ██████████</span></p>
-                    <p>H100-P <span>████████ ██ ███ ███████ ████ ██████████</span></p>
-                    <p>H100-P <span>███████ ████████ ██████</span></p>
+                <div className="uncensored">
+                    <p>H100-P <span>THE SEASON 100 CHAMPIONS HAVE BEEN BLESSED BY THE STARS.</span></p>
+                    <p>H100-P <span>CONGRATS POSERS.</span></p>
+                    <p>H100-P <span>PIECES OF THE MOON WERE RECOVERED.</span></p>
+                    <p>H100-P <span>SECTIONS OF THE COUNTRY WERE RECLAIMED.</span></p>
+                    <p>H100-P <span>STADIUM GENERICA FALLS.</span></p>
                 </div>
                 <br/>
                 {/* Section 12 */}
