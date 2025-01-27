@@ -1,20 +1,33 @@
 import logo from '../assets/images/baseball.png'
 import { useState, useEffect, useContext } from 'react';
 import Context from './Context';
+import Cookies from 'js-cookie';
 
 function Header() {
-    const userData = useContext(Context)
+    let userinfo = {}
     const [open, setOpen] = useState(false);
+    const [openP, setOpenP] = useState(false);
 
     const handleOpen = () => {
       setOpen(!open);
+      setOpenP(false);
+    }
+
+    const handleOpenProf = () => {
+      setOpenP(!openP);
+      setOpen(false);
+    }
+
+    let userData = Cookies.get("userInfo")
+    if (userData?.length > 0) {
+      userData = JSON.parse(userData)
     }
 
     return (
       <nav className="nav-bar">
         <div className="titlebox">
           <a href="/" ><img src={ logo } alt="Logo" className="logo" /></a>
-          <h1 className="title">Season 6 - Preparations</h1>
+          <h1 className="title">Season 7 - Coffee Break?</h1>
         </div>
         <br/>
         <ul className='wrap-me'>
