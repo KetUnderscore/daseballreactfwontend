@@ -87,7 +87,7 @@ function Home() {
         <div className="player">
             <h1>DASEBALL</h1>
             <h2>Data League Baseball</h2>
-            <p>Daseball is a love letter to amatuer coding, Sport Simulations and the creative pursuit.
+            <p>Daseball is a love letter to <span className="bold">amatuer</span> coding, Sport Simulations and the creative pursuit.
             <br/>Navigate with the nav bar at the top of the screen.
             <br/>
             <br/><a href="https://discord.gg/UZ3TfurF4N">Discord</a>

@@ -435,3 +435,7 @@ a {
   border-radius: .5rem .5rem .5rem .5rem;
   height: max-content;
 }
+
+.bold {
+  font-weight: bold;
+}
