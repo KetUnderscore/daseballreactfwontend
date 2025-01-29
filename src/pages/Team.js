@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import ProgressBar from '../components/ProgressBar.js'
+import Cookies from 'js-cookie';
+const { connectString } = require('../config.json')
 
 function Team() {
     const params = useParams()
@@ -19,6 +21,12 @@ function Team() {
     const [pocketLoading, setPocketLoading] = useState(false)
     const [playerHiddenData, setPlayerHiddenData] = useState(false)
     const [playerDetailedData, setPlayerDetailedData] = useState(false)
+    const [seed, setSeed] = useState(1);
+        
+    let userData = Cookies.get("userInfo")
+    if (userData?.length > 0) {
+        userData = JSON.parse(userData)
+    }
 
     let progbar
     if (teamData != null) {progbar = { bgcolor: "#" + teamData[0].teamColor, completed: Math.round((teamData[0].spiritFund / 10000)* 100) }}
@@ -40,7 +48,7 @@ function Team() {
     }
 
     const fetchTeam = async () => {
-        await fetch('https://daseballapi.adaptable.app/team/'+params.teamName)
+        await fetch(connectString + 'team/'+params.teamName)
         .then(res => res.json())
         .then(data => setTeamData(data))
         .then(setTeamLoaded(true))
@@ -50,7 +58,7 @@ function Team() {
     const fetchPitchers = async () => {
         setPitchingLoading(true)
         for (let i = 0; i < teamData[0].pitchingRotation.length; i++) {
-            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].pitchingRotation[i])
+            await fetch(connectString + 'playerbyid/'+teamData[0].pitchingRotation[i])
             .then(res => res.json())
             .then(data => pitchingData.push(data[0]))
             .catch(err => console.log(err))
@@ -61,7 +69,7 @@ function Team() {
     const fetchBatters = async () => {
         setBattingLoading(true)
         for (let i = 0; i < teamData[0].battingRotation.length; i++) {
-            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].battingRotation[i])
+            await fetch(connectString + 'playerbyid/'+teamData[0].battingRotation[i])
             .then(res => res.json())
             .then(data => battingData.push(data[0]))
             .catch(err => console.log(err))
@@ -72,7 +80,7 @@ function Team() {
     const fetchPockets = async () => {
         setPocketLoading(true)
         for (let i = 0; i < teamData[0].shadowRotation.length; i++) {
-            await fetch('https://daseballapi.adaptable.app/playerbyid/'+teamData[0].shadowRotation[i])
+            await fetch(connectString + 'playerbyid/'+teamData[0].shadowRotation[i])
             .then(res => res.json())
             .then(data => pocketData.push(data[0]))
             .catch(err => console.log(err))
@@ -107,13 +115,53 @@ function Team() {
         }
     }
 
+    const FetchFavButton = () => {
+        if (userData?.favTeam === teamData[0].teamName) {
+            return (
+                <img src='https://i.imgur.com/ykhoXyC.png' height={"30px"} title="This team is your favorite!" />
+            )
+        } else {
+            return (
+                <input type="image" src='https://i.imgur.com/hGMqbba.png' onClick={FavoriteMe} height={"30px"} title="This team is not your favorite." />
+            )
+        }
+    }
+
+    const FavoriteMe = async () => {
+        if (!userData) {
+            console.log("Not signed in!")
+            return
+        } else {
+                if (userData.favPlayer === teamData[0].teamName) {
+                    console.log("Already ur fav!")
+                } else {
+                const response = await fetch(connectString + 'fav/team', {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    withCredntials: true,
+                    credentials: 'include',
+                    body: JSON.stringify({
+                        username: userData.username,
+                        team: teamData[0].teamName,
+                    }),
+                });
+                // Reset States
+                console.log(response)
+                setSeed(Math.random())
+                console.log("Faved!")
+            }
+        }
+    }
+
     const Team = () => {
         return (
             <div className='player'>
                 {
                     teamData != null ?
                     <div className="player">
-                        <h1>{ teamData[0].teamEmoji }{ teamData[0].teamName }</h1>
+                        <h1>{ teamData[0].teamEmoji }{ teamData[0].teamName }<FetchFavButton key={seed} /></h1>
                         <h1>W { teamData[0].gamesWon } / L { teamData[0].gamesLost }</h1>
                         <h1>{ "🟡".repeat(teamData[0].championshipWins) } | { "🔴".repeat(teamData[0].championshipLosses) }</h1>
                         <h2>Vibes | {   teamData[0].curVibe < -24 ? "↓↓↓↓ Devastating" :
@@ -166,7 +214,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
+                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
                                             {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) - Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))))) : ''}
                                             {playerDetailedData != false ? "★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) -  Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))))) +"(" + (Math.floor(((item.praying + item.publicity + item.pope)/99)*10) / 10).toFixed(1).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
@@ -199,7 +247,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
+                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
                                             {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 99)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 99))))) : ''}
                                             {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 297))) + (statstotal % 297 >= 148.5 ? '☆' : '') + "(" + (Math.floor((statstotal/297)*10) / 10).toFixed(1).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {
@@ -232,7 +280,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'https://daseball.netlify.app/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
+                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
                                             {playerHiddenData != true && playerDetailedData != true ? "★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') : ''}
                                             {playerDetailedData != false ? "★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') + "(" + (Math.floor(((statstotal)*10)/396) / 10).toFixed(1).toString() +")" : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {

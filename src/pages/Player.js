@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Cookies from 'js-cookie';
+const { connectString } = require('../config.json')
 
 function Player () {
     const params = useParams()
@@ -11,10 +13,16 @@ function Player () {
     const [playerLoaded, setPlayerLoaded] = useState(false)
     const [playerStatsLoaded, setPlayerStatsLoaded] = useState(false)
     const [seasonNumber, setSeasonNumber] = useState(6) // Default is Season 6
+    const [seed, setSeed] = useState(1);
     
     let favoriteSeason
     let favoritePosition
     let favoriteStar
+    
+    let userData = Cookies.get("userInfo")
+    if (userData?.length > 0) {
+        userData = JSON.parse(userData)
+    }
 
     useEffect( () => {
         fetchPlayerData()
@@ -54,11 +62,51 @@ function Player () {
         )
     }
 
+    const FetchFavButton = () => {
+        if (userData?.favPlayer === playerData[0].name) {
+            return (
+                <img src='https://i.imgur.com/ykhoXyC.png' height={"30px"} title="This player is your favorite!" />
+            )
+        } else {
+            return (
+                <input type="image" src='https://i.imgur.com/hGMqbba.png' onClick={FavoriteMe} height={"30px"} title="This player is not your favorite." />
+            )
+        }
+    }
+
     const ToggleHidden = () => {
         if (playerHiddenData === false) {
             setPlayerHiddenData(true)
         } else {
             setPlayerHiddenData(false)
+        }
+    }
+
+    const FavoriteMe = async () => {
+        if (!userData) {
+            console.log("Not signed in!")
+            return
+        } else {
+                if (userData.favPlayer === playerData[0].name) {
+                    console.log("Already ur fav!")
+                } else {
+                const response = await fetch(connectString + 'fav/player', {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    withCredntials: true,
+                    credentials: 'include',
+                    body: JSON.stringify({
+                        username: userData.username,
+                        player: playerData[0].name,
+                    }),
+                });
+                // Reset States
+                console.log(response)
+                setSeed(Math.random())
+                console.log("Faved!")
+            }
         }
     }
 
@@ -68,7 +116,7 @@ function Player () {
     }
 
     const fetchPlayer = async () => {
-        await axios.get('https://daseballapi.adaptable.app/player/'+params.id)
+        await axios.get(connectString + 'player/'+params.id)
         .then(res => setPlayerData(res.data))
         .then(setPlayerLoaded(true))
         .catch(err => console.log(err))
@@ -76,7 +124,7 @@ function Player () {
 
     const fetchPlayerStats = async () => {
         if (playerData != null) {
-            await axios.get('https://daseballapi.adaptable.app/playerData/'+playerData[0].name+'/'+seasonNumber)
+            await axios.get(connectString + 'playerData/'+playerData[0].name+'/'+seasonNumber)
             .then(res => setPlayerStatData(res.data))
             .then(setPlayerStatsLoaded(true))
             .catch(err => console.log(err))
@@ -89,7 +137,8 @@ function Player () {
                 {
                     playerData != null ?
                     <div className="player-box">
-                        <h1>{ playerData[0].teamEmoji } { playerData[0].name }</h1>
+                        <div id="liveAlertPlaceholder" />
+                        <h1>{ playerData[0].teamEmoji } { playerData[0].name } <FetchFavButton key={seed} /></h1>
                         <div className="center row">
                             {  playerData[0]?.modifiers.map( (item) => {
                                 return (

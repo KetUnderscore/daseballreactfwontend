@@ -56,6 +56,27 @@ function Header() {
               </ul>
             ) : null}
           </li>
+          <li className="dropdown">
+            { userData ?
+            <>
+              <a onClick={handleOpenProf}>Profile</a>
+              {openP ? (
+                <ul className="menu">
+                  <li>
+                    <a><img src="https://i.imgur.com/pf9t6B1.png" height="15px" title="Coin."></img> {userData.coins}</a>
+                  </li>
+                  <li>
+                    <a><img src="https://i.imgur.com/yyoLqpN.png" height="15px" title="Ticket."></img> {userData.bets}</a>
+                  </li>
+                  <li>
+                    <a href="/profile"> Profile </a>
+                  </li>
+                </ul>
+              ) : null}
+            </>
+            : <a href="/register"> Register </a>
+            }
+          </li>
         </ul>
       </nav>
     )

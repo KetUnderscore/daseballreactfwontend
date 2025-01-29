@@ -89,6 +89,7 @@ function Home() {
             <h2>Data League Baseball</h2>
             <p>Daseball is a love letter to <span className="bold">amatuer</span> coding, Sport Simulations and the creative pursuit.
             <br/>Navigate with the nav bar at the top of the screen.
+            <br/>Games start at <time datetime="10:00-08:00">10:00AM PST</time>.
             <br/>
             <br/><a href="https://discord.gg/UZ3TfurF4N">Discord</a>
             </p>
