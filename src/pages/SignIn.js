@@ -57,6 +57,12 @@ const Login = () => {
                 setSuccess(false)
                 return
             }
+            if (response?.status === 401) {
+                setData({})
+                setErrMsg('Incorrect Password')
+                setSuccess(false)
+                return
+            }
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
             setSuccess(true)
