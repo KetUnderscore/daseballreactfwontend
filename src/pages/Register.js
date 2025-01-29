@@ -95,6 +95,14 @@ const Register = () => {
                 setSuccess(false)
                 return
             }
+            if (response?.status === 401) {
+                setErrMsg('Unauthorized')
+                setUser('')
+                setPwd('')
+                setMatchPwd('')
+                setSuccess(false)
+                return
+            }
             setSuccess(true)
         } catch (err) {
             if (!err?.response) {
