@@ -85,12 +85,12 @@ function Book() {
                 <br/>
                 {/* Section 6 */}
                 <div className="censored">
-                    <p>H70-F <span>███ ████ ██ ██ ███████ ███ █████████ ████████</span></p>
-                    <p>H70-F <span>████ █████ ██ ███ █████████ ███████ ████████ ███ ██ ███ █████</span></p>
-                    <p>H70-F <span>████ ███████ ████ ████ █████ ███ ███ ████</span></p>
-                    <p>H70-F <span>█████ █████████████ ██ ███ █████████ ███████ ███████ █ ██ ██</span></p>
-                    <p>H70-F <span>███ █████████ ███████ ████ ███ █████ ██ ██ ██</span></p>
-                    <p>H70-F <span>███ ████ ████ ████ █████████</span></p>
+                    <p>H70-F <span>THE TEAM IS UP AGAINST THE MOONSTONE RAPBITS!</span></p>
+                    <p>H70-F <span>TEWI INABA OF THE MOONSTONE RAPBITS ATTACKED THE OF THE TEAM!</span></p>
+                    <p>H70-F <span>BOTH PLAYERS HAVE BEEN TAKEN OFF THE ICE!</span></p>
+                    <p>H70-F <span>ARLON HOOMBLEFUMPER OF THE MOONSTONE RAPBITS SCORED! 3 TO 15</span></p>
+                    <p>H70-F <span>THE MOONSTONE RAPBITS BEAT THE TEAM, 18 TO 3!</span></p>
+                    <p>H70-F <span>THE TEAM HAVE BEEN ABDUCTED.</span></p>
                 </div>
                 <br/>
                 {/* Section 7 */}
