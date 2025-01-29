@@ -1,6 +1,7 @@
 import {useRef, useState, useEffect, useContext} from "react"
 import AuthContext from "../context/AuthProvider";
 import DataContext from "../context/DataContext";
+import Cookies from 'js-cookie';
 const { connectString } = require('../config.json')
 
 const Login = () => {
@@ -63,6 +64,7 @@ const Login = () => {
                 setSuccess(false)
                 return
             }
+            localStorage.setItem("userInfo", response.userInfo)
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
             setSuccess(true)
