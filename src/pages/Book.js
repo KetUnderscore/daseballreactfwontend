@@ -84,7 +84,7 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 6 */}
-                <div className="censored">
+                <div className="uncensored">
                     <p>H70-F <span>THE TEAM IS UP AGAINST THE MOONSTONE RAPBITS!</span></p>
                     <p>H70-F <span>TEWI INABA OF THE MOONSTONE RAPBITS ATTACKED THE OF THE TEAM!</span></p>
                     <p>H70-F <span>BOTH PLAYERS HAVE BEEN TAKEN OFF THE ICE!</span></p>
