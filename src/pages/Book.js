@@ -272,11 +272,11 @@ function Book() {
                 <br/>
                 {/* Section 25 */}
                 <div className="censored">
-                    <p>H142-V <span>██████ ████████</span></p>
-                    <p>H142-V <span>██████ ██ ███ ███████</span></p>
-                    <p>H142-V <span>██████ ██ ███ █████</span></p>
-                    <p>H142-V <span>██████ ██ ███ ████████</span></p>
-                    <p>H142-V <span>██████ ██ ███ ████ ████████</span></p>
+                    <p>H142-V <span>BELIEF SPREADS.</span></p>
+                    <p>H142-V <span>BELIEF IN THE FUTURE.</span></p>
+                    <p>H142-V <span>BELIEF IN THE PAST.</span></p>
+                    <p>H142-V <span>BELIEF IN THE PRESENT.</span></p>
+                    <p>H142-V <span>BELIEF IN THE MEAT GRINDER.</span></p>
                 </div>
                 <br/>
                 {/* Section 26 */}
