@@ -271,7 +271,7 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 25 */}
-                <div className="censored">
+                <div className="uncensored">
                     <p>H142-V <span>BELIEF SPREADS.</span></p>
                     <p>H142-V <span>BELIEF IN THE FUTURE.</span></p>
                     <p>H142-V <span>BELIEF IN THE PAST.</span></p>
