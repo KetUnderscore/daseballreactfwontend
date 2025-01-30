@@ -44,6 +44,8 @@ const Login = () => {
             })
             .then(res => setUserData(res.data))
             .then(console.log(userDataUsed))
+            localStorage.setItem("userInfo", {test: "Test"})
+            localStorage.setItem("dawg", 10)
             // Reset States
             console.log(response)
             setuserDataUsed(response.data)
@@ -67,7 +69,6 @@ const Login = () => {
                 setSuccess(false)
                 return
             }
-            localStorage.setItem("userInfo", {test: "Test"})
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
             setSuccess(true)
