@@ -99,7 +99,7 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 8 */}
-                <div className="censored">
+                <div className="uncensored">
                     <p>H90-P <span>THE SKY FALLS.</span></p>
                     <p>H90-P <span>THE NEGOTIATIONS ARE SET.</span></p>
                     <p>H90-P <span>THE TEAMS HAVE BEEN MET.</span></p>
