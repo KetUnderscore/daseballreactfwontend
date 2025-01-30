@@ -40,7 +40,9 @@ const Login = () => {
                     username: user,
                     password: pwd
                 }),
-            });
+            })
+            .then(response => response.json())
+            .then(localStorage.setItem("userInfo", response.userInfo))
             // Reset States
             console.log(response)
             console.log(response.json())
@@ -65,9 +67,6 @@ const Login = () => {
                 setSuccess(false)
                 return
             }
-            let newData = response.json()
-            console.log(newData)
-            localStorage.setItem("userInfo", newData.userInfo)
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
             setSuccess(true)
