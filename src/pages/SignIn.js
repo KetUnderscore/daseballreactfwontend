@@ -41,7 +41,6 @@ const Login = () => {
                     password: pwd
                 }),
             })
-            .then(response => response.json)
             // Reset States
             console.log(response)
             console.log(response.json())
