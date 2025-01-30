@@ -18,7 +18,7 @@ function Header() {
 
     const handleOpenProf = async () => {
       let response = await fetch(connectString + 'auth/refresh', {
-          method: 'POST',
+          method: 'GET',
           headers: {
             'Content-Type': 'application/json'
           },
