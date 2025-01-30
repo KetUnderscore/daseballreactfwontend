@@ -45,7 +45,12 @@ const Login = () => {
             .then(response=>response.json())
             .then(data=>{ 
                 console.log(data);
-                localStorage.setItem("userInfo", data.coins)
+                localStorage.setItem("userInfo", JSON.stringify(data))
+                localStorage.setItem("username", data.username)
+                localStorage.setItem("favTeam", data.favTeam)
+                localStorage.setItem("favPlayer", data.favPlayer)
+                localStorage.setItem("coins", data.coins)
+                localStorage.setItem("bets", data.bets)
              })
             // Reset States
             setUser('')
