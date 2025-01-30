@@ -14,6 +14,7 @@ const Login = () => {
     const [pwd, setPwd] = useState('')
     const [errMsg, setErrMsg] = useState('')
     const [success, setSuccess] = useState(false)
+    const [userDatas, setUserData] = useState(false)
 
     const [userDataUsed, setuserDataUsed] = useState(null)
 
@@ -41,6 +42,8 @@ const Login = () => {
                     password: pwd
                 }),
             })
+            .then(res => setUserData(res.data))
+            .then(console.log(userDataUsed))
             // Reset States
             console.log(response)
             console.log(response.username)
@@ -65,7 +68,7 @@ const Login = () => {
                 setSuccess(false)
                 return
             }
-            localStorage.setItem("userInfo", response.data.info)
+            localStorage.setItem("userInfo", userDataUsed)
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
             setSuccess(true)
