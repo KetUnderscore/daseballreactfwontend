@@ -24,9 +24,6 @@ function Header() {
           },
           withCredntials: true,
           credentials: 'include',
-          body: JSON.stringify({
-              username: userData.username
-          }),
       })
       .then(response=>response.json())
       .then(data=>{ 
