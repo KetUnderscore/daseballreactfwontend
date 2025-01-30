@@ -148,7 +148,8 @@ function Team() {
                 .then(data=>{ 
                     console.log(data);
                     localStorage.setItem("userInfo", JSON.stringify(data))
-                 })
+                })
+                .catch(err => console.log(err))
                 setSeed(Math.random())
                 console.log("Faved!")
             }
