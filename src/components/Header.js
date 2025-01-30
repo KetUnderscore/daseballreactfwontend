@@ -18,10 +18,7 @@ function Header() {
       setOpen(false);
     }
 
-    let userData = Cookies.get("userInfo")
-    if (userData?.length > 0) {
-      userData = JSON.parse(userData)
-    }
+    let userData = JSON.parse(localStorage.getItem("userInfo"))
 
     return (
       <nav className="nav-bar">
