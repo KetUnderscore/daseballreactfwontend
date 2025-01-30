@@ -64,7 +64,8 @@ const Login = () => {
                 setSuccess(false)
                 return
             }
-            localStorage.setItem("userInfo", JSON.stringify(response.userInfo))
+            console.log(response.userInfo)
+            localStorage.setItem("userInfo", response.userInfo)
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
             setSuccess(true)
