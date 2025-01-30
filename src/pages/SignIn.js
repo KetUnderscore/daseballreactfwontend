@@ -43,7 +43,7 @@ const Login = () => {
                 }),
             })
             console.log(response)
-            localStorage.setItem("userInfo", response.body)
+            localStorage.setItem("userInfo", response.body.username)
             localStorage.setItem("dawg", 10)
             // Reset States
             setuserDataUsed(response.data)
