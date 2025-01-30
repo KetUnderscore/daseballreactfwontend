@@ -19,10 +19,7 @@ function Player () {
     let favoritePosition
     let favoriteStar
     
-    let userData = Cookies.get("userInfo")
-    if (userData?.length > 0) {
-        userData = JSON.parse(userData)
-    }
+    let userData = JSON.parse(localStorage.getItem("userInfo"))
 
     useEffect( () => {
         fetchPlayerData()

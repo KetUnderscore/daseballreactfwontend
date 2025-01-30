@@ -20,16 +20,16 @@ function Header() {
       setOpen(!open);
     }
     
-    let userData = Cookies.get("userInfo")
-    if (userData?.length > 0) {
-        userData = JSON.parse(userData)
-    } else {
+    let userData = JSON.parse(localStorage.getItem("userInfo"))
+
+    if (userData?.length < 0) {
         setSuccess(true)
     }
 
     const handleSignOut = async (e) => {
         Cookies.remove("jwt")
         Cookies.remove("userInfo")
+        localStorage.removeItem("userInfo")
         navigate('/');
     }
 

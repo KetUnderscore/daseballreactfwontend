@@ -23,10 +23,7 @@ function Team() {
     const [playerDetailedData, setPlayerDetailedData] = useState(false)
     const [seed, setSeed] = useState(1);
         
-    let userData = Cookies.get("userInfo")
-    if (userData?.length > 0) {
-        userData = JSON.parse(userData)
-    }
+    let userData = JSON.parse(localStorage.getItem("userInfo"))
 
     let progbar
     if (teamData != null) {progbar = { bgcolor: "#" + teamData[0].teamColor, completed: Math.round((teamData[0].spiritFund / 10000)* 100) }}
