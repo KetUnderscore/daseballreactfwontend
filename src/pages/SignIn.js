@@ -42,35 +42,37 @@ const Login = () => {
                     password: pwd
                 }),
             })
-            .then(res => setUserData(res.data))
-            .then(console.log(userDataUsed))
-            localStorage.setItem("userInfo", {test: "Test"})
+            .then(if (!response.ok) {
+                    setErrMsg('Response from server bad.')
+                }
+                return response.json()
+            )
+            .then(data => {
+                console.log(data)
+            })
+            .catch (err) {
+                if (!err?.response) {
+                    setErrMsg('No Server Response')
+                    console.log(err)
+                } else if (err.response?.status === 400) {
+                    setErrMsg('Missing Username or Password')
+                } else if (err.response?.status === 401) {
+                    setErrMsg('Incorrect Password')
+                } else if (err.response?.status === 409) {
+                    setErrMsg('Incorrect Password')
+                } else {
+                    setErrMsg('Login Failed')
+                }
+                setSuccess(false)
+                errRef.current.focus()
+            }
+            localStorage.setItem("userInfo", response)
             localStorage.setItem("dawg", 10)
             // Reset States
             console.log(response)
             setuserDataUsed(response.data)
             setUser('')
             setPwd('')
-            if (JSON.stringify(response).length < 1) {
-                setData({})
-                setErrMsg('ERROR')
-                setSuccess(false)
-                return
-            }
-            if (response?.status === 409) {
-                setData({})
-                setErrMsg('Incorrect Password')
-                setSuccess(false)
-                return
-            }
-            if (response?.status === 401) {
-                setData({})
-                setErrMsg('Incorrect Password')
-                setSuccess(false)
-                return
-            }
-            const coins = response?.data?.coins
-            const bets = response?.data?.betMatrix
             setSuccess(true)
         } catch (err) {
             if (!err?.response) {
