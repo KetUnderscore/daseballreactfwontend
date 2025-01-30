@@ -42,6 +42,8 @@ const Login = () => {
                 }),
             });
             // Reset States
+            console.log(response)
+            console.log(response.json())
             setuserDataUsed(response.data)
             setUser('')
             setPwd('')
@@ -64,6 +66,7 @@ const Login = () => {
                 return
             }
             let newData = response.json()
+            console.log(newData)
             localStorage.setItem("userInfo", newData.userInfo)
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
