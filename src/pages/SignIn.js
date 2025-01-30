@@ -43,7 +43,7 @@ const Login = () => {
             })
             // Reset States
             console.log(response)
-            console.log(response.userInfo)
+            console.log(response.userInfo.value)
             setuserDataUsed(response.data)
             setUser('')
             setPwd('')
