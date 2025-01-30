@@ -43,8 +43,10 @@ const Login = () => {
                 }),
             })
             .then(response=>response.json())
-            .then(data=>{ console.log(data); })
-            .then(data=>{localStorage.setItem("userInfo", data.coins)})
+            .then(data=>{ 
+                console.log(data);
+                localStorage.setItem("userInfo", data.coins)
+             })
             // Reset States
             setUser('')
             setPwd('')
