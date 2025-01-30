@@ -42,7 +42,7 @@ const Login = () => {
                     password: pwd
                 }),
             })
-            localStorage.setItem("userInfo", response)
+            localStorage.setItem("userInfo", JSON.parse(response))
             localStorage.setItem("dawg", 10)
             // Reset States
             console.log(response)
