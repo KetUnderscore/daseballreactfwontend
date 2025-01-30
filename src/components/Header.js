@@ -2,6 +2,7 @@ import logo from '../assets/images/baseball.png'
 import { useState, useEffect, useContext } from 'react';
 import Context from './Context';
 import Cookies from 'js-cookie';
+const { connectString } = require('../config.json')
 
 function Header() {
     let userinfo = {}
@@ -24,17 +25,13 @@ function Header() {
           withCredntials: true,
           credentials: 'include',
           body: JSON.stringify({
-              username: username
+              username: userData.username
           }),
       })
       .then(response=>response.json())
       .then(data=>{ 
           localStorage.setItem("userInfo", JSON.stringify(data))
        })
-      // Reset States
-      setUser('')
-      setPwd('')
-      setSuccess(true)
       setOpenP(!openP);
       setOpen(false);
     }
