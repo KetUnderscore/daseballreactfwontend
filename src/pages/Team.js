@@ -143,9 +143,12 @@ function Team() {
                         username: userData.username,
                         team: teamData[0].teamName,
                     }),
-                });
-                // Reset States
-                console.log(response)
+                })
+                .then(response=>response.json())
+                .then(data=>{ 
+                    console.log(data);
+                    localStorage.setItem("userInfo", JSON.stringify(data))
+                 })
                 setSeed(Math.random())
                 console.log("Faved!")
             }

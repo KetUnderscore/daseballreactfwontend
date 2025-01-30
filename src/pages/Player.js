@@ -99,9 +99,12 @@ function Player () {
                         username: userData.username,
                         player: playerData[0].name,
                     }),
-                });
-                // Reset States
-                console.log(response)
+                })
+                .then(response=>response.json())
+                .then(data=>{ 
+                    console.log(data);
+                    localStorage.setItem("userInfo", JSON.stringify(data))
+                 })
                 setSeed(Math.random())
                 console.log("Faved!")
             }
