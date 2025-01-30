@@ -63,7 +63,7 @@ const Login = () => {
                 setSuccess(false)
                 return
             }
-            newData = response.json()
+            let newData = response.json()
             localStorage.setItem("userInfo", newData.userInfo)
             const coins = response?.data?.coins
             const bets = response?.data?.betMatrix
