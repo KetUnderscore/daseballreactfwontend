@@ -46,7 +46,6 @@ const Login = () => {
             .then(console.log(userDataUsed))
             // Reset States
             console.log(response)
-            console.log(response.username)
             setuserDataUsed(response.data)
             setUser('')
             setPwd('')
