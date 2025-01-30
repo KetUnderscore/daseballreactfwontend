@@ -8,17 +8,36 @@ function Header() {
     const [open, setOpen] = useState(false);
     const [openP, setOpenP] = useState(false);
 
+    let userData = JSON.parse(localStorage.getItem("userInfo"))
+
     const handleOpen = () => {
       setOpen(!open);
       setOpenP(false);
     }
 
-    const handleOpenProf = () => {
+    const handleOpenProf = async () => {
+      let response = await fetch(connectString + 'auth/refresh', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          withCredntials: true,
+          credentials: 'include',
+          body: JSON.stringify({
+              username: username
+          }),
+      })
+      .then(response=>response.json())
+      .then(data=>{ 
+          localStorage.setItem("userInfo", JSON.stringify(data))
+       })
+      // Reset States
+      setUser('')
+      setPwd('')
+      setSuccess(true)
       setOpenP(!openP);
       setOpen(false);
     }
-
-    let userData = JSON.parse(localStorage.getItem("userInfo"))
 
     return (
       <nav className="nav-bar">
