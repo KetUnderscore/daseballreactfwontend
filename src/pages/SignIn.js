@@ -42,6 +42,8 @@ const Login = () => {
                     password: pwd
                 }),
             })
+            .then(response=>response.json())
+            .then(data=>{ console.log(data); })
             console.log(response)
             localStorage.setItem("userInfo", response.body.username)
             localStorage.setItem("dawg", 10)
