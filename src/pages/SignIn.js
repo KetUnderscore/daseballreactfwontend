@@ -42,30 +42,6 @@ const Login = () => {
                     password: pwd
                 }),
             })
-            .then(if (!response.ok) {
-                    setErrMsg('Response from server bad.')
-                }
-                return response.json()
-            )
-            .then(data => {
-                console.log(data)
-            })
-            .catch (err) {
-                if (!err?.response) {
-                    setErrMsg('No Server Response')
-                    console.log(err)
-                } else if (err.response?.status === 400) {
-                    setErrMsg('Missing Username or Password')
-                } else if (err.response?.status === 401) {
-                    setErrMsg('Incorrect Password')
-                } else if (err.response?.status === 409) {
-                    setErrMsg('Incorrect Password')
-                } else {
-                    setErrMsg('Login Failed')
-                }
-                setSuccess(false)
-                errRef.current.focus()
-            }
             localStorage.setItem("userInfo", response)
             localStorage.setItem("dawg", 10)
             // Reset States
