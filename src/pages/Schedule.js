@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useForm } from "react-hook-form"
+import Cookies from 'js-cookie';
 const { currentActiveSeason, connectString } = require('../config.json')
 
 function Schedule() {
@@ -17,8 +18,13 @@ function Schedule() {
     const [dayTwoSched, setDayTwoSched] = useState([])
     const [dayThreeSched, setDayThreeSched] = useState([])
 
-    const [betVal, setBetVal] = useState(null)
+    const [betVal, setBetVal] = useState(10)
     const [teamVal, setTeamVal] = useState("")
+
+    let userData = Cookies.get("userInfo")
+    if (userData?.length > 0) {
+        userData = JSON.parse(userData)
+    }
 
     useEffect( () => {
         fetchGameData()
@@ -41,16 +47,44 @@ function Schedule() {
     }
      
     const inputHandler = (x) => {
-        if (x !== betVal) {
+        if (!x) {
+            setBetVal(0)
+            setSeasonLoaded(false)
+            return
+        }
+        if (x != betVal) {
             setBetVal(parseInt(x))
             setSeasonLoaded(false)
+            return
         }
     };
 
-    const handleClick = (team, day, num) => {
-        setTeamVal(team)
+    const handleClick = async (team, day, num) => {
         console.log(betVal)
-        alert(`${betVal} ${team} ${day} ${num}`)
+
+        if (!userData) {
+            console.log("Not signed in!")
+            return
+        } else {
+            const response = await fetch(connectString + 'fav/bet', {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json'
+                },
+                withCredntials: true,
+                credentials: 'include',
+                body: JSON.stringify({
+                    username: userData.username,
+                    betValue: betVal,
+                    teamBet: team,
+                    dayBet: day,
+                    dayNum: num,
+                }),
+            });
+            // Reset States
+            console.log(response)
+            console.log("Bet sent!")
+        }
     }
 
     const loadDays = async () => {
@@ -98,8 +132,8 @@ function Schedule() {
                     <span style={{color: "#"+team1.teamColor}}>{Math.round((team1.gamesWon/(team1.gamesWon+team2.gamesWon))*80)+Math.round(((team1.players.praying+team1.players.publicity+team1.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span> - <span style={{color: "#"+team2.teamColor}}>{Math.round((team2.gamesWon/(team2.gamesWon+team1.gamesWon))*80)+Math.round(((team2.players.praying+team2.players.publicity+team2.players.pope)/((team1.players.praying+team1.players.publicity+team1.players.pope)+(team2.players.praying+team2.players.publicity+team2.players.pope)))*20)}%</span>
                     <br/>
                     <form>
-                        <button type="submit" onClick={() => {handleClick(team1.teamName, seasonData[0].seasonDay+1, gn/2)}} style={{backgroundColor: "#"+team1.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team1.teamEmoji}</button>{" "}
-                        <button type="submit" onClick={() => {handleClick(team2.teamName, seasonData[0].seasonDay+1, gn/2)}} style={{backgroundColor: "#"+team2.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team2.teamEmoji}</button>
+                        <button type="button" onClick={() => {handleClick(team1.teamName, seasonData[0].seasonDay+1, gn/2)}} style={{backgroundColor: "#"+team1.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team1.teamEmoji}</button>{" "}
+                        <button type="button" onClick={() => {handleClick(team2.teamName, seasonData[0].seasonDay+1, gn/2)}} style={{backgroundColor: "#"+team2.teamColor, border: "none", width: "80px", height: "25px", borderRadius: "25px"}}>Bet {team2.teamEmoji}</button>
                     </form>
                     </h2>
                 </div>
@@ -209,78 +243,70 @@ function Schedule() {
         }
     }
 
-    const Schedule = () => {
-        return (
-            <div className='player'>
-                {
-                    seasonData != null && daysLoaded ?
-                    <div className="player center">
-                        <h1>Season {currentActiveSeason} Schedule</h1>
-                        <h1 style={{color: "red"}}>BETTING NOT WORKING SORRY</h1>
-                        <form>
-                            <input type="text" name="name"
-                            value={betVal}
-                            onChange={(e) => inputHandler(e.target.value)} placeholder='Bet Value' />
-                        </form>
-                        { dayOneSched.length > 0 ?
-                        <div>
-                            <h2>Day {seasonData[0].seasonDay+1}</h2>
-                            <div className='game-holder'>
-
-                                {dayOneSched.map((item, index) => (
-                                    <div key={index}>
-                                        {item}
-                                    </div>
-                                ))}
-                                
-                            </div>
-                        </div> :
-                        <></>
-                        }
-                        { dayTwoSched.length > 1 ?
-                        <div>
-                            <h2>Day {seasonData[0].seasonDay+2}</h2>
-                            <div className='game-holder'>
-                                
-                                {dayTwoSched.map((item, index) => (
-                                    <div key={index}>
-                                        {item}
-                                    </div>
-                                ))}
-                                
-                            </div>
-                        </div> :
-                        <></>
-                        }
-                        { dayThreeSched.length > 1 ?
-                        <div>
-                            <h2>Day {seasonData[0].seasonDay+3}</h2>
-                            <div className='game-holder'>
-                                
-                                {dayThreeSched.map((item, index) => (
-                                    <div key={index}>
-                                        {item}
-                                    </div>
-                                ))}
-                                
-                            </div>
-                        </div> :
-                        <></>
-                        }
-                    </div>
-                    :
-                    <h1>
-                        Loading...
-                    </h1>
-                }
-            </div>
-        )
-    }
-
     return (
-        <>
-            <Schedule />
-        </>
+        <div className='player center'>
+            <h1>Season {currentActiveSeason} Schedule</h1>
+            <h1 style={{color: "red"}}>BETTING NOT WORKING SORRY</h1>
+            <form>
+                <input type="text" name="name"
+                value={betVal}
+                onChange={(e) => inputHandler(e.target.value)} placeholder='Bet Value' />
+            </form>
+            {
+                seasonData != null && daysLoaded ?
+                <div className="player center">
+                    { dayOneSched.length > 0 ?
+                    <div>
+                        <h2>Day {seasonData[0].seasonDay+1}</h2>
+                        <div className='game-holder'>
+
+                            {dayOneSched.map((item, index) => (
+                                <div key={index}>
+                                    {item}
+                                </div>
+                            ))}
+                            
+                        </div>
+                    </div> :
+                    <></>
+                    }
+                    { dayTwoSched.length > 1 ?
+                    <div>
+                        <h2>Day {seasonData[0].seasonDay+2}</h2>
+                        <div className='game-holder'>
+                            
+                            {dayTwoSched.map((item, index) => (
+                                <div key={index}>
+                                    {item}
+                                </div>
+                            ))}
+                            
+                        </div>
+                    </div> :
+                    <></>
+                    }
+                    { dayThreeSched.length > 1 ?
+                    <div>
+                        <h2>Day {seasonData[0].seasonDay+3}</h2>
+                        <div className='game-holder'>
+                            
+                            {dayThreeSched.map((item, index) => (
+                                <div key={index}>
+                                    {item}
+                                </div>
+                            ))}
+                            
+                        </div>
+                    </div> :
+                    <></>
+                    }
+                </div>
+                :
+                <h1>
+                    Loading...
+                </h1>
+            }
+        </div>
     )
 }
 
