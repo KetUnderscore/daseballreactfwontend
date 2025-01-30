@@ -17,7 +17,7 @@ function Header() {
     }
 
     const handleOpenProf = async () => {
-      let response = await fetch(connectString + 'auth/refresh', {
+      /* let response = await fetch(connectString + 'auth/refresh', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ function Header() {
       .then(response=>response.json())
       .then(data=>{ 
           localStorage.setItem("userInfo", JSON.stringify(data))
-       })
+       }) */
       setOpenP(!openP);
       setOpen(false);
     }
