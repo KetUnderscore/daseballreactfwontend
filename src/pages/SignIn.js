@@ -44,11 +44,8 @@ const Login = () => {
             })
             .then(response=>response.json())
             .then(data=>{ console.log(data); })
-            console.log(response)
-            localStorage.setItem("userInfo", response.body.username)
-            localStorage.setItem("dawg", 10)
+            .then(localStorage.setItem("userInfo", data))
             // Reset States
-            setuserDataUsed(response.data)
             setUser('')
             setPwd('')
             setSuccess(true)
