@@ -74,13 +74,13 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 5 */}
-                <div className="censored">
-                    <p>H70-P <span>███ ███████ ████████ ███ ███ ████ █████</span></p>
-                    <p>H70-P <span>█ ████ ████ █████ ██████ ███ █████</span></p>
-                    <p>H70-P <span>███ ████ ████ ███ █████</span></p>
-                    <p>H70-P <span>███ ████ ████ ██████ ███ ██████ ██ ██████████</span></p>
-                    <p>H70-P <span>█████████ ██ █████████</span></p>
-                    <p>H70-P <span>████ ██████</span></p>
+                <div className="uncensored">
+                    <p>H70-P <span>THE CHICAGO CATGIRLS AND THE TEAM TIED!</span></p>
+                    <p>H70-P <span>A COIN FLIP SHALL DECIDE WHO WINS.</span></p>
+                    <p>H70-P <span>THE TEAM WINS THE TOSS!</span></p>
+                    <p>H70-P <span>THE TEAM HAVE BECOME THE SEASON 70 CHAMPIONS!</span></p>
+                    <p>H70-P <span>SOMETHING IS COMING...</span></p>
+                    <p>H70-P <span>FROM ABOVE.</span></p>
                 </div>
                 <br/>
                 {/* Section 6 */}
@@ -231,9 +231,9 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 20 */}
-                <div className="censored">
-                    <p>H141-R13 <span>███ ████ ███████ ██████ ████ ███ ████</span></p>
-                    <p>H141-R13 <span>███ ████ ███████ █████ ██████ ██████ ███ ██████ ████ ███</span></p>
+                <div className="uncensored">
+                    <p>H141-R13 <span>THE MEAT GRINDER CLIMBS ONTO THE ICE!</span></p>
+                    <p>H141-R13 <span>THE MEAT GRINDER GRABS BOUGHT SOUGHT AND GRINDS THEM UP!</span></p>
                 </div>
                 <br/>
                 {/* Section 21 */}
