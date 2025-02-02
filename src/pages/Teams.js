@@ -49,7 +49,8 @@ function Teams() {
     const Teams = () => {
         return (
             <div className='player'>
-                {/* <h1 style={{color:'#fcc603'}}>The Boston Bee Boys are your Season 5 Champions!</h1> */}
+                {/* <h1 style={{color:'#fcc603'}}>The Boston Bee Boys are your Season 7 Champions!</h1> */}
+                <h1 style={{color:'#7c80cc'}}>The Transports are your Season 7 Champions!</h1>
                 <br/>
                 <h1>Teams</h1>
                 <div className="divisions">
