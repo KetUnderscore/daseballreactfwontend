@@ -186,11 +186,16 @@ function Team() {
                                         
                                         { item.modName === "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
                                         { item.modName === "Witness Protection" ? <img src="https://i.imgur.com/pclDlgi.png" height="30px" title="This team is protected. Safe from The Witness."></img> : '' }
+                                        { item.modName === "Sunspotting" ? <img src="https://i.imgur.com/paSBr57.png" height="30px" title="This team is spotting the Sun."></img> : '' }
+                                        { item.modName === "Nullspotting" ? <img src="https://i.imgur.com/xgFVMnL.png" height="30px" title="This team is spotting the Null."></img> : '' }
                                         
                                         { item.modName === "Suck Forever" ? <img src="https://i.imgur.com/G4L25nw.png" height="30px" title="This team will suck forever."></img> : '' }
                                         { item.modName === "Tape Lovers" ? <img src="https://i.imgur.com/NBMbLYO.png" height="30px" title="This team may start skipping."></img> : '' }
                                         { item.modName === "Coffee Lovers" ? <img src="https://i.imgur.com/1WdpOMz.png" height="30px" title="This team may start pouring coffee."></img> : '' }
                                         { item.modName === "Homefield Advantage" ? <img src="https://i.imgur.com/tCnQYQ2.png" height="30px" title="This team has a homefield advantage!"></img> : '' }
+                                        { item.modName === "Trapped" ? <img src="https://i.imgur.com/AiC1xek.png" height="30px" title="This team has trapped their home."></img> : '' }
+                                        { item.modName === "Vibing" ? <img src="https://i.imgur.com/2StV7YX.png" height="30px" title="This teams vibes are wild."></img> : '' }
+                                        { item.modName === "Seasoned" ? <img src="https://i.imgur.com/KxZwfCp.png" height="30px" title="This team is being seasoned."></img> : '' }
                                     </span>
                                 )}) 
                             }
@@ -366,8 +371,9 @@ function modify(item, type) {
         { item.name === "Tertiary" ? <img src="https://i.imgur.com/FheImZD.png" height={heightText} title="This player has an affinity for triples."></img> : '' }
         { item.name === "Mindful" ? <img src="https://i.imgur.com/ZSlUnbk.png" height={heightText} title="This player has a mind for others."></img> : '' }
         { item.name === "WellTraveled" ? <img src="https://i.imgur.com/zCTp2Lx.png" height={heightText} title="This player has a heart for adventure."></img> : '' }
+        { item.name === "Homebody" ? <img src="https://i.imgur.com/HeewHag.png" height={heightText} title="This player prefers to be home."></img> : '' }
 
-        { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
+        { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height={heightText} title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }
         { item.name === "Sunsetter" ? <img src="https://i.imgur.com/nsGvwgp.png" height={heightText} title="This player plays better later in the game."></img> : '' }
         { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height={heightText} title="This player always tries to steal if able."></img> : '' }

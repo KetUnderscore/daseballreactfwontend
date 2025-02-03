@@ -384,6 +384,7 @@ function modify(item, type) {
         { item.name === "Tertiary" ? <img src="https://i.imgur.com/FheImZD.png" height={heightText} title="This player has an affinity for triples."></img> : '' }
         { item.name === "Mindful" ? <img src="https://i.imgur.com/ZSlUnbk.png" height={heightText} title="This player has a mind for others."></img> : '' }
         { item.name === "WellTraveled" ? <img src="https://i.imgur.com/zCTp2Lx.png" height={heightText} title="This player has a heart for adventure."></img> : '' }
+        { item.name === "Homebody" ? <img src="https://i.imgur.com/HeewHag.png" height={heightText} title="This player prefers to be home."></img> : '' }
 
         { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }
