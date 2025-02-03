@@ -133,7 +133,7 @@ function Mods() {
                 <div className='mod'>
                     <h3 className="center">Puppet</h3>
                     <img src="https://i.imgur.com/aFXHBBC.png" height="50px" title="This player is stuck on strings."></img>
-                    <p className="center">Sprinters will always try to steal when given the opportunity.</p>
+                    <p className="center">Puppet players play better with more pocket players on their team.</p>
                 </div>
             </div>
 
