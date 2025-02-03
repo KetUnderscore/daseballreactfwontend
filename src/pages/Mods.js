@@ -130,6 +130,11 @@ function Mods() {
                     <img src="https://i.imgur.com/xLI45y0.png" height="50px" title="This player always trys to steal."></img>
                     <p className="center">Sprinters will always try to steal when given the opportunity.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Puppet</h3>
+                    <img src="https://i.imgur.com/aFXHBBC.png" height="50px" title="This player is stuck on strings."></img>
+                    <p className="center">Sprinters will always try to steal when given the opportunity.</p>
+                </div>
             </div>
 
             <h3 className="center">Permanent Mods</h3>
