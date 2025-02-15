@@ -107,7 +107,7 @@ function Home() {
             <br/>
             <h2>API HERE</h2>
             <h3 className="center">For code wizards and nerds only.</h3>
-            <a href="https://daseballapi.adaptable.app/"><p>API Home</p></a>
+            <a href="https://daseball-api-05f8b0ed36e2.herokuapp.com/"><p>API Home</p></a>
             <br/>
             <br/>
         </div>
