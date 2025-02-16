@@ -34,7 +34,7 @@ function Home() {
 
     const Events = () => {
         let rows = []
-        if (seasonData) {
+        if (seasonData != null) {
             for (let i = Math.max(seasonData[0].seasonDay-9, 0); i < seasonData[0].seasonDay; i++) {
                 let dayGames = seasonData[0].seasonEvents.filter(function (el) {
                     return el.gameDay === i
@@ -63,7 +63,7 @@ function Home() {
                 <h1 className="center">Season {seasonNumber} Events</h1>
                 <div className="mod-container">
                     {
-                        seasonData ?
+                        seasonData != null ?
                         rows.toReversed().map( (item, index) => {
                             console.log(rows)
                             console.log(item)
