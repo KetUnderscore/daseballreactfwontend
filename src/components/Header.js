@@ -40,7 +40,7 @@ function Header() {
       <nav className="nav-bar">
         <div className="titlebox">
           <a href="/" ><img src={ logo } alt="Logo" className="logo" /></a>
-          <h1 className="title">Season 7 - FIX THIS</h1>
+          <h1 className="title">Season 8 - Applications</h1>
         </div>
         <br/>
         <ul className='wrap-me'>
@@ -65,6 +65,9 @@ function Header() {
                 </li>
                 <li>
                   <a href="/mods">Mods</a>
+                </li>
+                <li>
+                  <a href="/book">Book</a>
                 </li>
               </ul>
             ) : null}
