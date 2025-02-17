@@ -53,10 +53,10 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 2 */}
-                <div className="censored">
-                    <p>H41-O <span>███ ████ ██ ██████</span></p>
-                    <p>H41-O <span>███ █████ ███ ███████ █████ █████</span></p>
-                    <p>H41-O <span>█████ ██████</span></p>
+                <div className="uncensored">
+                    <p>H41-O <span>THE MOON IS OUT...</span></p>
+                    <p>H41-O <span>THE TEAMS ARE GETTING RILED UP...</span></p>
+                    <p>H41-O <span>WATCH OUT...</span></p>
                 </div>
                 <br/>
                 {/* Section 3 */}
