@@ -53,7 +53,7 @@ function Schedule() {
             return
         }
         if (x != betVal) {
-            setBetVal(parseInt(x))
+            setBetVal(x.target.value)
             setSeasonLoaded(false)
             return
         }
@@ -108,9 +108,7 @@ function Schedule() {
                     {seasonData[0].seasonDay >= 45 ?
                     <div>
                         { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                         { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                        { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                         { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
                         { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
                         { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-45][0+(gn/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
@@ -119,9 +117,7 @@ function Schedule() {
                     : 
                     <div>
                         { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                        { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                         { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                        { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                         { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
                         { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
                         { seasonData[0].weather[seasonData[0].seasonDay][0+(gn/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
@@ -162,9 +158,7 @@ function Schedule() {
                         {seasonData[0].seasonDay >= 45 ?
                         <div>
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                            { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                            { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-44][0+(gn/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
@@ -172,9 +166,7 @@ function Schedule() {
                         : 
                         <div>
                             { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+1][0+((gn)/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
@@ -212,9 +204,7 @@ function Schedule() {
                         {seasonData[0].seasonDay >= 45 ?
                         <div>
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-43][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                            { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-43][0+(gn/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-43][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                            { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-43][0+(gn/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-43][0+(gn/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-43][0+(gn/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
                             { seasonData[0].postSeasonWeather[seasonData[0].seasonDay-43][0+(gn/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
@@ -222,9 +212,7 @@ function Schedule() {
                         : 
                         <div>
                             { seasonData[0].weather[seasonData[0].seasonDay+2][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="20px" className="weather" title="Null" alt='Null'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+2][0+((gn)/2)] === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+2][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="20px" className="weather" title="Sunny" alt='Sunny'></img> : ''}
-                            { seasonData[0].weather[seasonData[0].seasonDay+2][0+((gn)/2)] === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="20px" className="weather" title="WITNESS" alt='WITNESS'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+2][0+((gn)/2)] === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="20px" className="weather" title="Shuffle" alt='Shuffle'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+2][0+((gn)/2)] === 3 ? <img src="https://i.imgur.com/YDH7LQT.png" height="20px" className="weather" title="Waves" alt='Waves'></img> : ''}
                             { seasonData[0].weather[seasonData[0].seasonDay+2][0+((gn)/2)] === 4 ? <img src="https://i.imgur.com/FfuBnBD.png" height="20px" className="weather" title="Coffee" alt='Coffee'></img> : ''}
