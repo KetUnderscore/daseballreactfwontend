@@ -65,13 +65,7 @@ function Games() {
                                                         item.weather === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="30px" class="weather" title="Null" alt='Null'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 0 ? <img src="https://i.imgur.com/sfWGuST.png" height="30px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''
-                                                    }
-                                                    {
                                                         item.weather === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="30px" class="weather" title="Sunny" alt='Sunny'></img> : ''
-                                                    }
-                                                    {
-                                                        item.weather === 1 ? <img src="https://i.imgur.com/sfWGuST.png" height="30px" class="weather" title="WITNESS" alt='WITNESS'></img> : ''
                                                     }
                                                     {
                                                         item.weather === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="30px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''
