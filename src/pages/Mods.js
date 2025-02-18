@@ -150,6 +150,11 @@ function Mods() {
                     <p className="center">Icon+ players pay out triple coins to their fans.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Noncon</h3>
+                    <img src="https://i.imgur.com/KGGTgET.png" height="50px" title="This player does not pay out..."></img>
+                    <p className="center">Noncons don't pay out.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Old School</h3>
                     <img src="https://i.imgur.com/yvlrdat.png" height="50px" title="This player enjoys the Null."></img>
                     <p className="center">Old School players play better in the Null.</p>
