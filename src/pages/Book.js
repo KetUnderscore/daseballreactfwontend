@@ -158,17 +158,17 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 13 */}
-                <div className="censored">
-                    <p>H100-O <span>███ ██████ ████ ███████████</span></p>
-                    <p>H100-O <span>█ ███ ███ █████</span></p>
-                    <p>H100-O <span>████ ████ ████ █████████ ███ ██ ███ █████████ ██████ █████</span></p>
-                    <p>H100-O <span>████ ███ ██████ ██ █ ████ ██████ ██ ████ █████ ██ ██████</span></p>
-                    <p>H100-O <span>████ █████ ██ ███ ███████</span></p>
-                    <p>H100-O <span>██ ██████████ █████████ █████</span></p>
-                    <p>H100-O <span>█████ ███ ██████████</span></p>
-                    <p>H100-O <span>████ ███ ████ ██ █████████</span></p>
-                    <p>H100-O <span>████ ██ ███ ███████</span></p>
-                    <p>H100-O <span>███ ████████</span></p>
+                <div className="uncensored">
+                    <p>H100-O <span>THE PLANTS WERE FERTILIZED.</span></p>
+                    <p>H100-O <span>A BIT TOO MUCH.</span></p>
+                    <p>H100-O <span>THEY HAVE BEEN RELOCATED OUT OF THE YORKSHIRE FLOWER SHOP.</span></p>
+                    <p>H100-O <span>THEY NOW RESIDE IN A COOL CIRCLE OF MOON ROCKS WE FOUND.</span></p>
+                    <p>H100-O <span>WITH PLUTO IN THE MIDDLE.</span></p>
+                    <p>H100-O <span>IN COMPLETELY UNRELATED NEWS.</span></p>
+                    <p>H100-O <span>THERE ARE SURVIVORS.</span></p>
+                    <p>H100-O <span>FROM THE FALL OF GENERICA.</span></p>
+                    <p>H100-O <span>ALSO AT THE CIRCLE.</span></p>
+                    <p>H100-O <span>HOW STRANGE.</span></p>
                 </div>
                 <br/>
                 {/* Section 14 */}
@@ -179,11 +179,11 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 15 */}
-                <div className="censored">
-                    <p>H110-O <span>███ █████ ███ ██████ ████ ██ ███ ████</span></p>
-                    <p>H110-O <span>████ █████</span></p>
-                    <p>H110-O <span>██ █████ ██████</span></p>
-                    <p>H110-O <span>█████ ███ █████████ ████</span></p>
+                <div className="uncensored">
+                    <p>H110-O <span>THE STARS ARE PLACED BACK IN THE SKY.</span></p>
+                    <p>H110-O <span>WITH TAPE.</span></p>
+                    <p>H110-O <span>IT LOOKS GREAT.</span></p>
+                    <p>H110-O <span>THANK YOU CUSTODIAN JOE.</span></p>
                 </div>
                 <br/>
                 {/* Section 16 */}
