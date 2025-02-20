@@ -196,10 +196,10 @@ function Book() {
                 <br/>
                 {/* Section 17 */}
                 <div className="censored">
-                    <p>H125-V <span>███ █████ █████ ██ █████ ███ ██████ ██ ████ ███</span></p>
-                    <p>H125-V <span>████ ███████ ██████</span></p>
-                    <p>H125-V <span>███ ██████ ███ ███████ ██ ███ ██████</span></p>
-                    <p>H125-V <span>████████ ███████</span></p>
+                    <p>H125-V <span>THE PRIZE MONEY IS FREED AND BEGINS TO ROLL IN.</span></p>
+                    <p>H125-V <span>POOL PARTIES START.</span></p>
+                    <p>H125-V <span>ALL LOSERS ARE INVITED TO GET SWOLE!</span></p>
+                    <p>H125-V <span>VAMPIRES ARRIVE.</span></p>
                 </div>
                 <br/>
                 {/* Section 18 */}
