@@ -203,16 +203,16 @@ function Book() {
                 </div>
                 <br/>
                 {/* Section 18 */}
-                <div className="censored">
-                    <p>H130-V <span>███ ████████ ████ ██████████████</span></p>
-                    <p>H130-V <span>█████ ███ ████ ███ ████ ███ ████████</span></p>
-                    <p>H130-V <span>████████</span></p>
-                    <p>H130-V <span>████████</span></p>
-                    <p>H130-V <span>██████████</span></p>
-                    <p>H130-V <span>████ ███ ██████████</span></p>
-                    <p>H130-V <span>██████</span></p>
-                    <p>H130-V <span>████ ██ ██████</span></p>
-                    <p>H130-V <span>███ █████ ██ ███ ████ ████████</span></p>
+                <div className="uncensored">
+                    <p>H130-V <span>THE VIOLENCE GETS BROADCASTED...</span></p>
+                    <p>H130-V <span>C3-PO HAS BEEN LET INTO OUR HOMES...</span></p>
+                    <p>H130-V <span>DEFENSE.</span></p>
+                    <p>H130-V <span>OFFENSE.</span></p>
+                    <p>H130-V <span>BLESSINGS.</span></p>
+                    <p>H130-V <span>THEY ARE DISPERSED.</span></p>
+                    <p>H130-V <span>BRIAN.</span></p>
+                    <p>H130-V <span>PUTS ON SOCKS.</span></p>
+                    <p>H130-V <span>AND FIRES UP THE MEAT GRINDER!</span></p>
                 </div>
                 <br/>
                 {/* Section 19 */}
