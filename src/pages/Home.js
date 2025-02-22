@@ -91,7 +91,7 @@ function Home() {
             <br/>Navigate with the nav bar at the top of the screen.
             <br/>Games start at <time datetime="10:00-08:00">10:00AM PST</time>.
             <br/>
-            <br/><a href="https://discord.gg/UZ3TfurF4N">Discord</a>
+            <br/><a href="https://discord.gg/UZ3TfurF4N">Discord</a> <a href="https://ko-fi.com/ketdaseball">Kofi</a>
             </p>
             <br/>
             <p>Todo:</p>
