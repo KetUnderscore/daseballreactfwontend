@@ -241,7 +241,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Misunderstood</h3>
-                    <img src="https://imgur.com/a/3dduwPK" height="50px" title="This player is just misunderstood."></img>
+                    <img src="https://i.imgur.com/q30osFm.png" height="50px" title="This player is just misunderstood."></img>
                     <p className="center">If a ball would be thrown by a Misunderstood pitcher with no strikes in the count, they will throw a strike.
                     <br/>If a Misunderstood batter would hit a strike with no balls in the count, they will hit a ball.</p>
                 </div>
