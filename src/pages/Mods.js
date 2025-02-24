@@ -95,6 +95,17 @@ function Mods() {
                 </div>
             </div>
 
+
+            <h3 className="center">Spirit Mods</h3>
+            <div className="mod-container">
+                <div className='mod'>
+                    <h3 className="center">Travelling</h3>
+                    <img src="https://i.imgur.com/m6JHgdb.png" height="50px" title="This team is always on the go."></img>
+                    <p className="center">Teams that are Travelling will play better in Away games.
+                    <br/>Players that join this team will get a slight buff.</p>
+                </div>
+            </div>
+
             
             <h2 className="center">Player Mods</h2>
             <h3 className="center">Crossover Mods</h3>

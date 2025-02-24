@@ -184,6 +184,8 @@ function Team() {
                                 return (
                                     <span> 
                                         { item.modName === "Partying" ? <img src="https://i.imgur.com/83JqkX2.png" height="30px" title="This team is out of the running and partying!"></img> : '' }
+
+                                        { item.modName === "Travelling" ? <img src="https://i.imgur.com/m6JHgdb.png" height="30px" title="This team is always on the go."></img> : '' }
                                         
                                         { item.modName === "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
                                         { item.modName === "Witness Protection" ? <img src="https://i.imgur.com/pclDlgi.png" height="30px" title="This team is protected. Safe from The Witness."></img> : '' }
