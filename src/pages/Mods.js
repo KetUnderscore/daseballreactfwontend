@@ -35,6 +35,18 @@ function Mods() {
                     <br/>This team may change the weather to Null.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Wavey</h3>
+                    <img src="https://i.imgur.com/MmKiNb3.png" height="50px" title="This team is riding the Waves."></img>
+                    <p className="center">Teams with Wavey will be protected from negative effects in Waves.
+                    <br/>This team may change the weather to Waves.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Winding</h3>
+                    <img src="https://i.imgur.com/WhmmTqP.png" height="50px" title="This team is feeling the Shuffle."></img>
+                    <p className="center">Teams with Winding will be protected from negative effects in Shuffle.
+                    <br/>This team may change the weather to Shuffle.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Coffee Lovers</h3>
                     <img src="https://i.imgur.com/1WdpOMz.png" height="50px" title="This team may start pouring coffee."></img>
                     <p className="center">This team may change the weather to Coffee.</p>
@@ -55,6 +67,16 @@ function Mods() {
                     <p className="center">This teams opponent starts with -1 run when playing a home game.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Fourth Strike</h3>
+                    <img src="https://i.imgur.com/eWPduqh.png" height="50px" title="This team gets four strikes!"></img>
+                    <p className="center">This teams batters need four strikes to be sent out.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Three Force</h3>
+                    <img src="https://i.imgur.com/5P3yQY1.png" height="50px" title="This team only gets three balls!"></img>
+                    <p className="center">This teams batters only need three balls to draw a walk.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Seasoned</h3>
                     <img src="https://i.imgur.com/KxZwfCp.png" height="50px" title="This team is being seasoned."></img>
                     <p className="center">This team will gain stars at the end of a season.</p>
@@ -64,6 +86,12 @@ function Mods() {
                     <img src="https://i.imgur.com/G4L25nw.png" height="50px" title="This team will suck forever."></img>
                     <p className="center">Teams that Suck Forever will lose one star when they realize their fate.
                     <br/>Teams that Suck Forever will party while losing by two or more points.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Throwing</h3>
+                    <img src="https://i.imgur.com/TB9pEdp.png" height="50px" title="This team just doesn't care."></img>
+                    <p className="center">Teams that are Throwing will play worse this season.
+                    <br/>Teams that are Throwing will party harder this season.</p>
                 </div>
             </div>
 
@@ -105,6 +133,13 @@ function Mods() {
                     <img src="https://i.imgur.com/keUYQ24.png" height="50px" title="This player plays for the Blittle League. This player is still growing."></img>
                     <p className="center">Blittle League players have some growing to do and play better as the season goes on.
                     <br/>Go check out <a href='https://www.blittleleague.com/'>Blittle League</a>!</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Reverberating</h3>
+                    <img src="https://i.imgur.com/UdlzP7K.png" height="50px" title="A Reverberating Player has a small chance of batting again after each of their At-Bats end."></img>
+                    <p className="center">Reverberating players have a chance of batting again immediately after their at-bat ends, as if they had "jumped the queue" in their team's lineup.
+                    <br/>If their previous at-bat ended in a hit, this can end with a player being simultaneously on base and batting.
+                    <br/>Blaseball RIV.</p>
                 </div>
             </div>
 
@@ -148,6 +183,11 @@ function Mods() {
                     <h3 className="center">Icon+</h3>
                     <img src="https://i.imgur.com/9jU25eY.png" height="50px" title="This player is an icon+. Tripled favorite payouts!"></img>
                     <p className="center">Icon+ players pay out triple coins to their fans.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Icon++</h3>
+                    <img src="https://i.imgur.com/Hb8yFtj.png" height="50px" title="This player is an icon++. Quadruple favorite payouts!"></img>
+                    <p className="center">Icon++ players pay out quadruple coins to their fans.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Noncon</h3>
@@ -198,6 +238,12 @@ function Mods() {
                     <h3 className="center">Loner</h3>
                     <img src="https://i.imgur.com/6IXXrHo.png" height="50px" title="This player is a loner."></img>
                     <p className="center">Loner players play better on smaller teams.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Misunderstood</h3>
+                    <img src="https://imgur.com/a/3dduwPK" height="50px" title="This player is just misunderstood."></img>
+                    <p className="center">If a ball would be thrown by a Misunderstood pitcher with no strikes in the count, they will throw a strike.
+                    <br/>If a Misunderstood batter would hit a strike with no balls in the count, they will hit a ball.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Vampiric</h3>
@@ -296,16 +342,15 @@ function Mods() {
                 <div className='mod'>
                     <h3 className="center">Data Leak</h3>
                     <img src="https://i.imgur.com/dLWhUNY.png" height="50px" title="This player is leaking data!"></img>
-                    <p className="center">Data Leak players were deleted and came back wrong.
-                    <br/>These players are leaking data!
-                    <br/>You just couldn't let them rest...</p>
+                    <p className="center">These players are leaking data!
+                    <br/>Data leak may wear off, affecting the player in unexpected ways.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Data Breach</h3>
                     <img src="https://i.imgur.com/ROhdf21.png" height="50px" title="This player is leaking breaking!"></img>
-                    <p className="center">Data Breach players were <span className="yellow-text">HELP</span> and <span className="yellow-text">WHY WON'T IT STOP</span>.
-                    <br/>These players are <span className="yellow-text">FIX ME</span>!
-                    <br/>You just couldn't <span className="yellow-text">I NEVER ASKED FOR THIS</span>...</p>
+                    <p className="center">Data Breach players seem content.
+                    <br/>For now.
+                    </p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Patched</h3>

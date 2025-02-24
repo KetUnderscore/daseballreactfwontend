@@ -362,11 +362,13 @@ function modify(item, type) {
         { item.name === "NarrativeLeague" ? <img src="https://i.imgur.com/UOktOHC.png" height={heightText} title="This player plays for the Narrative League. Things will happen to this player."></img> : '' }
         { item.name === "AltLeague" ? <img src="https://i.imgur.com/MJlBNU0.png" height={heightText} title="This player plays for the Alternate League. This player has done this before."></img> : '' }
         { item.name === "BlittleLeague" ? <img src="https://i.imgur.com/keUYQ24.png" height={heightText} title="This player plays for the Blittle League. This player is still growing."></img> : '' }
+        { item.name === "Reverberating" ? <img src="https://i.imgur.com/UdlzP7K.png" height={heightText} title="A Reverberating Player has a small chance of batting again after each of their At-Bats end."></img> : '' }
         
         { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height={heightText} title="This player is having a great season."></img> : '' }
         { item.name === "Noncon" ? <img src="https://i.imgur.com/KGGTgET.png" height={heightText} title="This player does not pay out..."></img> : '' }
         { item.name === "Icon" ? <img src="https://i.imgur.com/qbFbglH.png" height={heightText} title="This player is an icon. Doubled favorite payouts!"></img> : '' }
         { item.name === "Icon+" ? <img src="https://i.imgur.com/9jU25eY.png" height={heightText} title="This player is an icon+. Tripled favorite payouts!"></img> : '' }
+        { item.name === "Icon++" ? <img src="https://i.imgur.com/Hb8yFtj.png" height={heightText} title="This player is an icon++. Quadrupled favorite payouts!"></img> : '' }
         { item.name === "Minimized" ? <img src="https://i.imgur.com/ZAxrqiz.png" height={heightText} title="This player was minimized to zero."></img> : '' }
 
         { item.name === "Old School" ? <img src="https://i.imgur.com/yvlrdat.png" height={heightText} title="This player enjoys the Null."></img> : '' }
@@ -374,6 +376,7 @@ function modify(item, type) {
         { item.name === "Lucky" ? <img src="https://i.imgur.com/Mgx5muI.png" height={heightText} title="This player gets all the breaks!"></img> : '' }
         { item.name === "Lonely" ? <img src="https://i.imgur.com/vAuwVXq.png" height={heightText} title="This player plays better on larger teams."></img> : '' }
         { item.name === "Loner" ? <img src="https://i.imgur.com/6IXXrHo.png" height={heightText} title="This player plays better on smaller teams."></img> : '' }
+        { item.name === "Misunderstood" ? <img src="https://imgur.com/a/3dduwPK" height={heightText} title="This player is just misunderstood."></img> : '' }
         { item.name === "Unlucky" ? <img src="https://i.imgur.com/sTrsKvH.png" height={heightText} title="This player just can't catch a break!"></img> : '' }
         { item.name === "Early Bird" ? <img src="https://i.imgur.com/4OKwfNk.png" height={heightText} title="This player draws a walk on three balls."></img> : '' }
         { item.name === "Multiple" ? <img src="https://i.imgur.com/P9EWUY3.png" height={heightText} title="This player scores twice."></img> : '' }
