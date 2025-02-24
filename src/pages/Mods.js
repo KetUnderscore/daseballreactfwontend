@@ -170,6 +170,11 @@ function Mods() {
                     <img src="https://i.imgur.com/aFXHBBC.png" height="50px" title="This player is stuck on strings."></img>
                     <p className="center">Puppet players play better with more pocket players on their team.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Off Rails</h3>
+                    <img src="https://i.imgur.com/aFXHBBC.png" height="50px" title="This player is stuck on strings."></img>
+                    <p className="center">Off Rails players get better every time their position changes.</p>
+                </div>
             </div>
 
             <h3 className="center">Permanent Mods</h3>
