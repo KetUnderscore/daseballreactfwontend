@@ -172,7 +172,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Off Rails</h3>
-                    <img src="https://i.imgur.com/aFXHBBC.png" height="50px" title="This player is stuck on strings."></img>
+                    <img src="https://i.imgur.com/x5YT2PX.png" height="50px" title="This player is stuck on strings."></img>
                     <p className="center">Off Rails players get better every time their position changes.</p>
                 </div>
             </div>
