@@ -118,7 +118,7 @@ function Games() {
                                                 </div>
                                                 <div className="right">
                                                     <p>Balls : {'🟠'.repeat(item.currentBalls) + '🔵'.repeat(Math.max(0,(item.ballsNeeded - item.currentBalls)))}</p>
-                                                    <p>Strikes : {'🟠'.repeat(item.currentStrikes) + '🔵'.repeat(Math.max(0,(3 - item.currentStrikes)))}</p>
+                                                    <p>Strikes : {'🟠'.repeat(item.currentStrikes) + '🔵'.repeat(Math.max(0,(item.strikesNeeded - item.currentStrikes)))}</p>
                                                     <p>Outs : {'🟠'.repeat(item.currentOuts) + '🔵'.repeat(Math.max(0,(3 - item.currentOuts)))}</p>
                                                 </div>
                                                 <p className='split-para-old'>Pitcher <span>{item.currentPitcher.teamEmoji}<a style={item.topOfInning ? {color: "#"+item.homeTeam.teamColor} : {color: "#"+item.awayTeam.teamColor}} href={'/player/'+item.currentPitcher.name}>{item.currentPitcher.name}</a></span></p>
