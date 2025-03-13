@@ -206,9 +206,21 @@ function Mods() {
                     <p className="center">Icon++ players pay out quadruple coins to their fans.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Icon+++</h3>
+                    <img src="https://i.imgur.com/qra2kKd.png" height="50px" title="This player is an icon+++. Quintuple favorite payouts!"></img>
+                    <p className="center">Icon+++ players pay out quintuple coins to their fans.
+                    <br/>These players tend to be stressed.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Noncon</h3>
                     <img src="https://i.imgur.com/KGGTgET.png" height="50px" title="This player does not pay out..."></img>
                     <p className="center">Noncons don't pay out.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Stressed</h3>
+                    <img src="https://i.imgur.com/4yYcNhd.png" height="50px" title="This player is stressed! Any more and they might get crushed..."></img>
+                    <p className="center">Stressed pitchers play worse on teams with less than 5 pitchers.
+                    <br/>Stressed batters play worse on teams with less than 12 batters.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Old School</h3>

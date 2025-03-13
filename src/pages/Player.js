@@ -370,6 +370,8 @@ function modify(item, type) {
         { item.name === "Icon" ? <img src="https://i.imgur.com/qbFbglH.png" height={heightText} title="This player is an icon. Doubled favorite payouts!"></img> : '' }
         { item.name === "Icon+" ? <img src="https://i.imgur.com/9jU25eY.png" height={heightText} title="This player is an icon+. Tripled favorite payouts!"></img> : '' }
         { item.name === "Icon++" ? <img src="https://i.imgur.com/Hb8yFtj.png" height={heightText} title="This player is an icon++. Quadrupled favorite payouts!"></img> : '' }
+        { item.name === "Icon+++" ? <img src="https://i.imgur.com/qra2kKd.png" height={heightText} title="This player is an icon+++. Quintupled favorite payouts!"></img> : '' }
+        { item.name === "Stressed" ? <img src="https://i.imgur.com/4yYcNhd.png" height={heightText} title="This player is stressed! Any more and they might get crushed..."></img> : '' }
         { item.name === "Minimized" ? <img src="https://i.imgur.com/ZAxrqiz.png" height={heightText} title="This player was minimized to zero."></img> : '' }
 
         { item.name === "Old School" ? <img src="https://i.imgur.com/yvlrdat.png" height={heightText} title="This player enjoys the Null."></img> : '' }
