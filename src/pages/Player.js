@@ -366,6 +366,7 @@ function modify(item, type) {
         { item.name === "Reverberating" ? <img src="https://i.imgur.com/UdlzP7K.png" height={heightText} title="A Reverberating Player has a small chance of batting again after each of their At-Bats end."></img> : '' }
         
         { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height={heightText} title="This player is having a great season."></img> : '' }
+        { item.name === "Hierophant" ? <img src="https://i.imgur.com/rfIZ636.png" height={heightText} title="This player is checking the stars."></img> : '' }
         { item.name === "Noncon" ? <img src="https://i.imgur.com/KGGTgET.png" height={heightText} title="This player does not pay out..."></img> : '' }
         { item.name === "Icon" ? <img src="https://i.imgur.com/qbFbglH.png" height={heightText} title="This player is an icon. Doubled favorite payouts!"></img> : '' }
         { item.name === "Icon+" ? <img src="https://i.imgur.com/9jU25eY.png" height={heightText} title="This player is an icon+. Tripled favorite payouts!"></img> : '' }

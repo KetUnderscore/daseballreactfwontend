@@ -412,6 +412,13 @@ function Mods() {
                     <p className="center">The Crown is given to a player for a seaon when their team draws The Crown.
                     <br/>Players with the crown generally play better.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Hierophant</h3>
+                    <img src="https://i.imgur.com/rfIZ636.png" height="50px" title="This player is checking the stars."></img>
+                    <p className="center">The Hierophant is given to a player for a seaon when their team draws The Hierophant.
+                    <br/>Hierophant batters add or subtract balls and strikes needed from the count when they step up to bat.
+                    <br/>Hierophant pitchers add or subtract balls and strikes needed from the count when they face a new batter.</p>
+                </div>
             </div>
 
             <h3 className="center">One-off Mods</h3>
