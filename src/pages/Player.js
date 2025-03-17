@@ -405,6 +405,7 @@ function modify(item, type) {
         { item.name === "Sprinter" ? <img src="https://i.imgur.com/xLI45y0.png" height={heightText} title="This player always tries to steal if able."></img> : '' }
         { item.name === "Puppet" ? <img src="https://i.imgur.com/aFXHBBC.png" height={heightText} title="This player is stuck on strings."></img> : '' }
         { item.name === "OffRails" ? <img src="https://i.imgur.com/x5YT2PX.png" height={heightText} title="This player has gotta go!"></img> : '' }
+        { item.name === "TwinkleTwinkle" ? <img src="https://i.imgur.com/NzyFjCl.png" height={heightText} title="This player is twinkling."></img> : '' }
 
         { item.name === "Lost" ? <img src="https://i.imgur.com/2Vyez52.png" height={heightText} title="This player is lost..."></img> : '' }
         { item.name === "Found" ? <img src="https://i.imgur.com/FJ30bdi.png" height={heightText} title="This player was found!"></img> : '' }
