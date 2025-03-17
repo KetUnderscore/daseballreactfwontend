@@ -55,7 +55,7 @@ function Teams() {
                 <h1>Teams</h1>
                 <div className="divisions">
                     <div className="team">
-                        <h2>Old School</h2>
+                        <h2>Fair Legal</h2>
                         {
                             osteamData?.map( (item) => {
                                 return (
@@ -70,7 +70,7 @@ function Teams() {
                     </div>
                     <br/>
                     <div className="team">
-                        <h2>New School</h2>
+                        <h2>Balanced Legal</h2>
                         {
                             nsteamData?.map( (item) => {
                                 return (
@@ -85,7 +85,7 @@ function Teams() {
                     </div>
                     <br/>
                     <div className="team">
-                        <h2>Old Cool</h2>
+                        <h2>Fair Cheating</h2>
                         {
                             octeamData?.map( (item) => {
                                 return (
@@ -100,7 +100,7 @@ function Teams() {
                     </div>
                     <br/>
                     <div className="team">
-                        <h2>New Cool</h2>
+                        <h2>Balanced Cheating</h2>
                         {
                             ncteamData?.map( (item) => {
                                 return (

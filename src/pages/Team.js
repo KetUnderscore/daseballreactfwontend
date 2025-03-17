@@ -387,6 +387,10 @@ function modify(item, type) {
         { item.name === "Mindful" ? <img src="https://i.imgur.com/ZSlUnbk.png" height={heightText} title="This player has a mind for others."></img> : '' }
         { item.name === "WellTraveled" ? <img src="https://i.imgur.com/zCTp2Lx.png" height={heightText} title="This player has a heart for adventure."></img> : '' }
         { item.name === "Homebody" ? <img src="https://i.imgur.com/HeewHag.png" height={heightText} title="This player prefers to be home."></img> : '' }
+        { item.name === "Armored" ? <img src="https://i.imgur.com/GhGTsez.png" height={heightText} title="This player is prepared."></img> : '' }
+        { item.name === "OddScent" ? <img src="https://i.imgur.com/wN2akHp.png" height={heightText} title="This player smells weird..."></img> : '' }
+        { item.name === "Scattered" ? <img src="https://i.imgur.com/f1pN5ns.png" height={heightText} title="This player is dust in the wind."></img> : '' }
+        { item.name === "Unfamiliar" ? <img src="https://i.imgur.com/wrjCW4Y.png" height={heightText} title="This player is not the one you remember."></img> : '' }
 
         { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }

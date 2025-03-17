@@ -238,6 +238,12 @@ function Mods() {
                     <p className="center">Early Birds draw walks on three balls instead of four.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Armored</h3>
+                    <img src="https://i.imgur.com/GhGTsez.png" height="50px" title="This player is prepared."></img>
+                    <p className="center">This player is prepared.
+                    <br/>This player needs an extra strike to be made out.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Multiple</h3>
                     <img src="https://i.imgur.com/P9EWUY3.png" height="50px" title="This player scores double."></img>
                     <p className="center">Multiples score for twice as much.</p>
@@ -329,6 +335,18 @@ function Mods() {
                     <p className="center">This player can read minds.
                     <br/>This player has a chance to copy an opposing players mods.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Odd Scent</h3>
+                    <img src="https://i.imgur.com/wN2akHp.png" height="50px" title="This player smells weird..."></img>
+                    <p className="center">This player smells strange...
+                    <br/>Opponents have a chance to lose 0.1 runs when this player hits a foul.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Unfamiliar</h3>
+                    <img src="https://i.imgur.com/wrjCW4Y.png" height="50px" title="This player is not the one you remember."></img>
+                    <p className="center">This player is not the one you remember.
+                    <br/>This player will stay on base between innings.</p>
+                </div>
             </div>
 
             <h3 className="center">Effect Mods</h3>
@@ -401,6 +419,12 @@ function Mods() {
                     <h3 className="center">Welled</h3>
                     <img src="https://i.imgur.com/DqqNyTQ.png" height="50px" title="This player is stuck in a well and unable to play."></img>
                     <p className="center">This player is stuck in a well and unable to play.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Scattered</h3>
+                    <img src="https://i.imgur.com/f1pN5ns.png" height="50px" title="This player is dust in the wind."></img>
+                    <p className="center">This player is blowing in the wind.
+                    <br/>This player may move to another team.</p>
                 </div>
             </div>
 
