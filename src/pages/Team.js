@@ -178,6 +178,7 @@ function Team() {
                                     }</h2>
                         <h2>Spirit Level | {teamData[0].spirit}</h2>
                         <h2>Spirit Fund | {teamData[0].spiritFund } / {teamData[0].spiritMax }</h2>
+                        <h2>Patron Stat | {teamData[0].patron }</h2>
 
                         <div className="center row">
                             {  teamData[0]?.teamMods.map( (item) => {
