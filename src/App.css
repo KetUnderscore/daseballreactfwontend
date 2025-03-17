@@ -253,6 +253,10 @@ a {
   color: red;
 }
 
+.yellow-text {
+  color: yellow;
+}
+
 .game-holder {
   display: flex;
   flex-wrap: wrap;
