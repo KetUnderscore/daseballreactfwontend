@@ -228,7 +228,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
+                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span className="spaning">
                                             {playerHiddenData != true && playerDetailedData != true ? <div><span className='yellow-text'>{ "✪".repeat(item.evolution)}</span>{"★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) - Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99))))))
                                              + "(" + (item.evolution+(Math.floor(((item.praying + item.publicity + item.pope)/99)*10)) / 10).toFixed(1).toString() +")"}</div> : ''}
                                             {playerDetailedData != false ? <div><span className='yellow-text'>{ "✪".repeat(item.evolution)}</span>{"★".repeat(Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.praying + item.publicity + item.pope) / 99)) -  Math.max(0, (Math.floor((item.praying + item.publicity + item.pope) / 99)))))) +"(" + (item.evolution+(Math.floor(((item.praying + item.publicity + item.pope)/99)*10)) / 10).toFixed(1).toString() +")"}</div> : ''}
@@ -262,7 +262,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
+                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span className="spaning">
                                             {playerHiddenData != true && playerDetailedData != true ? <div><span className='yellow-text'>{ "✪".repeat(item.evolution)}</span>{"★".repeat(Math.max(0, (Math.floor((item.battery + item.assault + item.resistingArrest) / 99)))) + "☆".repeat(Math.max(0, ((Math.round((item.battery + item.assault + item.resistingArrest) / 99)))) - (Math.floor(Math.max(0, ((item.battery + item.assault + item.resistingArrest) / 99)))))
                                              + "(" + (item.evolution+(Math.floor(((item.battery + item.assault + item.resistingArrest) / 99)*10) / 10)).toFixed(1).toString() +")"}</div> : ''}
                                             {playerDetailedData != false ? <div><span className='yellow-text'>{ "✪".repeat(item.evolution)}</span>{"★".repeat(Math.max(0, Math.floor(statstotal / 297))) + (statstotal % 297 >= 148.5 ? '☆' : '') + "(" + (item.evolution+(Math.floor((statstotal/297)*10) / 10)).toFixed(1).toString() +")"}</div> : ''}
@@ -296,7 +296,7 @@ function Team() {
                                     return (
                                         <div className='player-link'>
                                             <div className='split-para'>
-                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span>
+                                            <a href={'/player/'+item.name} value={item._id} key={item.name}>{item.item.name != "None" ? '📦' : ''}{ item.name }</a><span className="spaning">
                                             {playerHiddenData != true && playerDetailedData != true ? <div><span className='yellow-text'>{ "✪".repeat(item.evolution)}</span>{"★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') + "(" + (item.evolution+(Math.floor(((statstotal)*10)/396) / 10)).toFixed(1).toString() +")"}</div> : ''}
                                             {playerDetailedData != false ? <div><span className='yellow-text'>{ "✪".repeat(item.evolution)}</span>{"★".repeat(Math.max(0, Math.floor(statstotal / 396))) + (statstotal % 396 >= 198 ? '☆' : '') + "(" + (item.evolution+(Math.floor(((statstotal)*10)/396) / 10)).toFixed(1).toString() +")"}</div> : ''}
                                             {playerHiddenData != false ? item.modifiers.map( (item) => {

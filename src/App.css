@@ -218,7 +218,7 @@ a {
   text-align:left;
 }
 
-.split-para span {
+.split-para .spaning {
   display:block;
   float:right;
   width: 7rem;
@@ -443,3 +443,5 @@ a {
 .bold {
   font-weight: bold;
 }
+
+.unbreakable { display: inline-block;}

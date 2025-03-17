@@ -155,16 +155,20 @@ function Player () {
                                 )}) 
                             }
                         </div>
-                        <h2>Pitching | { "★".repeat(Math.max(0, Math.floor(playerData[0].praying + playerData[0].publicity + playerData[0].pope) / 100)) + (Math.max(0, playerData[0].praying + playerData[0].publicity + playerData[0].pope) % 100 >= 50 ? '☆' : '') }
+                        <h2>Pitching | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            { "★".repeat(Math.max(0, Math.floor(playerData[0].praying + playerData[0].publicity + playerData[0].pope) / 100)) + (Math.max(0, playerData[0].praying + playerData[0].publicity + playerData[0].pope) % 100 >= 50 ? '☆' : '') }
                             <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].praying + playerData[0].publicity + playerData[0].pope))) / 100) + (Math.abs(Math.min(0, playerData[0].praying + playerData[0].publicity + playerData[0].pope)) % 100 >= 50 ? '☆' : '')}</span>
                         </h2>
-                        <h2>Batting | { "★".repeat(Math.max(0, Math.floor(playerData[0].battery + playerData[0].assault + playerData[0].resistingArrest) / 100)) + (Math.max(0, playerData[0].battery + playerData[0].assault + playerData[0].resistingArrest) % 100 >= 50 ? '☆' : '') }
+                        <h2>Batting | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            { "★".repeat(Math.max(0, Math.floor(playerData[0].battery + playerData[0].assault + playerData[0].resistingArrest) / 100)) + (Math.max(0, playerData[0].battery + playerData[0].assault + playerData[0].resistingArrest) % 100 >= 50 ? '☆' : '') }
                             <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].battery + playerData[0].assault + playerData[0].resistingArrest))) / 100) + (Math.abs(Math.min(0, playerData[0].battery + playerData[0].assault + playerData[0].resistingArrest)) % 100 >= 50 ? '☆' : '')}</span>
                         </h2>
-                        <h2>Running | { "★".repeat(Math.max(0, Math.floor(playerData[0].hammer + playerData[0].stalin + playerData[0].sickle) / 100)) + (Math.max(0, playerData[0].hammer + playerData[0].stalin + playerData[0].sickle) % 100 >= 50 ? '☆' : '') }
+                        <h2>Running | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            { "★".repeat(Math.max(0, Math.floor(playerData[0].hammer + playerData[0].stalin + playerData[0].sickle) / 100)) + (Math.max(0, playerData[0].hammer + playerData[0].stalin + playerData[0].sickle) % 100 >= 50 ? '☆' : '') }
                             <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].hammer + playerData[0].stalin + playerData[0].sickle))) / 100) + (Math.abs(Math.min(0, playerData[0].hammer + playerData[0].stalin + playerData[0].sickle)) % 100 >= 50 ? '☆' : '')}</span>
                         </h2>
-                        <h2>Fielding | { "★".repeat(Math.max(0, Math.floor(playerData[0].clooning + playerData[0].throwing + playerData[0].batman) / 100)) + (Math.max(0, playerData[0].clooning + playerData[0].throwing + playerData[0].batman) % 100 >= 50 ? '☆' : '') }
+                        <h2>Fielding | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            { "★".repeat(Math.max(0, Math.floor(playerData[0].clooning + playerData[0].throwing + playerData[0].batman) / 100)) + (Math.max(0, playerData[0].clooning + playerData[0].throwing + playerData[0].batman) % 100 >= 50 ? '☆' : '') }
                             <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].clooning + playerData[0].throwing + playerData[0].batman))) / 100) + (Math.abs(Math.min(0, playerData[0].clooning + playerData[0].throwing + playerData[0].batman)) % 100 >= 50 ? '☆' : '')}</span>
                         </h2>
                     </div>
