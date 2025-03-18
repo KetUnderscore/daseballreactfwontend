@@ -104,6 +104,11 @@ function Mods() {
                     <p className="center">Teams that are Travelling will play better in Away games.
                     <br/>Players that join this team will get a slight buff.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Oceanic</h3>
+                    <img src="https://i.imgur.com/qnyuEgo.png" height="50px" title="This team is watery."></img>
+                    <p className="center">Players on Teams that are Oceanic count as Sirens.</p>
+                </div>
             </div>
 
             
