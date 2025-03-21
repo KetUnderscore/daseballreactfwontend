@@ -244,19 +244,19 @@ function Player () {
                                 )}) 
                             }</h2>
                             <h2>Prop | {playerData[0].item.property}</h2>
-                            <h2>Pitching | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            <h2>Pitching | 
                                 { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]) / 100)) + (Math.max(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]) % 100 >= 50 ? '☆' : '') }
                                 <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[3] + playerData[0].item.stats[4] + playerData[0].item.stats[5])) % 100 >= 50 ? '☆' : '')}</span>
                             </h2>
-                            <h2>Batting | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            <h2>Batting | 
                                 { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]) / 100)) + (Math.max(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]) % 100 >= 50 ? '☆' : '') }
                                 <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[0] + playerData[0].item.stats[1] + playerData[0].item.stats[2])) % 100 >= 50 ? '☆' : '')}</span>
                             </h2>
-                            <h2>Running | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            <h2>Running | 
                                 { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]) / 100)) + (Math.max(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]) % 100 >= 50 ? '☆' : '') }
                                 <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[6] + playerData[0].item.stats[7] + playerData[0].item.stats[8])) % 100 >= 50 ? '☆' : '')}</span>
                             </h2>
-                            <h2>Fielding | <span className='yellow-text'>{ "✪".repeat(playerData[0].evolution)}</span>
+                            <h2>Fielding | 
                                 { "★".repeat(Math.max(0, Math.floor(playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]) / 100)) + (Math.max(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]) % 100 >= 50 ? '☆' : '') }
                                 <span className='red-text'>{ "★".repeat(Math.floor(Math.abs(Math.min(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11]))) / 100) + (Math.abs(Math.min(0, playerData[0].item.stats[9] + playerData[0].item.stats[10] + playerData[0].item.stats[11])) % 100 >= 50 ? '☆' : '')}</span>
                             </h2>
