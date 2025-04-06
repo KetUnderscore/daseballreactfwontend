@@ -40,7 +40,7 @@ function Header() {
       <nav className="nav-bar">
         <div className="titlebox">
           <a href="/" ><img src={ logo } alt="Logo" className="logo" /></a>
-          <h1 className="title">Season 9 - First Choice</h1>
+          <h1 className="title">Season 10 - Second Choice</h1>
         </div>
         <br/>
         <ul className='wrap-me'>
