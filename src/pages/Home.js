@@ -8,8 +8,8 @@ function Home() {
 
     const [seasonData, setSeasonData] = useState(null)
     const [seasonLoaded, setSeasonLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(9) // Default is Season 9
-    const [paramsData, setparamsData] = useState(9)
+    const [seasonNumber, setSeasonNumber] = useState(10) // Default is Season 10
+    const [paramsData, setparamsData] = useState(10)
     const [holdNum, setholdNum] = useState(0)
 
     useEffect( () => {
