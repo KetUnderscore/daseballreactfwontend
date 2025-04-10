@@ -96,8 +96,8 @@ function Schedule() {
             if (seasonData[0].seasonDay >= 45) {if (seasonData[0].scheduleTeamInfo[seasonData[0].seasonDay-45].length == 2) {teamLength = 2} else {teamLength = 4}}
             for (let daysLeft = seasonData[0].seasonDay; daysLeft < seasonData[0].schedule.length; daysLeft++) {
                 for (let gn = 0; gn < teamLength; gn += 2) {
-                    let team1 = seasonData[0].scheduleTeamInfo[seasonData[0].schedule[seasonData[0].seasonDay][gn]]
-                    let team2 = seasonData[0].scheduleTeamInfo[seasonData[0].schedule[seasonData[0].seasonDay][gn+1]]
+                    let team1 = seasonData[0].scheduleTeamInfo[seasonData[0].schedule[daysLeft][gn]]
+                    let team2 = seasonData[0].scheduleTeamInfo[seasonData[0].schedule[daysLeft][gn+1]]
                     setDayOneSched(dayOneSched => [...dayOneSched, 
                         <div className='game-panel' key={gn}>
                         <h2>Day {daysLeft+1}</h2>
