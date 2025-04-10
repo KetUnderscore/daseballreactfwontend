@@ -98,8 +98,8 @@ function Games() {
                                                         <span className='' style={{color: "black", backgroundColor: "#"+item.homeTeam.teamColor, borderRadius: ".5rem .5rem .5rem .5rem"}}>&nbsp;🔻 of {item.inningNumber} &nbsp;</span>
                                                     }
                                                 </h3>
-                                                <h3 className='split-para-old'>{item.homeTeam.teamEmoji}<a style={{color: "#"+item.homeTeam.teamColor}} href={'/team/'+item.homeTeam.teamName}>{item.homeTeam.teamName}</a> <span style={{color: 'white'}}>{item.homeScore}</span></h3>
-                                                <h3 className='split-para-old'>{item.awayTeam.teamEmoji}<a style={{color: "#"+item.awayTeam.teamColor}} href={'/team/'+item.awayTeam.teamName}>{item.awayTeam.teamName}</a> <span style={{color: 'white'}}>{item.awayScore}</span></h3>
+                                                <h3 className='split-para-old'>A{item.awayTeam.teamEmoji}<a style={{color: "#"+item.awayTeam.teamColor}} href={'/team/'+item.awayTeam.teamName}>{item.awayTeam.teamName}</a> <span style={{color: 'white'}}>{item.awayScore}</span></h3>
+                                                <h3 className='split-para-old'>H{item.homeTeam.teamEmoji}<a style={{color: "#"+item.homeTeam.teamColor}} href={'/team/'+item.homeTeam.teamName}>{item.homeTeam.teamName}</a> <span style={{color: 'white'}}>{item.homeScore}</span></h3>
                                             </div>
                                             <div className='game-panel'>
                                                 <div className='inline'>
