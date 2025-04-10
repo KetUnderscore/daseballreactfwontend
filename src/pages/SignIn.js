@@ -45,10 +45,22 @@ const Login = () => {
             .then(response=>response.json())
             .then(data=>{ 
                 localStorage.setItem("userInfo", JSON.stringify(data))
-             })
+            })
             // Reset States
             setUser('')
             setPwd('')
+            console.log(response)
+            if (response?.status === 400) {
+                setErrMsg('Missing Username or Password')
+                localStorage.removeItem("userInfo")
+                return
+            } else if (response?.status === 401) {
+                localStorage.removeItem("userInfo")
+                return
+            } else if (response?.status === 409) {
+                localStorage.removeItem("userInfo")
+                return
+            }
             setSuccess(true)
         } catch (err) {
             if (!err?.response) {

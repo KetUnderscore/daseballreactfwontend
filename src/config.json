@@ -1,4 +1,4 @@
 {
     "currentActiveSeason": 10,
-    "connectString": "https://daseball-api-05f8b0ed36e2.herokuapp.com/"
+    "connectString": "http://localhost:4000/"
 }
