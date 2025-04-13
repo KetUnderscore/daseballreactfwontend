@@ -355,7 +355,14 @@ function Mods() {
                     <h3 className="center">Unfamiliar</h3>
                     <img src="https://i.imgur.com/wrjCW4Y.png" height="50px" title="This player is not the one you remember."></img>
                     <p className="center">This player is not the one you remember.
-                    <br/>This player will stay on base between innings.</p>
+                    <br/>This player will stay on base between innings.
+                    <br/>This player will score negative if scoring for a team they are not on.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Threatening</h3>
+                    <img src="https://i.imgur.com/F8CGcLH.png" height="50px" title="This player is dangerous to be around."></img>
+                    <p className="center">This player will intentionally walk On Fire players.
+                    <br/>This player may be intentionally walked.</p>
                 </div>
             </div>
 
@@ -389,6 +396,21 @@ function Mods() {
                     <img src="https://i.imgur.com/qmw52U7.png" height="50px" title="This player is burnt out..."></img>
                     <p className="center">Burnt Out players play worst for the rest of the game.
                     <br/>This player will start warming up next game.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Twink</h3>
+                    <img src="https://i.imgur.com/yP1tgdG.png" height="50px" title="This player is Twink!"></img>
+                    <p className="center">Twink players take 1 less strike to out.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Twunk</h3>
+                    <img src="https://i.imgur.com/n9zYomn.png" height="50px" title="This player is Twunk!"></img>
+                    <p className="center">Twunk players take 1 more ball to walk.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Twonk</h3>
+                    <img src="https://i.imgur.com/wRqHRil.png" height="50px" title="This player is Twonk!"></img>
+                    <p className="center">Twonk players give 2 outs.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Erased</h3>

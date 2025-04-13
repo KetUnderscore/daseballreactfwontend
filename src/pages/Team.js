@@ -395,6 +395,7 @@ function modify(item, type) {
         { item.name === "OddScent" ? <img src="https://i.imgur.com/wN2akHp.png" height={heightText} title="This player smells weird..."></img> : '' }
         { item.name === "Scattered" ? <img src="https://i.imgur.com/f1pN5ns.png" height={heightText} title="This player is dust in the wind."></img> : '' }
         { item.name === "Unfamiliar" ? <img src="https://i.imgur.com/wrjCW4Y.png" height={heightText} title="This player is not the one you remember."></img> : '' }
+        { item.name === "Threatening" ? <img src="https://i.imgur.com/F8CGcLH.png" height={heightText} title="This player is dangerous to be around."></img> : '' }
 
         { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }
@@ -403,6 +404,10 @@ function modify(item, type) {
         { item.name === "Puppet" ? <img src="https://i.imgur.com/aFXHBBC.png" height={heightText} title="This player is stuck on strings."></img> : '' }
         { item.name === "OffRails" ? <img src="https://i.imgur.com/x5YT2PX.png" height={heightText} title="This player has gotta go!"></img> : '' }
         { item.name === "TwinkleTwinkle" ? <img src="https://i.imgur.com/NzyFjCl.png" height={heightText} title="This player is twinkling."></img> : '' }
+        
+        { item.name === "Twink" ? <img src="https://i.imgur.com/yP1tgdG.png" height={heightText} title="This player is Twink!"></img> : '' }
+        { item.name === "Twunk" ? <img src="https://i.imgur.com/n9zYomn.png" height={heightText} title="This player is Twunk!"></img> : '' }
+        { item.name === "Twonk" ? <img src="https://i.imgur.com/wRqHRil.png" height={heightText} title="This player is Twonk!"></img> : '' }
 
         { item.name === "Lost" ? <img src="https://i.imgur.com/2Vyez52.png" height={heightText} title="This player is lost..."></img> : '' }
         { item.name === "Found" ? <img src="https://i.imgur.com/FJ30bdi.png" height={heightText} title="This player was found!"></img> : '' }
