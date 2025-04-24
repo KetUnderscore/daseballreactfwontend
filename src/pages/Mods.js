@@ -85,7 +85,14 @@ function Mods() {
                     <h3 className="center">Suck Forever</h3>
                     <img src="https://i.imgur.com/G4L25nw.png" height="50px" title="This team will suck forever."></img>
                     <p className="center">Teams that Suck Forever will lose one star when they realize their fate.
-                    <br/>Teams that Suck Forever will party while losing by two or more points.</p>
+                    <br/>Teams that Suck Forever will party while losing by two or more points.
+                    <br/>Becomes Pretty Good after reaching playoffs.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Pretty Good</h3>
+                    <img src="https://i.imgur.com/T1cNfGP.png" height="50px" title="This team is pretty good."></img>
+                    <p className="center">This team is Pretty Good.
+                    <br/>Players on this team play better.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Throwing</h3>

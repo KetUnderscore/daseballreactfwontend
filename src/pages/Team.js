@@ -199,6 +199,7 @@ function Team() {
                                         { item.modName === "Coffee Lovers" ? <img src="https://i.imgur.com/1WdpOMz.png" height="30px" title="This team may start pouring coffee."></img> : '' }
                                         
                                         { item.modName === "Suck Forever" ? <img src="https://i.imgur.com/G4L25nw.png" height="30px" title="This team will suck forever."></img> : '' }
+                                        { item.modName === "Pretty Good" ? <img src="https://i.imgur.com/T1cNfGP.png" height="30px" title="This team is pretty good."></img> : '' }
                                         { item.modName === "Throwing" ? <img src="https://i.imgur.com/TB9pEdp.png" height="30px" title="This team just doesn't care."></img> : '' }
                                         { item.modName === "Fourth Strike" ? <img src="https://i.imgur.com/eWPduqh.png" height="30px" title="This team gets four strikes!"></img> : '' }
                                         { item.modName === "ThreeForce" ? <img src="https://i.imgur.com/5P3yQY1.png" height="30px" title="This team only gets three balls!"></img> : '' }
