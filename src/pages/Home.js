@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-const { connectString } = require('../config.json')
+const { currentActiveSeason, connectString } = require('../config.json')
 
 function Home() {
     const params = useParams()
@@ -8,8 +8,8 @@ function Home() {
 
     const [seasonData, setSeasonData] = useState(null)
     const [seasonLoaded, setSeasonLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(10) // Default is Season 10
-    const [paramsData, setparamsData] = useState(10)
+    const [seasonNumber, setSeasonNumber] = useState(currentActiveSeason) // Default is current season
+    const [paramsData, setparamsData] = useState(currentActiveSeason)
     const [holdNum, setholdNum] = useState(0)
 
     useEffect( () => {

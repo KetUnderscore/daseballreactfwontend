@@ -50,7 +50,6 @@ function Teams() {
         return (
             <div className='player'>
                 {/* <h1 style={{color:'#52e2ff'}}>The Seattle Seals are your Season 10 Champions!</h1> */}
-                <h1 style={{color:'#52e2ff'}}>The Seattle Seals are your Season 10 Champions!</h1>
                 <br/>
                 <h1>Teams</h1>
                 <div className="divisions">
