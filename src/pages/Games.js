@@ -65,13 +65,7 @@ function Games() {
                                                         item.weather === 0 ? <img src="https://i.imgur.com/yvlrdat.png" height="30px" class="weather" title="Null" alt='Null'></img> : ''
                                                     }
                                                     {
-                                                        item.weather === 0 ? <img src="https://i.imgur.com/2pd8zq8.png" height="30px" class="weather" title="Binder" alt='Binder'></img> : ''
-                                                    }
-                                                    {
                                                         item.weather === 1 ? <img src="https://i.imgur.com/MX8RFc4.png" height="30px" class="weather" title="Sunny" alt='Sunny'></img> : ''
-                                                    }
-                                                    {
-                                                        item.weather === 1 ? <img src="https://i.imgur.com/2pd8zq8.png" height="30px" class="weather" title="Binder" alt='Binder'></img> : ''
                                                     }
                                                     {
                                                         item.weather === 2 ? <img src="https://i.imgur.com/K3DWIqZ.png" height="30px" class="weather" title="Shuffle" alt='Shuffle'></img> : ''
@@ -84,6 +78,18 @@ function Games() {
                                                     }
                                                     {
                                                         item.weather === 5 ? <img src="https://i.imgur.com/NBMbLYO.png" height="30px" class="weather" title="Skipping" alt='Skipping'></img> : ''
+                                                    }
+                                                    {
+                                                        item.weather === 6 ? <img src="https://i.imgur.com/hec6F8s.png" height="30px" class="weather" title="Sunder" alt='Sunder'></img> : ''
+                                                    }
+                                                    {
+                                                        item.weather === 7 && item.inningNumber <= 3 ? <img src="https://i.imgur.com/JZoAQTD.png" height="30px" class="weather" title="Waning Moon" alt='Waning Moon'></img> : ''
+                                                    }
+                                                    {
+                                                        item.weather === 7 && item.inningNumber <= 3 ? <img src="https://i.imgur.com/IOlPsA2.png" height="30px" class="weather" title="Full Moon" alt='Full Moon'></img> : ''
+                                                    }
+                                                    {
+                                                        item.weather === 7 && item.inningNumber <= 3 ? <img src="https://i.imgur.com/cGmMJxi.png" height="30px" class="weather" title="Waxing Moon" alt='Waxing Moon'></img> : ''
                                                     }
                                                     {
                                                         (item.homeScore > item.awayScore && item.inningNumber > 8 && item.topOfInning === false) ? <img src="https://i.imgur.com/PVobD6N.png" height="30px" class="shame" title="Shame" alt='Shame'></img> : ''
