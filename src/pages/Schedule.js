@@ -18,7 +18,7 @@ function Schedule() {
     const [dayTwoSched, setDayTwoSched] = useState([])
     const [dayThreeSched, setDayThreeSched] = useState([])
 
-    const [betVal, setBetVal] = useState(10)
+    const [betVal, setBetVal] = useState(currentActiveSeason)
     const [teamVal, setTeamVal] = useState("")
 
     let userData = Cookies.get("userInfo")
