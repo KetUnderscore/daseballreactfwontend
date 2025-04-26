@@ -118,7 +118,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Candied</h3>
-                    <img src="https://i.imgur.com/aGVPbix.png" height="50px" title="This team is watery."></img>
+                    <img src="https://i.imgur.com/aGVPbix.png" height="50px" title="This team is candied."></img>
                     <p className="center">Players on this team play better earlier in the season.
                     <br/>Players on this team may eat their non spirit items.</p>
                 </div>
