@@ -405,6 +405,7 @@ function modify(item, type) {
         { item.name === "Gentleman" ? <img src="https://i.imgur.com/B93ztw2.png" height={heightText} title="This player is a gentleman thief."></img> : '' }
         { item.name === "Lightweight" ? <img src="https://i.imgur.com/uel3Avj.png" height={heightText} title="This player likes to travel light."></img> : '' }
         { item.name === "Tertiary" ? <img src="https://i.imgur.com/FheImZD.png" height={heightText} title="This player has an affinity for triples."></img> : '' }
+        { item.name === "Floaty" ? <img src="https://i.imgur.com/SXBBdcC.png" height={heightText} title="This player floats."></img> : '' }
         { item.name === "Mindful" ? <img src="https://i.imgur.com/ZSlUnbk.png" height={heightText} title="This player has a mind for others."></img> : '' }
         { item.name === "WellTraveled" ? <img src="https://i.imgur.com/zCTp2Lx.png" height={heightText} title="This player has a heart for adventure."></img> : '' }
         { item.name === "Homebody" ? <img src="https://i.imgur.com/HeewHag.png" height={heightText} title="This player prefers to be home."></img> : '' }
@@ -413,6 +414,7 @@ function modify(item, type) {
         { item.name === "Scattered" ? <img src="https://i.imgur.com/f1pN5ns.png" height={heightText} title="This player is dust in the wind."></img> : '' }
         { item.name === "Unfamiliar" ? <img src="https://i.imgur.com/wrjCW4Y.png" height={heightText} title="This player is not the one you remember."></img> : '' }
         { item.name === "Threatening" ? <img src="https://i.imgur.com/F8CGcLH.png" height={heightText} title="This player is dangerous to be around."></img> : '' }
+        { item.name === "Determined" ? <img src="https://i.imgur.com/2pwU5Pd.png" height={heightText} title="Determination."></img> : '' }
 
         { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }
@@ -439,6 +441,9 @@ function modify(item, type) {
         { item.name === "Tired" ? <img src="https://i.imgur.com/OFRRbPE.png" height={heightText} title="This player is tired..."></img> : '' }
         { item.name === "Team Pillar" ? <img src="https://i.imgur.com/GXCcMj0.png" height={heightText} title="This player is a team pillar! They are immune!"></img> : '' }
         { item.name === "Welled" ? <img src="https://i.imgur.com/DqqNyTQ.png" height={heightText} title="This player is stuck in a well and unable to play."></img> : '' }
+        { item.name === "Dominating" ? <img src="https://i.imgur.com/AUbAJZH.png" height={heightText} title="This player is dominating!"></img> : '' }
+        { item.name === "Skating" ? <img src="https://i.imgur.com/tlNIgd2.png" height={heightText} title="This player is skating!"></img> : '' }
+        { item.name === "Flunking" ? <img src="https://i.imgur.com/t9qmqPK.png" height={heightText} title="This player is flunking!"></img> : '' }
     </span>
     )
 }

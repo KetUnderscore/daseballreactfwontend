@@ -348,6 +348,11 @@ function Mods() {
                     <p className="center">This player hits triples more often.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Floaty</h3>
+                    <img src="https://i.imgur.com/SXBBdcC.png" height="50px" title="This player floats."></img>
+                    <p className="center">This player hits fly balls more often.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Well Traveled</h3>
                     <img src="https://i.imgur.com/zCTp2Lx.png" height="50px" title="This player has a heart for adventure."></img>
                     <p className="center">This player plays better away.</p>
@@ -381,6 +386,11 @@ function Mods() {
                     <img src="https://i.imgur.com/F8CGcLH.png" height="50px" title="This player is dangerous to be around."></img>
                     <p className="center">This player will intentionally walk On Fire players.
                     <br/>This player may be intentionally walked.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Determined</h3>
+                    <img src="https://i.imgur.com/2pwU5Pd.png" height="50px" title="Determination."></img>
+                    <p className="center">This player cannot strike out while losing.</p>
                 </div>
             </div>
 
@@ -475,6 +485,21 @@ function Mods() {
                     <img src="https://i.imgur.com/f1pN5ns.png" height="50px" title="This player is dust in the wind."></img>
                     <p className="center">This player is blowing in the wind.
                     <br/>This player may move to another team.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Dominating</h3>
+                    <img src="https://i.imgur.com/AUbAJZH.png" height="50px" title="This player is dominating!"></img>
+                    <p className="center">This player plays better when winning by 4 or more.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Skating</h3>
+                    <img src="https://i.imgur.com/tlNIgd2.png" height="50px" title="This player is skating!"></img>
+                    <p className="center">This player plays better when winning by 3 or less.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Flunking</h3>
+                    <img src="https://i.imgur.com/t9qmqPK.png" height="50px" title="This player is flunking!"></img>
+                    <p className="center">This player plays better when losing.</p>
                 </div>
             </div>
 
