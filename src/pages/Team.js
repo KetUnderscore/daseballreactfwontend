@@ -190,6 +190,7 @@ function Team() {
                                         { item.modName === "Oceanic" ? <img src="https://i.imgur.com/qnyuEgo.png" height="30px" title="This team is watery."></img> : '' }
                                         { item.modName === "Candied" ? <img src="https://i.imgur.com/aGVPbix.png" height="30px" title="This team is candied."></img> : '' }
                                         { item.modName === "Hexagonal" ? <img src="https://i.imgur.com/ufzG0Xr.png" height="30px" title="This team likes sixes."></img> : '' }
+                                        { item.modName === "FreshLinen" ? <img src="https://i.imgur.com/Xm6FiL4.png" height="30px" title="This team is fresh out of the dryer."></img> : '' }
                                         
                                         { item.modName === "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
                                         { item.modName === "Witness Protection" ? <img src="https://i.imgur.com/pclDlgi.png" height="30px" title="This team is protected. Safe from The Witness."></img> : '' }

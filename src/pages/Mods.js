@@ -127,6 +127,11 @@ function Mods() {
                     <img src="https://i.imgur.com/ufzG0Xr.png" height="50px" title="This team likes sixes."></img>
                     <p className="center">This team has an affinity for the number 6.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Fresh Linen</h3>
+                    <img src="https://i.imgur.com/Xm6FiL4.png" height="50px" title="This team is fresh out of the dryer."></img>
+                    <p className="center">This team plays with an additional vibe buff.</p>
+                </div>
             </div>
 
             
