@@ -93,7 +93,7 @@ function Schedule() {
             let teamLength = 12
             let teamSlotA = 0
             let teamSlotB = 0
-            // if (seasonData[0].seasonDay == 0) {seasonData[0].seasonDay += 1}
+            if (seasonData[0].seasonDay == 0) {seasonData[0].seasonDay += 1}
             if (seasonData[0].seasonDay < 45) {
                 for (let daysLeft = seasonData[0].seasonDay; daysLeft < seasonData[0].schedule.length; daysLeft++) {
                     for (let gn = 0; gn < teamLength; gn += 2) {
