@@ -200,6 +200,7 @@ function Team() {
                                         { item.modName === "Winding" ? <img src="https://i.imgur.com/WhmmTqP.png" height="30px" title="This team is riding the wind."></img> : '' }
                                         { item.modName === "Tape Lovers" ? <img src="https://i.imgur.com/NBMbLYO.png" height="30px" title="This team may start skipping."></img> : '' }
                                         { item.modName === "Coffee Lovers" ? <img src="https://i.imgur.com/1WdpOMz.png" height="30px" title="This team may start pouring coffee."></img> : '' }
+                                        { item.modName === "Counter" ? <img src="https://i.imgur.com/Sm1JrPe.png" height="30px" title="This team hates weather calling."></img> : '' }
                                         
                                         { item.modName === "Suck Forever" ? <img src="https://i.imgur.com/G4L25nw.png" height="30px" title="This team will suck forever."></img> : '' }
                                         { item.modName === "Pretty Good" ? <img src="https://i.imgur.com/T1cNfGP.png" height="30px" title="This team is pretty good."></img> : '' }
@@ -410,6 +411,7 @@ function modify(item, type) {
         { item.name === "Puppet" ? <img src="https://i.imgur.com/aFXHBBC.png" height={heightText} title="This player is stuck on strings."></img> : '' }
         { item.name === "OffRails" ? <img src="https://i.imgur.com/x5YT2PX.png" height={heightText} title="This player has gotta go!"></img> : '' }
         { item.name === "TwinkleTwinkle" ? <img src="https://i.imgur.com/NzyFjCl.png" height={heightText} title="This player is twinkling."></img> : '' }
+        { item.name === "Drone" ? <img src="https://i.imgur.com/40jIgTA.png" height={heightText} title="This player is a drone."></img> : '' }
         
         { item.name === "Twink" ? <img src="https://i.imgur.com/yP1tgdG.png" height={heightText} title="This player is Twink!"></img> : '' }
         { item.name === "Twunk" ? <img src="https://i.imgur.com/n9zYomn.png" height={heightText} title="This player is Twunk!"></img> : '' }
