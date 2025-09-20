@@ -67,6 +67,13 @@ function Mods() {
                     <p className="center">This teams opponent starts with -1 run when playing a home game.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Counter</h3>
+                    <img src="https://i.imgur.com/AiC1xek.png" height="50px" title="This team can counter."></img>
+                    <p className="center">This team will counter weather calls.
+                     <br/>When a weather call is countered, there is a chance the weather will be sundered.
+                    </p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Fourth Strike</h3>
                     <img src="https://i.imgur.com/eWPduqh.png" height="50px" title="This team gets four strikes!"></img>
                     <p className="center">This teams batters need four strikes to be sent out.</p>
@@ -218,6 +225,11 @@ function Mods() {
                     <h3 className="center">Twinkle Twinkle</h3>
                     <img src="https://i.imgur.com/NzyFjCl.png" height="50px" title="This player is twinkling."></img>
                     <p className="center">Twinkle Twinkle players may inflict opponents with Twink, Twunk or Twonk.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Drone</h3>
+                    <img src="https://i.imgur.com/NzyFjCl.png" height="50px" title="This player is a drone."></img>
+                    <p className="center">TDrone players will accumulate other players mods as the game goes on.</p>
                 </div>
             </div>
 

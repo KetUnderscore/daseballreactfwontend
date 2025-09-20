@@ -200,7 +200,7 @@ function Team() {
                                         { item.modName === "Winding" ? <img src="https://i.imgur.com/WhmmTqP.png" height="30px" title="This team is riding the wind."></img> : '' }
                                         { item.modName === "Tape Lovers" ? <img src="https://i.imgur.com/NBMbLYO.png" height="30px" title="This team may start skipping."></img> : '' }
                                         { item.modName === "Coffee Lovers" ? <img src="https://i.imgur.com/1WdpOMz.png" height="30px" title="This team may start pouring coffee."></img> : '' }
-                                        { item.modName === "Counter" ? <img src="https://i.imgur.com/Sm1JrPe.png" height="30px" title="This team hates weather calling."></img> : '' }
+                                        { item.modName === "Counter" ? <img src="https://i.imgur.com/Sm1JrPe.png" height="30px" title="This team can counter."></img> : '' }
                                         
                                         { item.modName === "Suck Forever" ? <img src="https://i.imgur.com/G4L25nw.png" height="30px" title="This team will suck forever."></img> : '' }
                                         { item.modName === "Pretty Good" ? <img src="https://i.imgur.com/T1cNfGP.png" height="30px" title="This team is pretty good."></img> : '' }
