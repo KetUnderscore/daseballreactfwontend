@@ -68,7 +68,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Counter</h3>
-                    <img src="https://i.imgur.com/AiC1xek.png" height="50px" title="This team can counter."></img>
+                    <img src="https://i.imgur.com/Sm1JrPe.png" height="50px" title="This team can counter."></img>
                     <p className="center">This team will counter weather calls.
                      <br/>When a weather call is countered, there is a chance the weather will be sundered.
                     </p>
@@ -228,7 +228,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Drone</h3>
-                    <img src="https://i.imgur.com/NzyFjCl.png" height="50px" title="This player is a drone."></img>
+                    <img src="https://i.imgur.com/40jIgTA.png" height="50px" title="This player is a drone."></img>
                     <p className="center">TDrone players will accumulate other players mods as the game goes on.</p>
                 </div>
             </div>
