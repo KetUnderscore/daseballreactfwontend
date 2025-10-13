@@ -139,6 +139,11 @@ function Mods() {
                     <img src="https://i.imgur.com/Xm6FiL4.png" height="50px" title="This team is fresh out of the dryer."></img>
                     <p className="center">This team plays with an additional vibe buff.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Slippery</h3>
+                    <img src="https://i.imgur.com/CFdQvtK.png" height="50px" title="This team is slippery when wet."></img>
+                    <p className="center">Players on this team may slip onto first after scoring.</p>
+                </div>
             </div>
 
             
