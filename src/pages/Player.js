@@ -380,6 +380,7 @@ function modify(item, type) {
         { item.name === "AltLeague" ? <img src="https://i.imgur.com/MJlBNU0.png" height={heightText} title="This player plays for the Alternate League. This player has done this before."></img> : '' }
         { item.name === "BlittleLeague" ? <img src="https://i.imgur.com/keUYQ24.png" height={heightText} title="This player plays for the Blittle League. This player is still growing."></img> : '' }
         { item.name === "Reverberating" ? <img src="https://i.imgur.com/UdlzP7K.png" height={heightText} title="A Reverberating Player has a small chance of batting again after each of their At-Bats end."></img> : '' }
+        { item.name === "Underhanded" ? <img src="https://i.imgur.com/ScRN37H.png" height={heightText} title="An Underhanded Player inverts home runs."></img> : '' }
         
         { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height={heightText} title="This player is having a great season."></img> : '' }
         { item.name === "Hierophant" ? <img src="https://i.imgur.com/rfIZ636.png" height={heightText} title="This player is checking the stars."></img> : '' }

@@ -195,6 +195,7 @@ function Team() {
                                         
                                         { item.modName === "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
                                         { item.modName === "Witness Protection" ? <img src="https://i.imgur.com/pclDlgi.png" height="30px" title="This team is protected. Safe from The Witness."></img> : '' }
+                                        { item.modName === "Worm Tamer" ? <img src="https://i.imgur.com/gRI6tTp.png" height="30px" title="This team likes the Worms."></img> : '' }
                                         { item.modName === "Sunspotting" ? <img src="https://i.imgur.com/paSBr57.png" height="30px" title="This team is spotting the Sun."></img> : '' }
                                         { item.modName === "Nullspotting" ? <img src="https://i.imgur.com/xgFVMnL.png" height="30px" title="This team is spotting the Null."></img> : '' }
                                         { item.modName === "Wavey" ? <img src="https://i.imgur.com/MmKiNb3.png" height="30px" title="This team is riding the wave."></img> : '' }
@@ -208,6 +209,8 @@ function Team() {
                                         { item.modName === "Throwing" ? <img src="https://i.imgur.com/TB9pEdp.png" height="30px" title="This team just doesn't care."></img> : '' }
                                         { item.modName === "Fourth Strike" ? <img src="https://i.imgur.com/eWPduqh.png" height="30px" title="This team gets four strikes!"></img> : '' }
                                         { item.modName === "ThreeForce" ? <img src="https://i.imgur.com/5P3yQY1.png" height="30px" title="This team only gets three balls!"></img> : '' }
+                                        { item.modName === "Losers Rights" ? <img src="https://i.imgur.com/vIk7Bdb.png" height="30px" title="This team has their losing rights."></img> : '' }
+                                        { item.modName === "Ketchup" ? <img src="https://i.imgur.com/u5Kcpr7.png" height="30px" title="This team has ketchup!"></img> : '' }
                                         { item.modName === "Homefield Advantage" ? <img src="https://i.imgur.com/tCnQYQ2.png" height="30px" title="This team has a homefield advantage!"></img> : '' }
                                         { item.modName === "Trapped" ? <img src="https://i.imgur.com/AiC1xek.png" height="30px" title="This team has trapped their home."></img> : '' }
                                         { item.modName === "Vibing" ? <img src="https://i.imgur.com/2StV7YX.png" height="30px" title="This teams vibes are wild."></img> : '' }
@@ -367,6 +370,7 @@ function modify(item, type) {
         { item.name === "AltLeague" ? <img src="https://i.imgur.com/MJlBNU0.png" height={heightText} title="This player plays for the Alternate League. This player has done this before."></img> : '' }
         { item.name === "BlittleLeague" ? <img src="https://i.imgur.com/keUYQ24.png" height={heightText} title="This player plays for the Blittle League. This player is still growing."></img> : '' }
         { item.name === "Reverberating" ? <img src="https://i.imgur.com/UdlzP7K.png" height={heightText} title="A Reverberating Player has a small chance of batting again after each of their At-Bats end."></img> : '' }
+        { item.name === "Underhanded" ? <img src="https://i.imgur.com/ScRN37H.png" height={heightText} title="An Underhanded Player inverts home runs."></img> : '' }
         
         { item.name === "Crown" ? <img src="https://i.imgur.com/ObKxsXM.png" height={heightText} title="This player is having a great season."></img> : '' }
         { item.name === "Hierophant" ? <img src="https://i.imgur.com/rfIZ636.png" height={heightText} title="This player is checking the stars."></img> : '' }

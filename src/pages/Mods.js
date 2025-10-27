@@ -23,6 +23,11 @@ function Mods() {
                     <br/>Witness Protection wears off after a season.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Worm Tamer</h3>
+                    <img src="https://i.imgur.com/gRI6tTp.png" height="50px" title="This team likes the Worms."></img>
+                    <p className="center">Teams with Worm Tamer will not be attacked by worms.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Sunspotting</h3>
                     <img src="https://i.imgur.com/paSBr57.png" height="50px" title="This team is spotting the Sun."></img>
                     <p className="center">Teams with Sunspotting will be protected from negative effects in the Sun.
@@ -82,6 +87,16 @@ function Mods() {
                     <h3 className="center">Three Force</h3>
                     <img src="https://i.imgur.com/5P3yQY1.png" height="50px" title="This team only gets three balls!"></img>
                     <p className="center">This teams batters only need three balls to draw a walk.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Losers Rights</h3>
+                    <img src="https://i.imgur.com/vIk7Bdb.png" height="50px" title="This team has their losing rights."></img>
+                    <p className="center">This team starts with a runner on second base if they are losing after the 8th inning.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Ketchup</h3>
+                    <img src="https://i.imgur.com/u5Kcpr7.png" height="50px" title="This team has ketchup!"></img>
+                    <p className="center">This team gains a point if they end an inning losing by 4 or more.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Seasoned</h3>
@@ -190,6 +205,12 @@ function Mods() {
                     <img src="https://i.imgur.com/UdlzP7K.png" height="50px" title="A Reverberating Player has a small chance of batting again after each of their At-Bats end."></img>
                     <p className="center">Reverberating players have a chance of batting again immediately after their at-bat ends, as if they had "jumped the queue" in their team's lineup.
                     <br/>If their previous at-bat ended in a hit, this can end with a player being simultaneously on base and batting.
+                    <br/>Blaseball RIV.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Underhanded</h3>
+                    <img src="https://i.imgur.com/ScRN37H.png" height="50px" title="An Underhanded Player inverts home runs."></img>
+                    <p className="center">Underhanded players will invert points gained when they hit or give up a home run.
                     <br/>Blaseball RIV.</p>
                 </div>
             </div>
