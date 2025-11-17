@@ -192,6 +192,9 @@ function Team() {
                                         { item.modName === "Hexagonal" ? <img src="https://i.imgur.com/ufzG0Xr.png" height="30px" title="This team likes sixes."></img> : '' }
                                         { item.modName === "FreshLinen" ? <img src="https://i.imgur.com/Xm6FiL4.png" height="30px" title="This team is fresh out of the dryer."></img> : '' }
                                         { item.modName === "Slippery" ? <img src="https://i.imgur.com/CFdQvtK.png" height="30px" title="This team is slippery when wet."></img> : '' }
+                                        { item.modName === "Reversal" ? <img src="https://i.imgur.com/QSeL8aw.png" height="30px" title="This team is turning tables."></img> : '' }
+                                        { item.modName === "Sunsetting" ? <img src="https://i.imgur.com/g5Wbff4.png" height="30px" title="This team is heading off the horizon."></img> : '' }
+                                        { item.modName === "Herders" ? <img src="https://i.imgur.com/YPqsgIE.png" height="30px" title="This team is rounding them up."></img> : '' }
                                         
                                         { item.modName === "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
                                         { item.modName === "Witness Protection" ? <img src="https://i.imgur.com/pclDlgi.png" height="30px" title="This team is protected. Safe from The Witness."></img> : '' }

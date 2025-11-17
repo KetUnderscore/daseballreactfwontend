@@ -159,6 +159,23 @@ function Mods() {
                     <img src="https://i.imgur.com/CFdQvtK.png" height="50px" title="This team is slippery when wet."></img>
                     <p className="center">Players on this team may slip onto first after scoring.</p>
                 </div>
+                <div className='mod'>
+                    <h3 className="center">Reversal</h3>
+                    <img src="https://i.imgur.com/QSeL8aw.png" height="50px" title="This team is turning tables."></img>
+                    <p className="center">Players on this team experience inverted effects from Twinkle Twinkle related mods.
+                    <br/>Players on this team play better against opponents with more stars.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Sunsetting</h3>
+                    <img src="https://i.imgur.com/g5Wbff4.png" height="50px" title="This team is heading off the horizon."></img>
+                    <p className="center">Players on this team play better as the season progresses.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Herders</h3>
+                    <img src="https://i.imgur.com/YPqsgIE.png" height="50px" title="This team is rounding them up."></img>
+                    <p className="center">Players on this team play better against opponents with more championship wins.
+                    <br/>Players on this team play better against opponents with a higher win rate.</p>
+                </div>
             </div>
 
             
