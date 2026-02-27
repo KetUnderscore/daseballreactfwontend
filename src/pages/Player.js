@@ -12,7 +12,7 @@ function Player () {
     const [playerStatData, setPlayerStatData] = useState(null)
     const [playerLoaded, setPlayerLoaded] = useState(false)
     const [playerStatsLoaded, setPlayerStatsLoaded] = useState(false)
-    const [seasonNumber, setSeasonNumber] = useState(13) // Default is Season 13
+    const [seasonNumber, setSeasonNumber] = useState(14) // Default is Season 14
     const [seed, setSeed] = useState(1);
     
     let favoriteSeason
@@ -40,6 +40,7 @@ function Player () {
         return (
             <div className='season-form'>
                 <select value={seasonNumber} onChange={(e) => SeasonChanger(e.target.value)} className='season-select'>
+                    <option value="14">14</option>
                     <option value="13">13</option>
                     <option value="12">12</option>
                     <option value="11">11</option>

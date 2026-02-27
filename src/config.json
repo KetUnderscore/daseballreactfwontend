@@ -1,5 +1,5 @@
 {
-    "currentActiveSeason": 13,
+    "currentActiveSeason": 14,
     "connectString": "https://daseball-api-05f8b0ed36e2.herokuapp.com/",
     "connectStringReal": "https://daseball-api-05f8b0ed36e2.herokuapp.com/",
     "connectStringLocal": "http://localhost:4000/"
