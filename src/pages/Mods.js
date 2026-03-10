@@ -23,9 +23,33 @@ function Mods() {
                     <br/>Witness Protection wears off after a season.</p>
                 </div>
                 <div className='mod'>
+                    <h3 className="center">Hibernating</h3>
+                    <img src="https://imgur.com/5epVtd4" height="50px" title="This team is sleeping..."></img>
+                    <p className="center">Hibernating teams are resting for the season.
+                    <br/>Hibernating teams play much worse.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Stoic</h3>
+                    <img src="https://imgur.com/rgHwnlY" height="50px" title="This team is calm."></img>
+                    <p className="center">Stoic teams are unbothered.
+                    <br/>Stoic teams have maximum vibes this season.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Demonic</h3>
+                    <img src="https://imgur.com/Zwt6RQ7" height="50px" title="This team is demonic."></img>
+                    <p className="center">Demonic teams are possesed this season.
+                    <br/>Players on demonic teams play 100% better.
+                    <br/>When demonic teams lose their fans get 100 coins.</p>
+                </div>
+                <div className='mod'>
                     <h3 className="center">Worm Tamer</h3>
                     <img src="https://i.imgur.com/gRI6tTp.png" height="50px" title="This team likes the Worms."></img>
                     <p className="center">Teams with Worm Tamer will not be attacked by worms.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Comeback</h3>
+                    <img src="https://imgur.com/QpVKakn" height="50px" title="This team is having a comeback!"></img>
+                    <p className="center">Comeback teams play better for every three games they've lost.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Sunspotting</h3>
