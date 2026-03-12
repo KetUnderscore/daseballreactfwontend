@@ -419,6 +419,7 @@ function modify(item, type) {
         { item.name === "Unfamiliar" ? <img src="https://i.imgur.com/wrjCW4Y.png" height={heightText} title="This player is not the one you remember."></img> : '' }
         { item.name === "Threatening" ? <img src="https://i.imgur.com/F8CGcLH.png" height={heightText} title="This player is dangerous to be around."></img> : '' }
         { item.name === "Determined" ? <img src="https://i.imgur.com/2pwU5Pd.png" height={heightText} title="Determination."></img> : '' }
+        { item.name === "Downdraft" ? <img src="https://i.imgur.com/OaviBCK.png" height={heightText} title="This player is catching a breeze."></img> : '' }
 
         { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }
@@ -438,6 +439,7 @@ function modify(item, type) {
         { item.name === "Erased" ? <img src="https://i.imgur.com/4mvBVph.png" height={heightText} title="This player was erased..."></img> : '' }
         { item.name === "Data Leak" ? <img src="https://i.imgur.com/dLWhUNY.png" height={heightText} title="This player is leaking!"></img> : '' }
         { item.name === "Data Breach" ? <img src="https://i.imgur.com/ROhdf21.png" height={heightText} title="This player is breaking!"></img> : '' }
+        { item.name === "Fractured" ? <img src="hhttps://i.imgur.com/sNF9XpY.png" height={heightText} title="This player is fractured!"></img> : '' }
         { item.name === "Patched" ? <img src="https://i.imgur.com/ar8A2xZ.png" height={heightText} title="This player has been patched."></img> : '' }
         { item.name === "HeatingUp" ? <img src="https://i.imgur.com/wWxWKyI.png" height={heightText} title="This player is heating up..."></img> : '' }
         { item.name === "On Fire" ? <img src="https://i.imgur.com/N1MvyL6.png" height={heightText} title="This player is on fire!"></img> : '' }

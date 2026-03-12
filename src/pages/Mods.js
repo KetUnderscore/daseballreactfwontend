@@ -36,7 +36,7 @@ function Mods() {
                 </div>
                 <div className='mod'>
                     <h3 className="center">Demonic</h3>
-                    <img src="https://imgur.com/Zwt6RQ7" height="50px" title="This team is demonic."></img>
+                    <img src="https://imgur.com/Zwt6RQ7" height="50px" title="This team is demonic!"></img>
                     <p className="center">Demonic teams are possesed this season.
                     <br/>Players on demonic teams play 100% better.
                     <br/>When demonic teams lose their fans get 100 coins.</p>
@@ -463,7 +463,7 @@ function Mods() {
                     <img src="https://i.imgur.com/wrjCW4Y.png" height="50px" title="This player is not the one you remember."></img>
                     <p className="center">This player is not the one you remember.
                     <br/>This player will stay on base between innings.
-                    <br/>This player will score negative if scoring for a team they are not on.</p>
+                    <br/>This player will score zero points if scoring for a team they are not on.</p>
                 </div>
                 <div className='mod'>
                     <h3 className="center">Threatening</h3>
@@ -475,6 +475,12 @@ function Mods() {
                     <h3 className="center">Determined</h3>
                     <img src="https://i.imgur.com/2pwU5Pd.png" height="50px" title="Determination."></img>
                     <p className="center">This player cannot strike out while losing.</p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Downdraft</h3>
+                    <img src="https://i.imgur.com/OaviBCK.png" height="50px" title="This player is catching a breeze."></img>
+                    <p className="center">This player may remove an out from the count when they get a hit.
+                    <br/>This player may take a baserunner off base when they pitch a strike.</p>
                 </div>
             </div>
 
@@ -540,6 +546,14 @@ function Mods() {
                     <img src="https://i.imgur.com/ROhdf21.png" height="50px" title="This player is leaking breaking!"></img>
                     <p className="center">Data Breach players seem content.
                     <br/>For now.
+                    </p>
+                </div>
+                <div className='mod'>
+                    <h3 className="center">Fractured</h3>
+                    <img src="https://i.imgur.com/sNF9XpY.png" height="50px" title="This player is fractured!"></img>
+                    <p className="center">Fractured players are made of other players.
+                    <br/>Copies stats and name of a different player at the start of every game.
+                    <br/>May delete other players.
                     </p>
                 </div>
                 <div className='mod'>

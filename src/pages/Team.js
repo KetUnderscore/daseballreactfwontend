@@ -199,7 +199,11 @@ function Team() {
                                         
                                         { item.modName === "Stable" ? <img src="https://i.imgur.com/TWKgRZQ.png" height="30px" title="This team is stable. Safe from Shuffle and Waves."></img> : '' }
                                         { item.modName === "Witness Protection" ? <img src="https://i.imgur.com/pclDlgi.png" height="30px" title="This team is protected. Safe from The Witness."></img> : '' }
+                                        { item.modName === "Hibernating" ? <img src="https://imgur.com/5epVtd4" height="30px" title="This team is sleeping..."></img> : '' }
+                                        { item.modName === "Stoic" ? <img src="https://imgur.com/rgHwnlY" height="30px" title="This team is calm."></img> : '' }
+                                        { item.modName === "Demonic" ? <img src="https://imgur.com/Zwt6RQ7" height="30px" title="This team is demonic!"></img> : '' }
                                         { item.modName === "Worm Tamer" ? <img src="https://i.imgur.com/gRI6tTp.png" height="30px" title="This team likes the Worms."></img> : '' }
+                                        { item.modName === "Comeback" ? <img src="https://imgur.com/QpVKakn" height="30px" title="This team is having a comeback!"></img> : '' }
                                         { item.modName === "Sunspotting" ? <img src="https://i.imgur.com/paSBr57.png" height="30px" title="This team is spotting the Sun."></img> : '' }
                                         { item.modName === "Nullspotting" ? <img src="https://i.imgur.com/xgFVMnL.png" height="30px" title="This team is spotting the Null."></img> : '' }
                                         { item.modName === "Wavey" ? <img src="https://i.imgur.com/MmKiNb3.png" height="30px" title="This team is riding the wave."></img> : '' }
@@ -219,6 +223,7 @@ function Team() {
                                         { item.modName === "Trapped" ? <img src="https://i.imgur.com/AiC1xek.png" height="30px" title="This team has trapped their home."></img> : '' }
                                         { item.modName === "Vibing" ? <img src="https://i.imgur.com/2StV7YX.png" height="30px" title="This teams vibes are wild."></img> : '' }
                                         { item.modName === "Seasoned" ? <img src="https://i.imgur.com/KxZwfCp.png" height="30px" title="This team is being seasoned."></img> : '' }
+                                        { item.modName === "Demonic" ? <img src="https://imgur.com/Zwt6RQ7" height="30px" title="This team is demonic."></img> : '' }
                                     </span>
                                 )}) 
                             }
@@ -412,6 +417,7 @@ function modify(item, type) {
         { item.name === "Unfamiliar" ? <img src="https://i.imgur.com/wrjCW4Y.png" height={heightText} title="This player is not the one you remember."></img> : '' }
         { item.name === "Threatening" ? <img src="https://i.imgur.com/F8CGcLH.png" height={heightText} title="This player is dangerous to be around."></img> : '' }
         { item.name === "Determined" ? <img src="https://i.imgur.com/2pwU5Pd.png" height={heightText} title="Determination."></img> : '' }
+        { item.name === "Downdraft" ? <img src="https://i.imgur.com/OaviBCK.png" height={heightText} title="This player is catching a breeze."></img> : '' }
 
         { item.name === "Zodiac" ? <img src="https://i.imgur.com/qJlX78M.png" height="30px" title="This player is a zodiac player."></img> : '' }
         { item.name === "Shepard" ? <img src="https://i.imgur.com/zm2KgpM.png" height={heightText} title="This player plays better for every player on base."></img> : '' }
@@ -431,6 +437,7 @@ function modify(item, type) {
         { item.name === "Erased" ? <img src="https://i.imgur.com/4mvBVph.png" height={heightText} title="This player was erased..."></img> : '' }
         { item.name === "Data Leak" ? <img src="https://i.imgur.com/dLWhUNY.png" height={heightText} title="This player is leaking!"></img> : '' }
         { item.name === "Data Breach" ? <img src="https://i.imgur.com/ROhdf21.png" height={heightText} title="This player is breaking!"></img> : '' }
+        { item.name === "Fractured" ? <img src="hhttps://i.imgur.com/sNF9XpY.png" height={heightText} title="This player is fractured!"></img> : '' }
         { item.name === "Patched" ? <img src="https://i.imgur.com/ar8A2xZ.png" height={heightText} title="This player has been patched."></img> : '' }
         { item.name === "HeatingUp" ? <img src="https://i.imgur.com/wWxWKyI.png" height={heightText} title="This player is heating up..."></img> : '' }
         { item.name === "On Fire" ? <img src="https://i.imgur.com/N1MvyL6.png" height={heightText} title="This player is on fire!"></img> : '' }
