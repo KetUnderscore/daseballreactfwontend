@@ -480,7 +480,7 @@ function Mods() {
                     <h3 className="center">Downdraft</h3>
                     <img src="https://i.imgur.com/OaviBCK.png" height="50px" title="This player is catching a breeze."></img>
                     <p className="center">This player may remove an out from the count when they get a hit.
-                    <br/>This player may take a baserunner off base when they pitch a strike.</p>
+                    <br/>This player may take a baserunner off base when they pitch an out.</p>
                 </div>
             </div>
 
